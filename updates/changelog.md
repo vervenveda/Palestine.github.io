@@ -10,4 +10,8 @@
 - Added draggable before/after comparison controls, exact photo dates, image attribution and licenses, and 2026 legal/humanitarian context links.
 - Added a scope note distinguishing present-day Jaffa inside Israel from the Occupied Palestinian Territory as defined in the ICJ's 2024 advisory opinion.
 - Added a dedicated image-rights/source register in `SOURCES.md`.
+- Expanded the **Then / Now** documentary gallery with Battir, Ramallah, Akka/Acre, Haifa, Lydd/Lod, and Lifta.
+- Added 12 new sourced images with explicit dates and rights: public-domain Matson/Australian War Memorial material and Creative Commons contemporary photographs.
+- Added 2026 occupation-context sourcing for Battir and Ramallah while explicitly distinguishing Akka/Acre, Haifa, Lydd/Lod, and Lifta from the occupied West Bank/Gaza legal framing.
+- Added UNESCO 2026 World Heritage in Danger context for Battir and a village-memory case study for Lifta.
 
