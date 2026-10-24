@@ -1,0 +1,1081 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#21472f">
+<meta name="description" content="Palestine · Land, People, Memory — a source-led bilingual educational guide to the land, cities, culture, and Palestinian social history, with special attention to life before 1948.">
+<meta name="robots" content="index,follow,max-image-preview:large">
+<link rel="canonical" href="https://vervenveda.com/Palestine.github.io/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Verve N Veda">
+<meta property="og:title" content="Palestine | Land · People · Memory">
+<meta property="og:description" content="A research-led English-Arabic introduction to Palestine's landscapes, cities, living culture, archives, and social history before 1948.">
+<meta property="og:url" content="https://vervenveda.com/Palestine.github.io/">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Palestine | Land · People · Memory">
+<meta name="twitter:description" content="Explore land, cities, culture, archives, and Palestinian social history through source-linked learning.">
+<title>Palestine | Land · People · Memory</title>
+<style>
+:root{
+  --olive:#21472f;
+  --olive-2:#496b43;
+  --olive-3:#7b824b;
+  --red:#a52d35;
+  --red-deep:#7d2027;
+  --black:#171917;
+  --ink:#252823;
+  --muted:#687067;
+  --cream:#f8f1e3;
+  --paper:#fffdf8;
+  --stone:#e9dfca;
+  --stone-2:#d8c8a9;
+  --gold:#b88e4d;
+  --line:#ded3c0;
+  --white:#fff;
+  --shadow:0 18px 45px rgba(40,34,24,.09);
+  --display:Georgia,"Times New Roman",serif;
+  --body:"Avenir Next","Segoe UI",Arial,sans-serif;
+  --arabic:"Noto Naskh Arabic","Geeza Pro","Arial",sans-serif;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:118px}
+body{
+  margin:0;
+  min-width:300px;
+  background:var(--paper);
+  color:var(--ink);
+  font:16px/1.68 var(--body);
+  -webkit-font-smoothing:antialiased;
+  text-rendering:optimizeLegibility;
+}
+html[dir="rtl"] body{font-family:var(--arabic);text-align:right}
+a{color:inherit}
+button,a{touch-action:manipulation}
+button,input{font:inherit}
+img,svg{display:block;max-width:100%}
+[hidden]{display:none!important}
+::selection{background:#d8b9aa;color:#171917}
+:focus-visible{outline:3px solid var(--red);outline-offset:3px}
+.wrap{width:min(1160px,calc(100% - 42px));margin-inline:auto}
+.skip-link{
+  position:fixed;left:12px;top:-120px;z-index:4000;
+  padding:10px 15px;background:var(--paper);color:var(--olive);
+  border:2px solid var(--red);font-weight:700;text-decoration:none
+}
+.skip-link:focus{top:12px}
+.tatreez-line{
+  height:7px;
+  background:
+    linear-gradient(45deg,transparent 25%,var(--red) 25% 50%,transparent 50% 75%,var(--red) 75%) 0 0/20px 20px,
+    var(--black);
+}
+#vnvTicker{
+  position:relative;z-index:1500;
+  min-height:35px;
+  display:grid;grid-template-columns:minmax(0,1fr) 42px;
+  color:#f4ead7;
+  background:linear-gradient(90deg,#07110d,#162b21 50%,#07110d);
+  border-bottom:1px solid #ffffff24;
+  font:500 11px/1.25 var(--body);
+  letter-spacing:.08em
+}
+#vnvTicker .viewport{overflow:hidden;min-width:0;mask-image:linear-gradient(90deg,transparent,#000 24px,#000 calc(100% - 24px),transparent)}
+#vnvTicker .track{
+  min-height:35px;width:max-content;
+  display:flex;align-items:center;
+  animation:tickerMove 33s linear infinite
+}
+#vnvTicker .set{display:flex;align-items:center;gap:23px;padding-inline:12px;white-space:nowrap}
+#vnvTicker .brand{color:#e6c999;letter-spacing:.17em;text-transform:uppercase}
+#vnvTicker a{text-decoration:none;color:#f3eee4}
+#vnvTicker a:hover,#vnvTicker a:focus-visible{text-decoration:underline;color:#fff}
+#vnvTicker .pause{
+  min-height:35px;border:0;border-left:1px solid #ffffff2a;
+  background:transparent;color:#fff;cursor:pointer;font-size:15px
+}
+#vnvTicker:hover .track,#vnvTicker:focus-within .track,#vnvTicker[data-paused="true"] .track{animation-play-state:paused}
+@keyframes tickerMove{to{transform:translateX(-50%)}}
+.site-header{
+  position:sticky;top:0;z-index:1200;
+  background:rgba(255,253,248,.95);
+  backdrop-filter:blur(13px);
+  border-bottom:1px solid var(--line)
+}
+.nav{
+  min-height:76px;
+  display:flex;align-items:center;justify-content:space-between;gap:22px
+}
+.site-brand{
+  display:flex;align-items:center;gap:11px;
+  text-decoration:none;color:var(--olive);min-width:0
+}
+.brand-mark{
+  width:42px;height:42px;flex:0 0 42px;
+  display:grid;place-items:center;
+  border:1px solid var(--red);
+  color:var(--red);background:#fff9f0;
+  font:600 19px/1 var(--display);
+  position:relative;overflow:hidden
+}
+.brand-mark:before,.brand-mark:after{
+  content:"";position:absolute;background:var(--olive);opacity:.17;transform:rotate(45deg)
+}
+.brand-mark:before{width:24px;height:5px;left:-7px;top:3px}
+.brand-mark:after{width:24px;height:5px;right:-7px;bottom:3px}
+.brand-name{font:600 1rem/1.1 var(--display);letter-spacing:.08em}
+.brand-name small{
+  display:block;margin-top:5px;
+  color:var(--muted);font:600 .58rem/1 var(--body);
+  letter-spacing:.14em;text-transform:uppercase
+}
+.nav-right{display:flex;align-items:center;gap:16px}
+.nav-links{display:flex;gap:18px;align-items:center}
+.nav-links a{
+  color:var(--muted);text-decoration:none;font-size:.84rem;font-weight:600
+}
+.nav-links a:hover{color:var(--olive)}
+.lang{
+  border:1px solid var(--red);background:transparent;color:var(--red);
+  padding:8px 11px;cursor:pointer;font-weight:700;border-radius:3px
+}
+.menu-button{
+  width:42px;height:42px;display:grid;place-items:center;
+  border:1px solid var(--line);background:var(--paper);cursor:pointer;
+  color:var(--olive);border-radius:3px
+}
+.menu-lines,.menu-lines:before,.menu-lines:after{
+  width:18px;height:2px;background:currentColor;display:block;position:relative
+}
+.menu-lines:before,.menu-lines:after{content:"";position:absolute;left:0}
+.menu-lines:before{top:-6px}.menu-lines:after{top:6px}
+.hero{
+  position:relative;overflow:hidden;
+  color:#fff;
+  background:
+    radial-gradient(circle at 78% 10%,rgba(255,255,255,.09),transparent 25rem),
+    linear-gradient(115deg,#173a27,#21472f 54%,#183724)
+}
+.hero:before{
+  content:"";position:absolute;inset:auto 0 0;
+  height:9px;
+  background:linear-gradient(90deg,var(--black) 0 25%,#fff 25% 50%,var(--olive-3) 50% 75%,var(--red) 75%)
+}
+.hero-inner{
+  min-height:650px;
+  display:grid;grid-template-columns:1.05fr .95fr;
+  align-items:center;gap:54px;
+  padding:80px 0 90px
+}
+.hero-copy{position:relative;z-index:2}
+.eyebrow,.kicker{
+  font-size:.72rem;font-weight:800;letter-spacing:.19em;text-transform:uppercase
+}
+.eyebrow{color:#efd8ad}
+.hero h1{
+  margin:18px 0 18px;
+  font:500 clamp(3.25rem,7vw,6.7rem)/.92 var(--display);
+  letter-spacing:.01em
+}
+.hero h1 .arabic-title{
+  display:block;margin-top:12px;
+  color:#f2dfba;
+  font:500 clamp(2.1rem,4vw,3.9rem)/1.1 var(--arabic)
+}
+.hero-lead{
+  max-width:690px;margin:0;
+  color:#e3ece5;font-size:1.05rem;line-height:1.75
+}
+.hero-actions{display:flex;flex-wrap:wrap;gap:11px;margin-top:28px}
+.button{
+  min-height:46px;display:inline-flex;align-items:center;justify-content:center;
+  padding:10px 17px;border:1px solid #ffffff70;border-radius:3px;
+  color:white;text-decoration:none;font-size:.86rem;font-weight:700
+}
+.button.primary{background:var(--red);border-color:var(--red)}
+.button.light{background:#fffdf8;color:var(--olive);border-color:#fffdf8}
+.hero-note{margin-top:25px;color:#c9d9ce;font-size:.79rem;letter-spacing:.02em}
+.hero-art{
+  position:relative;min-height:470px;
+  display:grid;place-items:center
+}
+.art-card{
+  width:min(100%,480px);aspect-ratio:4/5;
+  border:1px solid #ffffff38;
+  background:#f4ecd9;
+  box-shadow:0 28px 70px #07170e66;
+  position:relative;overflow:hidden
+}
+.art-card svg{width:100%;height:100%}
+.art-caption{
+  position:absolute;left:20px;right:20px;bottom:19px;
+  padding:12px 14px;background:#12261dcc;color:#fff;
+  border-left:4px solid var(--red);
+  backdrop-filter:blur(5px);
+  font-size:.76rem
+}
+html[dir="rtl"] .art-caption{border-left:0;border-right:4px solid var(--red)}
+.section{padding:82px 0}
+.section.stone{background:var(--cream)}
+.section.dark{background:var(--black);color:#ece7dc}
+.section-head{max-width:780px;margin-bottom:34px}
+.kicker{color:var(--red)}
+.section h2{
+  margin:9px 0 14px;color:var(--olive);
+  font:500 clamp(2rem,4vw,3rem)/1.12 var(--display)
+}
+.section.dark h2{color:#f5efe2}
+.section-head>p{margin:0;color:var(--muted)}
+.section.dark .section-head>p{color:#c7c3ba}
+.intro-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:36px;align-items:start}
+.prose-card{
+  padding:28px;background:#fff;border:1px solid var(--line);box-shadow:var(--shadow)
+}
+.prose-card p{margin:0 0 15px;color:var(--muted)}
+.prose-card p:last-child{margin-bottom:0}
+.context-note{
+  padding:24px;border:1px solid #c9bba1;background:#f3ead9;
+  color:#4d514b
+}
+.context-note strong{display:block;color:var(--olive);font-family:var(--display);font-size:1.2rem;margin-bottom:8px}
+.fact-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px;margin-top:30px}
+.fact-card{
+  background:#fff;border:1px solid var(--line);padding:24px;min-width:0
+}
+.fact-no{color:var(--red);font:600 1.7rem/1 var(--display)}
+.fact-card h3{margin:12px 0 8px;color:var(--olive);font:600 1.22rem/1.25 var(--display)}
+.fact-card p{margin:0;color:var(--muted);font-size:.9rem}
+.fact-card a{display:inline-block;margin-top:14px;color:var(--red);font-size:.78rem;font-weight:800;text-decoration:none}
+.fact-card a:hover{text-decoration:underline}
+.land-strip{
+  display:grid;grid-template-columns:repeat(4,minmax(0,1fr));
+  border:1px solid #37593f;margin-top:30px;background:#173621;color:white
+}
+.land-strip div{padding:21px;border-right:1px solid #ffffff22}
+.land-strip div:last-child{border-right:0}
+html[dir="rtl"] .land-strip div{border-right:0;border-left:1px solid #ffffff22}
+.land-strip strong{display:block;color:#efd8ad;font-family:var(--display);font-size:1.08rem}
+.land-strip span{display:block;margin-top:5px;color:#d7e1da;font-size:.82rem}
+.city-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px}
+.city{
+  position:relative;min-height:280px;padding:27px;
+  background:#fff;border:1px solid var(--line);overflow:hidden
+}
+.city:after{
+  content:"";position:absolute;width:150px;height:150px;right:-62px;bottom:-62px;
+  border:1px solid #a52d3533;transform:rotate(45deg)
+}
+.city-tag{font-size:.68rem;letter-spacing:.16em;color:var(--red);font-weight:800;text-transform:uppercase}
+.city h3{margin:10px 0 9px;color:var(--olive);font:600 1.5rem/1.2 var(--display)}
+.city p{margin:0;color:var(--muted);font-size:.9rem}
+.city small{display:block;margin-top:16px;color:#7b6b56;font-size:.76rem}
+.culture-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px}
+.culture-card{
+  padding:28px;border:1px solid #ffffff25;background:#ffffff08;position:relative;overflow:hidden
+}
+.culture-card:before{
+  content:"";position:absolute;left:0;top:0;width:7px;height:100%;
+  background:linear-gradient(var(--red) 0 33%,#f0e7d5 33% 66%,var(--olive-3) 66%)
+}
+html[dir="rtl"] .culture-card:before{left:auto;right:0}
+.culture-card .icon{font-size:1.75rem}
+.culture-card h3{margin:12px 0 8px;color:#f5efe2;font:500 1.45rem/1.25 var(--display)}
+.culture-card p{margin:0;color:#c7c3ba;font-size:.91rem}
+.culture-card a{display:inline-block;margin-top:15px;color:#e8cfa0;font-size:.78rem;font-weight:800;text-decoration:none}
+.timeline{position:relative;margin-top:34px}
+.timeline:before{content:"";position:absolute;left:112px;top:0;bottom:0;width:1px;background:var(--stone-2)}
+html[dir="rtl"] .timeline:before{left:auto;right:112px}
+.time-row{
+  display:grid;grid-template-columns:90px 1fr;gap:44px;
+  position:relative;padding:0 0 28px
+}
+.time-row:after{
+  content:"";position:absolute;left:106px;top:8px;width:13px;height:13px;
+  border-radius:50%;background:var(--red);border:3px solid var(--cream)
+}
+html[dir="rtl"] .time-row:after{left:auto;right:106px}
+.time-date{color:var(--red);font:600 1.05rem/1.3 var(--display);text-align:right}
+html[dir="rtl"] .time-date{text-align:left}
+.time-copy{padding:0 0 7px}
+.time-copy h3{margin:0 0 7px;color:var(--olive);font:600 1.25rem/1.25 var(--display)}
+.time-copy p{margin:0;color:var(--muted);font-size:.92rem}
+.before-card{
+  margin-top:30px;padding:30px;background:var(--olive);color:white;
+  display:grid;grid-template-columns:.8fr 1.2fr;gap:30px;align-items:center
+}
+.before-card strong{font:500 clamp(1.7rem,3vw,2.35rem)/1.16 var(--display)}
+.before-card p{margin:0;color:#dce7df}
+.archive-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px}
+.archive-card{
+  background:#fff;border:1px solid var(--line);padding:24px;
+  display:flex;flex-direction:column;min-height:230px
+}
+.archive-card .label{font-size:.67rem;letter-spacing:.15em;color:var(--red);font-weight:800;text-transform:uppercase}
+.archive-card h3{margin:11px 0;color:var(--olive);font:600 1.25rem/1.25 var(--display)}
+.archive-card p{margin:0;color:var(--muted);font-size:.88rem}
+.archive-card a{margin-top:auto;padding-top:17px;color:var(--red);font-size:.78rem;font-weight:800;text-decoration:none}
+.archive-card a:hover{text-decoration:underline}
+.source-list{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
+.source-link{
+  display:block;padding:18px 20px;background:#fff;border:1px solid var(--line);
+  text-decoration:none;color:var(--olive);font-weight:800
+}
+.source-link:hover{border-color:var(--red);transform:translateY(-1px)}
+.source-link span{display:block;margin-top:5px;color:var(--muted);font-size:.8rem;font-weight:500}
+.research-banner{
+  margin-top:27px;padding:24px 26px;border:1px solid #cabd9e;
+  background:#efe4cf;display:flex;justify-content:space-between;gap:24px;align-items:center;flex-wrap:wrap
+}
+.research-banner strong{color:var(--olive);font-family:var(--display);font-size:1.18rem}
+.research-banner p{margin:5px 0 0;color:var(--muted);font-size:.88rem}
+.research-banner a{
+  display:inline-flex;min-height:44px;align-items:center;padding:8px 13px;
+  border:1px solid var(--olive);color:var(--olive);text-decoration:none;font-weight:800;font-size:.78rem
+}
+footer{background:#0c1510;color:#d8ddd8;padding:34px 0;font-size:.82rem}
+.foot{display:flex;justify-content:space-between;gap:24px;flex-wrap:wrap}
+footer p{margin:4px 0;color:#aeb8b0}
+footer a{color:#e4d0aa}
+.backtop{
+  position:fixed;right:18px;bottom:18px;z-index:900;
+  width:42px;height:42px;display:grid;place-items:center;
+  background:var(--red);color:#fff;text-decoration:none;border-radius:3px;
+  box-shadow:0 5px 18px #0003;font-weight:900
+}
+html[dir="rtl"] .backtop{right:auto;left:18px}
+.menu-overlay{
+  position:fixed;inset:0;z-index:2500;
+  display:grid;place-items:start end;
+  background:#07100bd1;opacity:0;visibility:hidden;transition:.18s
+}
+html[dir="rtl"] .menu-overlay{place-items:start start}
+.menu-overlay.open{opacity:1;visibility:visible}
+.menu-panel{
+  width:min(420px,92vw);height:100%;padding:28px;
+  background:var(--paper);color:var(--ink);overflow:auto;
+  transform:translateX(105%);transition:.22s
+}
+html[dir="rtl"] .menu-panel{transform:translateX(-105%)}
+.menu-overlay.open .menu-panel{transform:none}
+.menu-top{display:flex;justify-content:space-between;align-items:center;gap:12px}
+.menu-top h2{margin:0;color:var(--olive);font:600 1.4rem/1.2 var(--display)}
+.menu-close{
+  width:40px;height:40px;border:1px solid var(--line);background:white;
+  color:var(--red);cursor:pointer;font-size:1.2rem
+}
+.menu-panel nav{display:grid;margin-top:26px;border-top:1px solid var(--line)}
+.menu-panel nav a{
+  padding:14px 3px;border-bottom:1px solid var(--line);
+  text-decoration:none;color:var(--olive);font-weight:700
+}
+.menu-mini{margin-top:25px;padding:18px;background:var(--cream);color:var(--muted);font-size:.82rem}
+@media(max-width:940px){
+  .nav-links{display:none}
+  .hero-inner{grid-template-columns:1fr;gap:35px;padding-top:68px}
+  .hero-art{min-height:390px}.art-card{max-width:430px}
+  .city-grid,.fact-grid,.archive-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .land-strip{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .intro-grid,.before-card{grid-template-columns:1fr}
+}
+@media(max-width:620px){
+  .wrap{width:calc(100% - 30px)}
+  .nav{min-height:68px}.brand-name small{display:none}
+  .hero-inner{min-height:auto;padding:58px 0 72px}
+  .hero h1{font-size:clamp(3rem,15vw,4.8rem)}
+  .section{padding:60px 0}
+  .fact-grid,.city-grid,.culture-grid,.archive-grid,.source-list{grid-template-columns:1fr}
+  .land-strip{grid-template-columns:1fr}
+  .land-strip div{border-right:0;border-bottom:1px solid #ffffff22}
+  .land-strip div:last-child{border-bottom:0}
+  .timeline:before{left:76px}
+  html[dir="rtl"] .timeline:before{left:auto;right:76px}
+  .time-row{grid-template-columns:62px 1fr;gap:30px}
+  .time-row:after{left:70px}
+  html[dir="rtl"] .time-row:after{left:auto;right:70px}
+  .hero-art{min-height:330px}.art-card{width:min(100%,360px)}
+}
+@media(prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  *{animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important}
+  #vnvTicker .track{animation:none;width:auto;flex-wrap:wrap}
+  #vnvTicker .set[aria-hidden="true"]{display:none}
+}
+@media print{
+  #vnvTicker,.site-header,.menu-overlay,.backtop,.hero-actions{display:none!important}
+  .hero{background:#fff!important;color:#111!important}
+  .hero-lead,.hero-note{color:#333!important}
+  .hero-inner{min-height:auto;padding:30px 0}
+  .section{padding:35px 0}
+  .culture-card{color:#111;background:#fff;border-color:#bbb}
+  .culture-card h3{color:#111}.culture-card p{color:#333}
+}
+</style>
+</head>
+<body>
+<a class="skip-link" href="#main" data-en="Skip to main content" data-ar="انتقل إلى المحتوى الرئيسي">Skip to main content</a>
+
+<div id="vnvTicker" data-paused="false" aria-label="Verve N Veda 333 Network ticker">
+  <div class="viewport">
+    <div class="track">
+      <div class="set">
+        <span class="brand">333 Network</span>
+        <a href="https://vervenveda.github.io/333.github.io/app/HOLLO_333_direct_connect_index.html">HOLLO</a>
+        <a href="https://vervenveda.github.io/333.github.io/app/KANSEE_333_meeting_rooms_index.html">KANSEE</a>
+        <a href="https://vervenveda.github.io/333.github.io/app/EVen_mail_index.html">E=Ven Mail</a>
+        <a href="https://vervenveda.github.io/333.github.io/app/Bazaar_Art_Live_index.html">Bazaar Art Live</a>
+        <a href="https://vervenveda.github.io/333.github.io/app/SIte_builder_index.html">SIte Studio</a>
+        <a href="https://vervenveda.github.io/333.github.io/app/Bunya_digital_infrastructure_index.html">Bunya</a>
+        <a href="https://vervenveda.github.io/333.github.io/">Open 333 →</a>
+      </div>
+      <div class="set" aria-hidden="true">
+        <span class="brand">333 Network</span>
+        <a tabindex="-1" href="https://vervenveda.github.io/333.github.io/app/HOLLO_333_direct_connect_index.html">HOLLO</a>
+        <a tabindex="-1" href="https://vervenveda.github.io/333.github.io/app/KANSEE_333_meeting_rooms_index.html">KANSEE</a>
+        <a tabindex="-1" href="https://vervenveda.github.io/333.github.io/app/EVen_mail_index.html">E=Ven Mail</a>
+        <a tabindex="-1" href="https://vervenveda.github.io/333.github.io/app/Bazaar_Art_Live_index.html">Bazaar Art Live</a>
+        <a tabindex="-1" href="https://vervenveda.github.io/333.github.io/app/SIte_builder_index.html">SIte Studio</a>
+        <a tabindex="-1" href="https://vervenveda.github.io/333.github.io/app/Bunya_digital_infrastructure_index.html">Bunya</a>
+        <a tabindex="-1" href="https://vervenveda.github.io/333.github.io/">Open 333 →</a>
+      </div>
+    </div>
+  </div>
+  <button class="pause" id="tickerPause" type="button" aria-label="Pause 333 Network ticker" aria-pressed="false" title="Pause or resume ticker">Ⅱ</button>
+</div>
+<div class="tatreez-line" aria-hidden="true"></div>
+
+<header class="site-header">
+  <div class="wrap nav">
+    <a class="site-brand" href="#top" aria-label="Palestine landing page home">
+      <span class="brand-mark" aria-hidden="true">ف</span>
+      <span class="brand-name">PALESTINE
+        <small data-en="Land · People · Memory" data-ar="الأرض · الناس · الذاكرة">Land · People · Memory</small>
+      </span>
+    </a>
+    <div class="nav-right">
+      <nav class="nav-links" aria-label="Main navigation">
+        <a href="#land" data-en="Land" data-ar="الأرض">Land</a>
+        <a href="#cities" data-en="Cities" data-ar="المدن">Cities</a>
+        <a href="#culture" data-en="Culture" data-ar="الثقافة">Culture</a>
+        <a href="#before1948" data-en="Before 1948" data-ar="قبل 1948">Before 1948</a>
+        <a href="#archives" data-en="Archives" data-ar="الأرشيف">Archives</a>
+        <a href="#sources" data-en="Sources" data-ar="المصادر">Sources</a>
+      </nav>
+      <button class="lang" id="languageToggle" type="button" aria-label="Switch language">العربية</button>
+      <button class="menu-button" id="menuButton" type="button" aria-label="Open ecosystem menu" aria-expanded="false" aria-controls="menuOverlay">
+        <span class="menu-lines" aria-hidden="true"></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<main id="main" tabindex="-1">
+<section class="hero" id="top">
+  <div class="wrap hero-inner">
+    <div class="hero-copy">
+      <div class="eyebrow" data-en="VERVE N VEDA · SOURCE-LED PUBLIC HISTORY" data-ar="فيرف إن فيدا · تاريخ عام موثّق بالمصادر">VERVE N VEDA · SOURCE-LED PUBLIC HISTORY</div>
+      <h1>Palestine <span class="arabic-title">فلسطين</span></h1>
+      <p class="hero-lead"
+         data-en="Explore a land of ancient towns, terraced hills, olive groves, ports, markets, workshops, sacred places, family traditions and living arts. This independent educational guide gives special attention to Palestinian social, cultural, urban and agricultural life before 1948 while keeping the region’s many communities and historical layers in view."
+         data-ar="اكتشف أرضاً تضم مدناً عريقة ومدرجات زراعية وبساتين زيتون وموانئ وأسواقاً وحِرَفاً وأماكن مقدسة وتقاليد عائلية وفنوناً حيّة. يولي هذا الدليل التعليمي المستقل اهتماماً خاصاً بالحياة الاجتماعية والثقافية والحضرية والزراعية الفلسطينية قبل عام 1948، مع إبقاء تعدد مجتمعات المنطقة وطبقات تاريخها في الصورة.">
+        Explore a land of ancient towns, terraced hills, olive groves, ports, markets, workshops, sacred places, family traditions and living arts. This independent educational guide gives special attention to Palestinian social, cultural, urban and agricultural life before 1948 while keeping the region’s many communities and historical layers in view.
+      </p>
+      <div class="hero-actions">
+        <a class="button primary" href="#before1948" data-en="Explore life before 1948" data-ar="استكشف الحياة قبل 1948">Explore life before 1948</a>
+        <a class="button light" href="#sources" data-en="Open trusted sources" data-ar="افتح المصادر الموثوقة">Open trusted sources</a>
+      </div>
+      <div class="hero-note"
+           data-en="Independent educational project · English + العربية · Evidence close to the claim"
+           data-ar="مشروع تعليمي مستقل · الإنجليزية + العربية · وضع الدليل قريباً من الادعاء">
+        Independent educational project · English + العربية · Evidence close to the claim
+      </div>
+    </div>
+
+    <div class="hero-art" aria-label="Illustrated olive terraces and tatreez-inspired geometry">
+      <div class="art-card">
+        <svg viewBox="0 0 480 600" role="img" aria-labelledby="artTitle artDesc">
+          <title id="artTitle">Olive terraces and geometric textile motifs</title>
+          <desc id="artDesc">A stylized illustration inspired by limestone terraces, olive trees, village architecture and Palestinian embroidery geometry.</desc>
+          <rect width="480" height="600" fill="#f5eddc"/>
+          <circle cx="365" cy="112" r="62" fill="#d8bd78"/>
+          <path d="M0 255 C95 210 170 223 250 190 C330 156 408 160 480 145 V600 H0Z" fill="#c8c49a"/>
+          <path d="M0 320 C90 285 160 300 250 266 C347 229 410 248 480 220 V600 H0Z" fill="#8c9867"/>
+          <path d="M0 382 C102 350 172 363 269 329 C350 301 420 314 480 294 V600 H0Z" fill="#65764f"/>
+          <path d="M0 443 C90 417 173 428 273 397 C364 369 421 382 480 366 V600 H0Z" fill="#415d3d"/>
+          <g fill="none" stroke="#f1e5cb" stroke-width="6" opacity=".9">
+            <path d="M0 323 C93 287 163 303 251 268 C344 232 409 248 480 220"/>
+            <path d="M0 384 C103 351 174 365 270 331 C349 303 418 314 480 295"/>
+            <path d="M0 446 C94 419 174 430 274 399 C363 371 421 383 480 368"/>
+          </g>
+          <g transform="translate(83 185)">
+            <rect x="-5" y="67" width="10" height="69" rx="3" fill="#6b4c2d"/>
+            <path d="M0 77 C-48 46 -51 5 -8 7 C-39 -33 17 -52 29 -11 C55 -41 95 -9 67 22 C105 27 98 73 56 76 C40 111 5 112 0 77Z" fill="#314d32"/>
+            <g fill="#8b934e"><circle cx="-17" cy="35" r="5"/><circle cx="24" cy="24" r="5"/><circle cx="54" cy="50" r="5"/><circle cx="17" cy="72" r="5"/></g>
+          </g>
+          <g transform="translate(330 244)">
+            <rect x="-4" y="55" width="8" height="58" rx="3" fill="#6b4c2d"/>
+            <path d="M0 65 C-40 38 -37 2 -4 7 C-27 -24 21 -38 27 -8 C51 -31 79 -3 58 23 C88 28 81 61 50 64 C35 91 9 92 0 65Z" fill="#2d4a30"/>
+          </g>
+          <g fill="#e9deca" stroke="#8f7f65" stroke-width="2">
+            <rect x="255" y="208" width="54" height="41"/>
+            <rect x="309" y="193" width="49" height="56"/>
+            <rect x="358" y="215" width="64" height="34"/>
+          </g>
+          <g fill="#a52d35" opacity=".95">
+            <path d="M35 43 l12 -12 12 12 -12 12z"/><path d="M61 43 l12 -12 12 12 -12 12z"/>
+            <path d="M48 56 l12 -12 12 12 -12 12z"/><path d="M74 56 l12 -12 12 12 -12 12z"/>
+            <path d="M394 506 l12 -12 12 12 -12 12z"/><path d="M420 506 l12 -12 12 12 -12 12z"/>
+            <path d="M407 519 l12 -12 12 12 -12 12z"/><path d="M433 519 l12 -12 12 12 -12 12z"/>
+          </g>
+          <g fill="#171917">
+            <rect x="33" y="82" width="7" height="7"/><rect x="47" y="82" width="7" height="7"/><rect x="40" y="75" width="7" height="7"/>
+            <rect x="427" y="468" width="7" height="7"/><rect x="441" y="468" width="7" height="7"/><rect x="434" y="461" width="7" height="7"/>
+          </g>
+        </svg>
+        <div class="art-caption"
+             data-en="A visual vocabulary drawn from olive terraces, limestone villages and geometric embroidery—not a reconstruction of one specific historical site."
+             data-ar="مفردات بصرية مستوحاة من مدرجات الزيتون والقرى الحجرية والتطريز الهندسي، وليست إعادة بناء لموقع تاريخي محدد.">
+          A visual vocabulary drawn from olive terraces, limestone villages and geometric embroidery—not a reconstruction of one specific historical site.
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="land">
+  <div class="wrap">
+    <div class="section-head">
+      <div class="kicker" data-en="01 / LAND & CONTINUITY" data-ar="01 / الأرض والاستمرارية">01 / LAND & CONTINUITY</div>
+      <h2 data-en="A landscape shaped by water, stone, cultivation and movement" data-ar="مشهد طبيعي صاغته المياه والحجر والزراعة والحركة">A landscape shaped by water, stone, cultivation and movement</h2>
+      <p data-en="Coastal plains, central highlands, the Jordan Valley and desert margins created different local economies and ways of life. Terraces, springs, orchards and trade routes connected villages and towns to a wider eastern Mediterranean world."
+         data-ar="أوجدت السهول الساحلية والمرتفعات الوسطى وغور الأردن وهوامش الصحراء اقتصادات محلية وأساليب حياة متنوعة. وربطت المدرجات والينابيع والبساتين وطرق التجارة القرى والمدن بعالم شرق المتوسط الأوسع.">
+        Coastal plains, central highlands, the Jordan Valley and desert margins created different local economies and ways of life. Terraces, springs, orchards and trade routes connected villages and towns to a wider eastern Mediterranean world.
+      </p>
+    </div>
+
+    <div class="intro-grid">
+      <article class="prose-card">
+        <p data-en="Ancient Jericho/Tell es-Sultan preserves archaeological layers reaching back to about 10,500 BCE, including evidence associated with early settled life and urban development in the southern Levant."
+           data-ar="يحفظ تل السلطان/أريحا القديمة طبقات أثرية تعود إلى نحو 10,500 قبل الميلاد، بما في ذلك أدلة مرتبطة بالحياة المستقرة المبكرة والتطور الحضري في جنوب بلاد الشام.">
+          Ancient Jericho/Tell es-Sultan preserves archaeological layers reaching back to about 10,500 BCE, including evidence associated with early settled life and urban development in the southern Levant.
+        </p>
+        <p data-en="At Battir, dry-stone terraces and a spring-fed irrigation network show how generations adapted steep hillsides for olives, vines and vegetables. UNESCO describes the landscape as a continuing system of agriculture, water sharing and community knowledge."
+           data-ar="في بتير، تُظهر المدرجات الحجرية الجافة وشبكة الري التي تغذيها الينابيع كيف كيّفت أجيال متعاقبة السفوح الشديدة لزراعة الزيتون والكروم والخضروات. وتصف اليونسكو هذا المشهد بوصفه نظاماً مستمراً للزراعة وتقاسم المياه والمعرفة المجتمعية.">
+          At Battir, dry-stone terraces and a spring-fed irrigation network show how generations adapted steep hillsides for olives, vines and vegetables. UNESCO describes the landscape as a continuing system of agriculture, water sharing and community knowledge.
+        </p>
+      </article>
+      <aside class="context-note">
+        <strong data-en="Historical scope" data-ar="نطاق تاريخي">Historical scope</strong>
+        <span data-en="The name, borders and political administration of Palestine changed across periods. This project does not treat a geographical name as proof of uninterrupted modern state sovereignty, and it does not treat foreign imperial rule as evidence that local populations lacked history, society or attachment to place."
+              data-ar="تغيّر اسم فلسطين وحدودها وإدارتها السياسية عبر العصور. لا يتعامل هذا المشروع مع الاسم الجغرافي باعتباره دليلاً على سيادة دولة حديثة متواصلة، كما لا يعتبر الحكم الإمبراطوري الأجنبي دليلاً على أن السكان المحليين كانوا بلا تاريخ أو مجتمع أو ارتباط بالمكان.">
+          The name, borders and political administration of Palestine changed across periods. This project does not treat a geographical name as proof of uninterrupted modern state sovereignty, and it does not treat foreign imperial rule as evidence that local populations lacked history, society or attachment to place.
+        </span>
+      </aside>
+    </div>
+
+    <div class="fact-grid">
+      <article class="fact-card">
+        <div class="fact-no">10,500 BCE</div>
+        <h3 data-en="Ancient Jericho" data-ar="أريحا القديمة">Ancient Jericho</h3>
+        <p data-en="Tell es-Sultan contains deep archaeological deposits documenting very early settlement and later Bronze Age urbanism."
+           data-ar="يحتوي تل السلطان على طبقات أثرية عميقة توثّق الاستيطان المبكر جداً ثم التحضر في العصر البرونزي.">
+          Tell es-Sultan contains deep archaeological deposits documenting very early settlement and later Bronze Age urbanism.
+        </p>
+        <a href="https://whc.unesco.org/en/decisions/8417" target="_blank" rel="noopener noreferrer">UNESCO source ↗</a>
+      </article>
+      <article class="fact-card">
+        <div class="fact-no">Battir</div>
+        <h3 data-en="Olives, vines & water" data-ar="الزيتون والكروم والمياه">Olives, vines & water</h3>
+        <p data-en="Stone terraces and a shared irrigation system preserve a long-lived agricultural relationship between families, springs and cultivated hillsides."
+           data-ar="تحافظ المدرجات الحجرية ونظام الري المشترك على علاقة زراعية طويلة الأمد بين العائلات والينابيع والسفوح المزروعة.">
+          Stone terraces and a shared irrigation system preserve a long-lived agricultural relationship between families, springs and cultivated hillsides.
+        </p>
+        <a href="https://whc.unesco.org/en/list/1492" target="_blank" rel="noopener noreferrer">UNESCO source ↗</a>
+      </article>
+      <article class="fact-card">
+        <div class="fact-no">1915</div>
+        <h3 data-en="A mapped landscape" data-ar="أرض موثقة بالخرائط">A mapped landscape</h3>
+        <p data-en="A Library of Congress map published around 1915 records the physical geography and place names used for Palestine in the late Ottoman era."
+           data-ar="تسجل خريطة محفوظة في مكتبة الكونغرس نُشرت نحو عام 1915 الجغرافيا الطبيعية وأسماء الأماكن المستخدمة لفلسطين في أواخر العهد العثماني.">
+          A Library of Congress map published around 1915 records the physical geography and place names used for Palestine in the late Ottoman era.
+        </p>
+        <a href="https://www.loc.gov/item/2012586637/" target="_blank" rel="noopener noreferrer">Library of Congress ↗</a>
+      </article>
+    </div>
+
+    <div class="land-strip">
+      <div><strong data-en="Coast" data-ar="الساحل">Coast</strong><span data-en="Ports, citrus, fishing and Mediterranean exchange" data-ar="الموانئ والحمضيات والصيد والتبادل المتوسطي">Ports, citrus, fishing and Mediterranean exchange</span></div>
+      <div><strong data-en="Highlands" data-ar="المرتفعات">Highlands</strong><span data-en="Terraces, olives, stone towns and village agriculture" data-ar="المدرجات والزيتون والمدن الحجرية والزراعة القروية">Terraces, olives, stone towns and village agriculture</span></div>
+      <div><strong data-en="Jordan Valley" data-ar="غور الأردن">Jordan Valley</strong><span data-en="Springs, date palms and deep archaeological time" data-ar="الينابيع والنخيل وعمق الزمن الأثري">Springs, date palms and deep archaeological time</span></div>
+      <div><strong data-en="South & Gaza" data-ar="الجنوب وغزة">South & Gaza</strong><span data-en="Caravan routes, coastal exchange, farming and crafts" data-ar="طرق القوافل والتبادل الساحلي والزراعة والحرف">Caravan routes, coastal exchange, farming and crafts</span></div>
+    </div>
+  </div>
+</section>
+
+<section class="section stone" id="cities">
+  <div class="wrap">
+    <div class="section-head">
+      <div class="kicker" data-en="02 / CITIES, VILLAGES & NETWORKS" data-ar="02 / المدن والقرى والشبكات">02 / CITIES, VILLAGES & NETWORKS</div>
+      <h2 data-en="Urban life and rural life were deeply connected" data-ar="كانت الحياة الحضرية والريفية مترابطتين بعمق">Urban life and rural life were deeply connected</h2>
+      <p data-en="Markets depended on farming villages; ports connected orchards and workshops to regional trade; pilgrimage brought visitors to sacred centers; and roads moved people, goods, ideas and newspapers between towns."
+         data-ar="اعتمدت الأسواق على القرى الزراعية، وربطت الموانئ البساتين والورش بالتجارة الإقليمية، وجلب الحج الزوار إلى المراكز المقدسة، ونقلت الطرق الناس والسلع والأفكار والصحف بين المدن.">
+        Markets depended on farming villages; ports connected orchards and workshops to regional trade; pilgrimage brought visitors to sacred centers; and roads moved people, goods, ideas and newspapers between towns.
+      </p>
+    </div>
+
+    <div class="city-grid">
+      <article class="city">
+        <div class="city-tag">YAFA · يافا</div>
+        <h3 data-en="Jaffa" data-ar="يافا">Jaffa</h3>
+        <p data-en="A Mediterranean port and major center of citrus cultivation, commerce and cultural life. During the nineteenth century Jaffa expanded rapidly and became a gateway linking Palestine to regional and international markets."
+           data-ar="ميناء متوسطي ومركز مهم لزراعة الحمضيات والتجارة والحياة الثقافية. توسعت يافا بسرعة خلال القرن التاسع عشر وأصبحت بوابة تربط فلسطين بالأسواق الإقليمية والدولية.">
+          A Mediterranean port and major center of citrus cultivation, commerce and cultural life. During the nineteenth century Jaffa expanded rapidly and became a gateway linking Palestine to regional and international markets.
+        </p>
+        <small data-en="Explore: port history · citrus · neighborhoods · press · photography" data-ar="استكشف: تاريخ الميناء · الحمضيات · الأحياء · الصحافة · التصوير">Explore: port history · citrus · neighborhoods · press · photography</small>
+      </article>
+      <article class="city">
+        <div class="city-tag">AL-QUDS · القدس</div>
+        <h3 data-en="Jerusalem" data-ar="القدس">Jerusalem</h3>
+        <p data-en="A sacred and civic center shaped by Muslim, Christian, Jewish, Armenian and other communities, with religious institutions, markets, schools, hospitals, publishing and municipal life."
+           data-ar="مركز ديني ومدني ساهمت في تشكيله مجتمعات مسلمة ومسيحية ويهودية وأرمنية وغيرها، مع مؤسسات دينية وأسواق ومدارس ومستشفيات ونشر وحياة بلدية.">
+          A sacred and civic center shaped by Muslim, Christian, Jewish, Armenian and other communities, with religious institutions, markets, schools, hospitals, publishing and municipal life.
+        </p>
+        <small data-en="Explore: sacred geography · neighborhoods · education · medicine · public life" data-ar="استكشف: الجغرافيا المقدسة · الأحياء · التعليم · الطب · الحياة العامة">Explore: sacred geography · neighborhoods · education · medicine · public life</small>
+      </article>
+      <article class="city">
+        <div class="city-tag">NABLUS · نابلس</div>
+        <h3 data-en="Nablus" data-ar="نابلس">Nablus</h3>
+        <p data-en="A highland trade and manufacturing center closely tied to surrounding villages and olive groves. Its olive-oil soap industry became a defining part of the city’s economy and built environment."
+           data-ar="مركز تجاري وصناعي في المرتفعات ارتبط ارتباطاً وثيقاً بالقرى المحيطة وبساتين الزيتون. وأصبحت صناعة الصابون من زيت الزيتون جزءاً أساسياً من اقتصاد المدينة وعمارتها.">
+          A highland trade and manufacturing center closely tied to surrounding villages and olive groves. Its olive-oil soap industry became a defining part of the city’s economy and built environment.
+        </p>
+        <small data-en="Explore: soap · markets · caravan routes · olive economy · architecture" data-ar="استكشف: الصابون · الأسواق · طرق القوافل · اقتصاد الزيتون · العمارة">Explore: soap · markets · caravan routes · olive economy · architecture</small>
+      </article>
+      <article class="city">
+        <div class="city-tag">AL-KHALIL · الخليل</div>
+        <h3 data-en="Hebron" data-ar="الخليل">Hebron</h3>
+        <p data-en="An old highland city known for religious significance, stone architecture, markets, agriculture and crafts, with historical ties to surrounding villages and long-distance trade."
+           data-ar="مدينة قديمة في المرتفعات عُرفت بمكانتها الدينية وعمارتها الحجرية وأسواقها وزراعتها وحرفها، مع روابط تاريخية بالقرى المحيطة والتجارة بعيدة المدى.">
+          An old highland city known for religious significance, stone architecture, markets, agriculture and crafts, with historical ties to surrounding villages and long-distance trade.
+        </p>
+        <small data-en="Explore: old city · crafts · grapes · pilgrimage · market life" data-ar="استكشف: البلدة القديمة · الحرف · العنب · الحج · حياة الأسواق">Explore: old city · crafts · grapes · pilgrimage · market life</small>
+      </article>
+      <article class="city">
+        <div class="city-tag">GHAZZA · غزة</div>
+        <h3 data-en="Gaza" data-ar="غزة">Gaza</h3>
+        <p data-en="For centuries Gaza stood on routes linking Egypt, the Levant and the Mediterranean. Its history includes trade, agriculture, scholarship, religious life and layers of architecture from many periods."
+           data-ar="وقفت غزة لقرون على طرق تربط مصر وبلاد الشام والبحر المتوسط. ويشمل تاريخها التجارة والزراعة والعلم والحياة الدينية وطبقات معمارية من عصور متعددة.">
+          For centuries Gaza stood on routes linking Egypt, the Levant and the Mediterranean. Its history includes trade, agriculture, scholarship, religious life and layers of architecture from many periods.
+        </p>
+        <small data-en="Explore: caravan routes · coast · agriculture · scholarship · historic center" data-ar="استكشف: طرق القوافل · الساحل · الزراعة · العلم · المركز التاريخي">Explore: caravan routes · coast · agriculture · scholarship · historic center</small>
+      </article>
+      <article class="city">
+        <div class="city-tag">HAIFA · حيفا</div>
+        <h3 data-en="Haifa & Acre" data-ar="حيفا وعكا">Haifa & Acre</h3>
+        <p data-en="Northern coastal cities linked inland agriculture and regional trade to Mediterranean shipping. Their histories include Arab, Jewish, Christian, Muslim and other communities living within changing Ottoman and Mandate-era urban systems."
+           data-ar="ربطت مدن الساحل الشمالي الزراعة الداخلية والتجارة الإقليمية بالملاحة المتوسطية. وتشمل تواريخها مجتمعات عربية ويهودية ومسيحية ومسلمة وغيرها ضمن أنظمة حضرية متغيرة في العهدين العثماني والانتدابي.">
+          Northern coastal cities linked inland agriculture and regional trade to Mediterranean shipping. Their histories include Arab, Jewish, Christian, Muslim and other communities living within changing Ottoman and Mandate-era urban systems.
+        </p>
+        <small data-en="Explore: ports · rail · mixed neighborhoods · commerce · migration" data-ar="استكشف: الموانئ · السكك الحديدية · الأحياء المختلطة · التجارة · الهجرة">Explore: ports · rail · mixed neighborhoods · commerce · migration</small>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section class="section dark" id="culture">
+  <div class="wrap">
+    <div class="section-head">
+      <div class="kicker" data-en="03 / LIVING CULTURE" data-ar="03 / الثقافة الحيّة">03 / LIVING CULTURE</div>
+      <h2 data-en="Heritage carried in thread, rhythm, story, stone and olive oil" data-ar="تراث يُحمل في الخيط والإيقاع والحكاية والحجر وزيت الزيتون">Heritage carried in thread, rhythm, story, stone and olive oil</h2>
+      <p data-en="Palestinian heritage is not a frozen museum category. Many practices remain living, adaptive and intergenerational, continuing in towns, villages and diaspora communities."
+         data-ar="التراث الفلسطيني ليس فئة جامدة في المتاحف. فالعديد من الممارسات ما زالت حيّة ومتكيّفة وعابرة للأجيال، وتستمر في المدن والقرى ومجتمعات الشتات.">
+        Palestinian heritage is not a frozen museum category. Many practices remain living, adaptive and intergenerational, continuing in towns, villages and diaspora communities.
+      </p>
+    </div>
+
+    <div class="culture-grid">
+      <article class="culture-card">
+        <div class="icon" aria-hidden="true">✣</div>
+        <h3 data-en="Tatreez · التطريز" data-ar="التطريز · Tatreez">Tatreez · التطريز</h3>
+        <p data-en="Traditional embroidery uses regional motifs, colors and garment forms that can communicate place, family history and social meaning. UNESCO recognizes Palestinian embroidery as intangible cultural heritage."
+           data-ar="يستخدم التطريز التقليدي زخارف وألواناً وأشكال ملابس إقليمية يمكن أن تعبّر عن المكان وتاريخ العائلة والمعنى الاجتماعي. وتعترف اليونسكو بالتطريز الفلسطيني تراثاً ثقافياً غير مادي.">
+          Traditional embroidery uses regional motifs, colors and garment forms that can communicate place, family history and social meaning. UNESCO recognizes Palestinian embroidery as intangible cultural heritage.
+        </p>
+        <a href="https://ich.unesco.org/en/RL/art-of-embroidery-in-palestine-practices-skills-knowledge-and-rituals-01722" target="_blank" rel="noopener noreferrer">UNESCO embroidery record ↗</a>
+      </article>
+      <article class="culture-card">
+        <div class="icon" aria-hidden="true">◈</div>
+        <h3 data-en="Nabulsi soap · الصابون النابلسي" data-ar="الصابون النابلسي · Nabulsi soap">Nabulsi soap · الصابون النابلسي</h3>
+        <p data-en="Made from olive oil, water and lye, Nabulsi soap ties household knowledge, olive harvests, workshops and urban commerce together. UNESCO inscribed the tradition in 2024."
+           data-ar="يُصنع الصابون النابلسي من زيت الزيتون والماء والقلوي، ويربط المعرفة المنزلية ومواسم الزيتون والورش والتجارة الحضرية معاً. أدرجت اليونسكو هذا التقليد عام 2024.">
+          Made from olive oil, water and lye, Nabulsi soap ties household knowledge, olive harvests, workshops and urban commerce together. UNESCO inscribed the tradition in 2024.
+        </p>
+        <a href="https://ich.unesco.org/en/RL/tradition-of-nabulsi-soap-making-in-palestine-02112" target="_blank" rel="noopener noreferrer">UNESCO soap record ↗</a>
+      </article>
+      <article class="culture-card">
+        <div class="icon" aria-hidden="true">♪</div>
+        <h3 data-en="Dabkeh · الدبكة" data-ar="الدبكة · Dabkeh">Dabkeh · الدبكة</h3>
+        <p data-en="A communal line dance performed at celebrations and social gatherings, dabkeh remains a widely practiced expression of rhythm, cooperation and shared memory."
+           data-ar="رقصة جماعية تؤدى في الاحتفالات والتجمعات الاجتماعية، وما زالت الدبكة تعبيراً واسع الانتشار عن الإيقاع والتعاون والذاكرة المشتركة.">
+          A communal line dance performed at celebrations and social gatherings, dabkeh remains a widely practiced expression of rhythm, cooperation and shared memory.
+        </p>
+        <a href="https://ich.unesco.org/en/state/state-of-palestine-PS?info=elements-on-the-lists" target="_blank" rel="noopener noreferrer">UNESCO heritage list ↗</a>
+      </article>
+      <article class="culture-card">
+        <div class="icon" aria-hidden="true">❦</div>
+        <h3 data-en="Hikaye · الحكاية" data-ar="الحكاية · Hikaye">Hikaye · الحكاية</h3>
+        <p data-en="Palestinian oral storytelling preserves humor, wisdom, family memory and social observation. UNESCO recognizes Palestinian Hikaye on the Representative List of Intangible Cultural Heritage."
+           data-ar="تحفظ الحكاية الفلسطينية الفكاهة والحكمة وذاكرة العائلة والملاحظة الاجتماعية. وتعترف اليونسكو بالحكاية الفلسطينية ضمن القائمة التمثيلية للتراث الثقافي غير المادي.">
+          Palestinian oral storytelling preserves humor, wisdom, family memory and social observation. UNESCO recognizes Palestinian Hikaye on the Representative List of Intangible Cultural Heritage.
+        </p>
+        <a href="https://ich.unesco.org/en/state/state-of-palestine-PS?info=elements-on-the-lists" target="_blank" rel="noopener noreferrer">UNESCO heritage list ↗</a>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section class="section stone" id="before1948">
+  <div class="wrap">
+    <div class="section-head">
+      <div class="kicker" data-en="04 / PALESTINE BEFORE 1948" data-ar="04 / فلسطين قبل 1948">04 / PALESTINE BEFORE 1948</div>
+      <h2 data-en="A society of cities, villages, farms, schools, workshops, associations and newspapers" data-ar="مجتمع من المدن والقرى والمزارع والمدارس والورش والجمعيات والصحف">A society of cities, villages, farms, schools, workshops, associations and newspapers</h2>
+      <p data-en="The decades before 1948 were not a blank space between ancient history and the creation of Israel. Under late Ottoman and then British Mandate rule, Palestinian Arab society developed alongside Jewish and other communities through agriculture, trade, municipal life, education, publishing, medicine, crafts and civic organizations."
+         data-ar="لم تكن العقود السابقة لعام 1948 فراغاً بين التاريخ القديم وقيام إسرائيل. ففي أواخر العهد العثماني ثم الانتداب البريطاني، تطور المجتمع العربي الفلسطيني إلى جانب المجتمعات اليهودية وغيرها من خلال الزراعة والتجارة والحياة البلدية والتعليم والنشر والطب والحرف والتنظيمات المدنية.">
+        The decades before 1948 were not a blank space between ancient history and the creation of Israel. Under late Ottoman and then British Mandate rule, Palestinian Arab society developed alongside Jewish and other communities through agriculture, trade, municipal life, education, publishing, medicine, crafts and civic organizations.
+      </p>
+    </div>
+
+    <div class="timeline">
+      <article class="time-row">
+        <div class="time-date">1516–17</div>
+        <div class="time-copy">
+          <h3 data-en="Ottoman incorporation" data-ar="الانضمام إلى الدولة العثمانية">Ottoman incorporation</h3>
+          <p data-en="Much of the region came under Ottoman rule. Administration changed over the centuries, while local towns, villages, religious institutions, agriculture and trade continued within wider Syrian and Mediterranean networks."
+             data-ar="دخلت أجزاء واسعة من المنطقة تحت الحكم العثماني. تغيّرت الإدارة عبر القرون، فيما استمرت المدن والقرى والمؤسسات الدينية والزراعة والتجارة المحلية ضمن شبكات شامية ومتوسطية أوسع.">
+            Much of the region came under Ottoman rule. Administration changed over the centuries, while local towns, villages, religious institutions, agriculture and trade continued within wider Syrian and Mediterranean networks.
+          </p>
+        </div>
+      </article>
+      <article class="time-row">
+        <div class="time-date">1800s</div>
+        <div class="time-copy">
+          <h3 data-en="Growth, trade and reform" data-ar="النمو والتجارة والإصلاح">Growth, trade and reform</h3>
+          <p data-en="Late Ottoman reforms, expanding Mediterranean commerce and new transport links reshaped landholding, towns and markets. Jaffa grew as a port and citrus center; Nablus remained a major highland market and manufacturing city."
+             data-ar="أعادت إصلاحات أواخر العهد العثماني واتساع التجارة المتوسطية ووسائل النقل الجديدة تشكيل ملكية الأرض والمدن والأسواق. نمت يافا كميناء ومركز للحمضيات، وظلت نابلس مركزاً تجارياً وصناعياً مهماً في المرتفعات.">
+            Late Ottoman reforms, expanding Mediterranean commerce and new transport links reshaped landholding, towns and markets. Jaffa grew as a port and citrus center; Nablus remained a major highland market and manufacturing city.
+          </p>
+        </div>
+      </article>
+      <article class="time-row">
+        <div class="time-date">1900s</div>
+        <div class="time-copy">
+          <h3 data-en="Public life expands" data-ar="اتساع الحياة العامة">Public life expands</h3>
+          <p data-en="Schools, hospitals, newspapers, municipal institutions, professional networks and civic associations expanded in the late Ottoman and Mandate periods. Archival collections preserve photographs and documents of everyday work, family life, broadcasting, farming and urban institutions."
+             data-ar="توسعت المدارس والمستشفيات والصحف والمؤسسات البلدية والشبكات المهنية والجمعيات المدنية في أواخر العهد العثماني وفترة الانتداب. وتحفظ الأرشيفات صوراً ووثائق عن العمل اليومي والحياة العائلية والبث والزراعة والمؤسسات الحضرية.">
+            Schools, hospitals, newspapers, municipal institutions, professional networks and civic associations expanded in the late Ottoman and Mandate periods. Archival collections preserve photographs and documents of everyday work, family life, broadcasting, farming and urban institutions.
+          </p>
+        </div>
+      </article>
+      <article class="time-row">
+        <div class="time-date">1917–20</div>
+        <div class="time-copy">
+          <h3 data-en="From Ottoman to British rule" data-ar="من الحكم العثماني إلى البريطاني">From Ottoman to British rule</h3>
+          <p data-en="British forces captured Jerusalem in 1917. Military administration was followed by the League of Nations Mandate for Palestine, beginning a new political framework while the population continued to build institutions, businesses and community life."
+             data-ar="سيطرت القوات البريطانية على القدس عام 1917. أعقبت الإدارة العسكريةَ منظومةُ الانتداب على فلسطين التابعة لعصبة الأمم، فبدأ إطار سياسي جديد بينما واصل السكان بناء المؤسسات والأعمال والحياة المجتمعية.">
+            British forces captured Jerusalem in 1917. Military administration was followed by the League of Nations Mandate for Palestine, beginning a new political framework while the population continued to build institutions, businesses and community life.
+          </p>
+        </div>
+      </article>
+      <article class="time-row">
+        <div class="time-date">1920–48</div>
+        <div class="time-copy">
+          <h3 data-en="Mandate-era society" data-ar="المجتمع في عهد الانتداب">Mandate-era society</h3>
+          <p data-en="The Mandate period saw rapid demographic, economic and political change, including growing Palestinian Arab political organization and Zionist Jewish immigration and institution-building. The era also contained ordinary life: schools, commerce, agriculture, sports, music, weddings, religious observance, newspapers and local government."
+             data-ar="شهد عهد الانتداب تغيراً ديموغرافياً واقتصادياً وسياسياً سريعاً، بما في ذلك نمو التنظيم السياسي العربي الفلسطيني والهجرة اليهودية الصهيونية وبناء المؤسسات. كما ضم العصر حياة يومية عادية: مدارس وتجارة وزراعة ورياضة وموسيقى وأعراساً وشعائر دينية وصحفاً وحكماً محلياً.">
+            The Mandate period saw rapid demographic, economic and political change, including growing Palestinian Arab political organization and Zionist Jewish immigration and institution-building. The era also contained ordinary life: schools, commerce, agriculture, sports, music, weddings, religious observance, newspapers and local government.
+          </p>
+        </div>
+      </article>
+      <article class="time-row">
+        <div class="time-date">1948</div>
+        <div class="time-copy">
+          <h3 data-en="A major rupture" data-ar="تحول وانقطاع كبير">A major rupture</h3>
+          <p data-en="The end of the British Mandate, the war surrounding the establishment of Israel, and the mass displacement of Palestinians transformed the region and Palestinian society. Later sections of this research repository can document those events separately and with their own source record."
+             data-ar="أدى انتهاء الانتداب البريطاني والحرب المحيطة بقيام إسرائيل والتهجير الجماعي للفلسطينيين إلى تغيير المنطقة والمجتمع الفلسطيني بصورة عميقة. ويمكن لأقسام لاحقة من هذا المستودع البحثي توثيق تلك الأحداث بصورة مستقلة وبسجل مصادر خاص بها.">
+            The end of the British Mandate, the war surrounding the establishment of Israel, and the mass displacement of Palestinians transformed the region and Palestinian society. Later sections of this research repository can document those events separately and with their own source record.
+          </p>
+        </div>
+      </article>
+    </div>
+
+    <div class="before-card">
+      <strong data-en="The archive restores ordinary life to the historical record." data-ar="يعيد الأرشيف الحياة اليومية إلى السجل التاريخي.">The archive restores ordinary life to the historical record.</strong>
+      <p data-en="Historical photographs and documents show bazaars, orchards, hospitals, municipal offices, schools, weddings, religious processions, farmers, craftspeople, broadcasters and families. That record matters because political histories can otherwise make daily life disappear."
+         data-ar="تُظهر الصور والوثائق التاريخية الأسواق والبساتين والمستشفيات والمكاتب البلدية والمدارس والأعراس والمواكب الدينية والمزارعين والحرفيين والمذيعين والعائلات. وهذه المادة مهمة لأن التاريخ السياسي قد يجعل تفاصيل الحياة اليومية تختفي.">
+        Historical photographs and documents show bazaars, orchards, hospitals, municipal offices, schools, weddings, religious processions, farmers, craftspeople, broadcasters and families. That record matters because political histories can otherwise make daily life disappear.
+      </p>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="archives">
+  <div class="wrap">
+    <div class="section-head">
+      <div class="kicker" data-en="05 / MAPS, PHOTOGRAPHS & ARCHIVES" data-ar="05 / الخرائط والصور والأرشيف">05 / MAPS, PHOTOGRAPHS & ARCHIVES</div>
+      <h2 data-en="Read the past through original records" data-ar="اقرأ الماضي من خلال السجلات الأصلية">Read the past through original records</h2>
+      <p data-en="A strong history page should let readers move from summary to evidence. These collections are starting points for maps, photographs, community records and material culture."
+         data-ar="يجب أن تسمح صفحة التاريخ القوية للقارئ بالانتقال من الملخص إلى الدليل. هذه المجموعات نقاط بداية للخرائط والصور والسجلات المجتمعية والثقافة المادية.">
+        A strong history page should let readers move from summary to evidence. These collections are starting points for maps, photographs, community records and material culture.
+      </p>
+    </div>
+
+    <div class="archive-grid">
+      <article class="archive-card">
+        <div class="label">PRIMARY MAP</div>
+        <h3 data-en="Palestine map, c. 1915" data-ar="خريطة فلسطين، نحو 1915">Palestine map, c. 1915</h3>
+        <p data-en="A digitized Library of Congress physical map labeled “Modern Palestine,” useful as a historical artifact of how the region was mapped and named in the late Ottoman period."
+           data-ar="خريطة طبيعية رقمية من مكتبة الكونغرس تحمل عنوان «فلسطين الحديثة»، وتفيد بوصفها وثيقة تاريخية لكيفية رسم المنطقة وتسميتها في أواخر العهد العثماني.">
+          A digitized Library of Congress physical map labeled “Modern Palestine,” useful as a historical artifact of how the region was mapped and named in the late Ottoman period.
+        </p>
+        <a href="https://www.loc.gov/item/2012586637/" target="_blank" rel="noopener noreferrer">Open Library of Congress ↗</a>
+      </article>
+      <article class="archive-card">
+        <div class="label">PHOTOGRAPH COLLECTION</div>
+        <h3 data-en="Cities, villages & daily life" data-ar="المدن والقرى والحياة اليومية">Cities, villages & daily life</h3>
+        <p data-en="Library of Congress stereograph collections include scenes of Jaffa, Jerusalem, Bethlehem, Jericho, Nablus, Nazareth and other places, including markets, occupations, ceremonies and landscapes."
+           data-ar="تضم مجموعات الصور المجسمة في مكتبة الكونغرس مشاهد من يافا والقدس وبيت لحم وأريحا ونابلس والناصرة وغيرها، بما في ذلك الأسواق والمهن والاحتفالات والمناظر الطبيعية.">
+          Library of Congress stereograph collections include scenes of Jaffa, Jerusalem, Bethlehem, Jericho, Nablus, Nazareth and other places, including markets, occupations, ceremonies and landscapes.
+        </p>
+        <a href="https://www.loc.gov/item/2005676228/" target="_blank" rel="noopener noreferrer">Open photo collection ↗</a>
+      </article>
+      <article class="archive-card">
+        <div class="label">COMMUNITY ARCHIVE</div>
+        <h3 data-en="Palestinian Museum Digital Archive" data-ar="أرشيف المتحف الفلسطيني الرقمي">Palestinian Museum Digital Archive</h3>
+        <p data-en="A large community-oriented archive containing photographs, documents, family collections, social-history records and locally described materials."
+           data-ar="أرشيف مجتمعي واسع يضم صوراً ووثائق ومجموعات عائلية وسجلات للتاريخ الاجتماعي ومواد موصوفة محلياً.">
+          A large community-oriented archive containing photographs, documents, family collections, social-history records and locally described materials.
+        </p>
+        <a href="https://palarchive.org/" target="_blank" rel="noopener noreferrer">Search the archive ↗</a>
+      </article>
+      <article class="archive-card">
+        <div class="label">WORLD HERITAGE</div>
+        <h3 data-en="UNESCO · State of Palestine" data-ar="اليونسكو · دولة فلسطين">UNESCO · State of Palestine</h3>
+        <p data-en="World Heritage records provide documented descriptions of places such as Ancient Jericho, Bethlehem, Hebron/Al-Khalil, Battir and Saint Hilarion Monastery/Tell Umm Amer."
+           data-ar="تقدم سجلات التراث العالمي أوصافاً موثقة لأماكن مثل أريحا القديمة وبيت لحم والخليل وبتير ودير القديس هيلاريون/تل أم عامر.">
+          World Heritage records provide documented descriptions of places such as Ancient Jericho, Bethlehem, Hebron/Al-Khalil, Battir and Saint Hilarion Monastery/Tell Umm Amer.
+        </p>
+        <a href="https://whc.unesco.org/en/statesparties/ps" target="_blank" rel="noopener noreferrer">UNESCO World Heritage ↗</a>
+      </article>
+      <article class="archive-card">
+        <div class="label">LIVING HERITAGE</div>
+        <h3 data-en="Embroidery, dabkeh, hikaye & crafts" data-ar="التطريز والدبكة والحكاية والحرف">Embroidery, dabkeh, hikaye & crafts</h3>
+        <p data-en="UNESCO’s intangible heritage records help document practices carried by communities, including embroidery, dabkeh, Palestinian Hikaye, Nabulsi soap and related regional traditions."
+           data-ar="تساعد سجلات اليونسكو للتراث غير المادي في توثيق الممارسات التي تحملها المجتمعات، ومنها التطريز والدبكة والحكاية الفلسطينية والصابون النابلسي وتقاليد إقليمية مرتبطة بها.">
+          UNESCO’s intangible heritage records help document practices carried by communities, including embroidery, dabkeh, Palestinian Hikaye, Nabulsi soap and related regional traditions.
+        </p>
+        <a href="https://ich.unesco.org/en/state/state-of-palestine-PS?info=elements-on-the-lists" target="_blank" rel="noopener noreferrer">UNESCO intangible heritage ↗</a>
+      </article>
+      <article class="archive-card">
+        <div class="label">LOCAL RESEARCH REGISTER</div>
+        <h3 data-en="Palestine repository sources" data-ar="مصادر مستودع فلسطين">Palestine repository sources</h3>
+        <p data-en="The repository’s own source register separates primary documents, scholarship, official records and current reporting, with a citation policy designed for correction and review."
+           data-ar="يفصل سجل المصادر الخاص بالمستودع بين الوثائق الأولية والدراسات والسجلات الرسمية والتقارير المعاصرة، مع سياسة استشهاد مصممة للمراجعة والتصحيح.">
+          The repository’s own source register separates primary documents, scholarship, official records and current reporting, with a citation policy designed for correction and review.
+        </p>
+        <a href="./SOURCES.md">Open SOURCES.md →</a>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section class="section stone" id="sources">
+  <div class="wrap">
+    <div class="section-head">
+      <div class="kicker" data-en="06 / TRUSTED STARTING POINTS" data-ar="06 / نقاط بداية موثوقة">06 / TRUSTED STARTING POINTS</div>
+      <h2 data-en="Research should remain inspectable" data-ar="يجب أن يبقى البحث قابلاً للتحقق">Research should remain inspectable</h2>
+      <p data-en="The page favors sources that let readers inspect original records, institutional descriptions or scholarly evidence. No source is treated as beyond criticism; provenance and scope matter."
+         data-ar="تفضّل الصفحة المصادر التي تتيح للقارئ فحص السجلات الأصلية أو الأوصاف المؤسسية أو الأدلة العلمية. ولا يُعامل أي مصدر على أنه فوق النقد؛ فالمصدر والنطاق مهمان.">
+        The page favors sources that let readers inspect original records, institutional descriptions or scholarly evidence. No source is treated as beyond criticism; provenance and scope matter.
+      </p>
+    </div>
+
+    <div class="source-list">
+      <a class="source-link" href="https://whc.unesco.org/en/statesparties/ps" target="_blank" rel="noopener noreferrer">
+        UNESCO World Heritage
+        <span data-en="Cultural landscapes, ancient sites and conservation records." data-ar="مناظر ثقافية ومواقع أثرية وسجلات للحفظ.">Cultural landscapes, ancient sites and conservation records.</span>
+      </a>
+      <a class="source-link" href="https://ich.unesco.org/en/state/state-of-palestine-PS?info=elements-on-the-lists" target="_blank" rel="noopener noreferrer">
+        UNESCO Intangible Cultural Heritage
+        <span data-en="Living practices, crafts, dance, storytelling and community knowledge." data-ar="الممارسات الحيّة والحرف والرقص والحكاية والمعرفة المجتمعية.">Living practices, crafts, dance, storytelling and community knowledge.</span>
+      </a>
+      <a class="source-link" href="https://www.loc.gov/item/2005676228/" target="_blank" rel="noopener noreferrer">
+        Library of Congress
+        <span data-en="Historical photographs of cities, villages, occupations and landscapes." data-ar="صور تاريخية للمدن والقرى والمهن والمناظر الطبيعية.">Historical photographs of cities, villages, occupations and landscapes.</span>
+      </a>
+      <a class="source-link" href="https://palarchive.org/" target="_blank" rel="noopener noreferrer">
+        Palestinian Museum Digital Archive
+        <span data-en="Family collections, photographs, documents and social history." data-ar="مجموعات عائلية وصور ووثائق وتاريخ اجتماعي.">Family collections, photographs, documents and social history.</span>
+      </a>
+      <a class="source-link" href="https://www.un.org/unispal/history/" target="_blank" rel="noopener noreferrer">
+        UNISPAL History
+        <span data-en="Institutional history and document gateways for the modern political period." data-ar="تاريخ مؤسسي وبوابات للوثائق المتعلقة بالفترة السياسية الحديثة.">Institutional history and document gateways for the modern political period.</span>
+      </a>
+      <a class="source-link" href="./CITATION_POLICY.md">
+        Repository Citation Policy
+        <span data-en="How claims, quotations, maps, images and corrections should be documented." data-ar="كيفية توثيق الادعاءات والاقتباسات والخرائط والصور والتصحيحات.">How claims, quotations, maps, images and corrections should be documented.</span>
+      </a>
+    </div>
+
+    <div class="research-banner">
+      <div>
+        <strong data-en="This is the front door, not the final word." data-ar="هذه هي البوابة الأولى، وليست الكلمة الأخيرة.">This is the front door, not the final word.</strong>
+        <p data-en="Deeper chapters can now grow inside research/, primary-sources/, data/ and methodology/ without overcrowding the landing page."
+           data-ar="يمكن الآن للفصول الأعمق أن تنمو داخل research/ وprimary-sources/ وdata/ وmethodology/ دون ازدحام صفحة الهبوط.">
+          Deeper chapters can now grow inside research/, primary-sources/, data/ and methodology/ without overcrowding the landing page.
+        </p>
+      </div>
+      <a href="https://github.com/vervenveda/Palestine.github.io" target="_blank" rel="noopener noreferrer">Open Research Repository ↗</a>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap foot">
+    <div>
+      <strong>Palestine · Land, People, Memory</strong>
+      <p data-en="Independent educational project · Verve N Veda" data-ar="مشروع تعليمي مستقل · Verve N Veda">Independent educational project · Verve N Veda</p>
+    </div>
+    <div>
+      <p><a href="./SOURCES.md" data-en="Sources" data-ar="المصادر">Sources</a> · <a href="./CITATION_POLICY.md" data-en="Citation policy" data-ar="سياسة الاستشهاد">Citation policy</a> · <a href="./CONTRIBUTING.md" data-en="Corrections" data-ar="التصحيحات">Corrections</a></p>
+      <p data-en="Respectful history · No collective blame · Evidence near the claim" data-ar="تاريخ باحترام · بلا لوم جماعي · الدليل قريب من الادعاء">Respectful history · No collective blame · Evidence near the claim</p>
+    </div>
+  </div>
+</footer>
+
+<a class="backtop" href="#top" aria-label="Back to top">↑</a>
+
+<div class="menu-overlay" id="menuOverlay" aria-hidden="true">
+  <aside class="menu-panel" role="dialog" aria-modal="true" aria-labelledby="menuTitle">
+    <div class="menu-top">
+      <h2 id="menuTitle" data-en="Explore" data-ar="استكشف">Explore</h2>
+      <button class="menu-close" id="menuClose" type="button" aria-label="Close menu">×</button>
+    </div>
+    <nav aria-label="Palestine page menu">
+      <a href="#land" data-en="Land & continuity" data-ar="الأرض والاستمرارية">Land & continuity</a>
+      <a href="#cities" data-en="Cities, villages & networks" data-ar="المدن والقرى والشبكات">Cities, villages & networks</a>
+      <a href="#culture" data-en="Living culture" data-ar="الثقافة الحيّة">Living culture</a>
+      <a href="#before1948" data-en="Palestine before 1948" data-ar="فلسطين قبل 1948">Palestine before 1948</a>
+      <a href="#archives" data-en="Maps & archives" data-ar="الخرائط والأرشيف">Maps & archives</a>
+      <a href="#sources" data-en="Trusted sources" data-ar="المصادر الموثوقة">Trusted sources</a>
+      <a href="https://vervenveda.com/" data-en="Verve N Veda Home ↗" data-ar="العودة إلى Verve N Veda ↗">Verve N Veda Home ↗</a>
+      <a href="https://vervenveda.github.io/Saudi_Arabia.github.io/" data-en="Saudi Arabia guide ↗" data-ar="دليل المملكة العربية السعودية ↗">Saudi Arabia guide ↗</a>
+    </nav>
+    <div class="menu-mini"
+         data-en="Editorial principle: distinguish geography, population, identity, political authority and state sovereignty. Preserve evidence and explain disagreement."
+         data-ar="المبدأ التحريري: التمييز بين الجغرافيا والسكان والهوية والسلطة السياسية وسيادة الدولة. حفظ الأدلة وشرح مواضع الاختلاف.">
+      Editorial principle: distinguish geography, population, identity, political authority and state sovereignty. Preserve evidence and explain disagreement.
+    </div>
+  </aside>
+</div>
+
+<script>
+(function(){
+  "use strict";
+
+  var html = document.documentElement;
+  var langButton = document.getElementById("languageToggle");
+  var menuButton = document.getElementById("menuButton");
+  var menuOverlay = document.getElementById("menuOverlay");
+  var menuClose = document.getElementById("menuClose");
+  var ticker = document.getElementById("vnvTicker");
+  var tickerPause = document.getElementById("tickerPause");
+  var priorFocus = null;
+
+  function applyLanguage(lang){
+    var arabic = lang === "ar";
+    html.lang = arabic ? "ar" : "en";
+    html.dir = arabic ? "rtl" : "ltr";
+    document.querySelectorAll("[data-en][data-ar]").forEach(function(el){
+      el.textContent = arabic ? el.getAttribute("data-ar") : el.getAttribute("data-en");
+    });
+    langButton.textContent = arabic ? "English" : "العربية";
+    langButton.setAttribute("aria-label", arabic ? "Switch to English" : "التبديل إلى العربية");
+    try{ localStorage.setItem("VNV_PALESTINE_LANG", arabic ? "ar" : "en"); }catch(e){}
+  }
+
+  function currentLanguage(){
+    try{
+      var saved = localStorage.getItem("VNV_PALESTINE_LANG");
+      if(saved === "ar" || saved === "en") return saved;
+    }catch(e){}
+    return "en";
+  }
+
+  function openMenu(){
+    priorFocus = document.activeElement;
+    menuOverlay.classList.add("open");
+    menuOverlay.setAttribute("aria-hidden","false");
+    menuButton.setAttribute("aria-expanded","true");
+    document.body.style.overflow = "hidden";
+    window.setTimeout(function(){ menuClose.focus(); },50);
+  }
+
+  function closeMenu(){
+    menuOverlay.classList.remove("open");
+    menuOverlay.setAttribute("aria-hidden","true");
+    menuButton.setAttribute("aria-expanded","false");
+    document.body.style.overflow = "";
+    if(priorFocus && priorFocus.focus) priorFocus.focus();
+  }
+
+  function setTickerPaused(paused){
+    ticker.dataset.paused = String(paused);
+    tickerPause.setAttribute("aria-pressed",String(paused));
+    tickerPause.setAttribute("aria-label",paused ? "Resume 333 Network ticker" : "Pause 333 Network ticker");
+    tickerPause.textContent = paused ? "▶" : "Ⅱ";
+    try{ localStorage.setItem("VNV_PALESTINE_TICKER_PAUSED",String(paused)); }catch(e){}
+  }
+
+  langButton.addEventListener("click",function(){
+    applyLanguage(html.lang === "ar" ? "en" : "ar");
+  });
+
+  menuButton.addEventListener("click",openMenu);
+  menuClose.addEventListener("click",closeMenu);
+  menuOverlay.addEventListener("click",function(event){
+    if(event.target === menuOverlay) closeMenu();
+  });
+  menuOverlay.querySelectorAll("a").forEach(function(link){
+    link.addEventListener("click",closeMenu);
+  });
+
+  document.addEventListener("keydown",function(event){
+    if(event.key === "Escape" && menuOverlay.classList.contains("open")){
+      event.preventDefault();
+      closeMenu();
+    }
+    if(event.key === "Tab" && menuOverlay.classList.contains("open")){
+      var focusable = Array.prototype.slice.call(menuOverlay.querySelectorAll("a[href],button:not([disabled])"));
+      if(!focusable.length) return;
+      var first = focusable[0];
+      var last = focusable[focusable.length - 1];
+      if(event.shiftKey && document.activeElement === first){
+        event.preventDefault(); last.focus();
+      }else if(!event.shiftKey && document.activeElement === last){
+        event.preventDefault(); first.focus();
+      }
+    }
+  });
+
+  var paused = false;
+  try{ paused = localStorage.getItem("VNV_PALESTINE_TICKER_PAUSED") === "true"; }catch(e){}
+  setTickerPaused(paused);
+  tickerPause.addEventListener("click",function(){
+    setTickerPaused(ticker.dataset.paused !== "true");
+  });
+
+  applyLanguage(currentLanguage());
+})();
+</script>
+</body>
+</html>
