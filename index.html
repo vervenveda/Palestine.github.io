@@ -307,6 +307,41 @@ html[dir="rtl"] .time-date{text-align:left}
 .before-card strong{font:500 clamp(1.7rem,3vw,2.35rem)/1.16 var(--display)}
 .before-card p{margin:0;color:#dce7df}
 
+
+/* GAZA HISTORY + CHILDHOOD FEATURE */
+.gaza-feature{position:relative;overflow:hidden;background:radial-gradient(circle at 86% 15%,rgba(255,255,255,.08),transparent 24rem),linear-gradient(125deg,#10281b,#173b29 58%,#11291d);color:#edf3ee}
+.gaza-feature:before{content:"";position:absolute;inset:0 0 auto;height:7px;background:linear-gradient(90deg,var(--black) 0 25%,#f7f3ea 25% 50%,var(--olive-3) 50% 75%,var(--red) 75%)}
+.gaza-feature .section-head h2{color:#fff}.gaza-feature .section-head>p{color:#d0ddd3}
+.gaza-layout{display:grid;grid-template-columns:.9fr 1.1fr;gap:34px;align-items:stretch}
+.gaza-photo{min-height:560px;position:relative;overflow:hidden;border:1px solid #ffffff2e;background:#22362a;box-shadow:0 24px 60px #06120b66}
+.gaza-photo img{width:100%;height:100%;object-fit:cover}
+.gaza-photo:after{content:"";position:absolute;inset:45% 0 0;background:linear-gradient(transparent,#08120ce8)}
+.gaza-photo-caption{position:absolute;left:20px;right:20px;bottom:18px;z-index:2;padding:14px 16px;background:#0c1710c7;border-left:4px solid var(--red);backdrop-filter:blur(4px);font-size:.78rem;line-height:1.55}
+html[dir="rtl"] .gaza-photo-caption{border-left:0;border-right:4px solid var(--red)}
+.gaza-photo-caption strong{display:block;color:#f6e1b5;margin-bottom:4px}.gaza-photo-caption a{color:#f6e1b5}
+.gaza-story-panel{padding:30px;background:#fffdf8;color:var(--ink);border:1px solid #dccfb9}
+.gaza-story-panel h3{margin:0 0 12px;color:var(--olive);font:600 clamp(1.55rem,3vw,2.15rem)/1.18 var(--display)}
+.gaza-story-panel>p{margin:0;color:var(--muted)}
+.gaza-timeline{margin-top:24px;display:grid;gap:12px}
+.gaza-era{display:grid;grid-template-columns:84px 1fr;gap:16px;padding:15px 0;border-top:1px solid var(--line)}
+.gaza-era:first-child{border-top:0}.gaza-era-date{color:var(--red);font:700 .9rem/1.35 var(--display)}
+.gaza-era strong{display:block;color:var(--olive);margin-bottom:4px;font-size:.92rem}
+.gaza-era p{margin:0;color:var(--muted);font-size:.84rem}
+.gaza-era a{display:inline-block;margin-top:7px;color:var(--red);font-size:.72rem;font-weight:800;text-decoration:none}.gaza-era a:hover{text-decoration:underline}
+.gaza-children{margin-top:28px;padding:25px;background:#efe3cd;border:1px solid #cdbd9e;color:var(--ink)}
+.gaza-children .kicker{margin-bottom:8px}.gaza-children h3{margin:0;color:var(--olive);font:600 1.45rem/1.2 var(--display)}
+.gaza-children p{margin:10px 0 0;color:var(--muted)}
+.gaza-children-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px;margin-top:18px}
+.gaza-hope-card{padding:17px;background:#fff;border:1px solid var(--line)}
+.gaza-hope-card strong{display:block;color:var(--olive);font-size:.88rem}.gaza-hope-card span{display:block;margin-top:5px;color:var(--muted);font-size:.78rem}
+.gaza-source-bar{margin-top:20px;display:flex;flex-wrap:wrap;gap:8px}
+.gaza-source-bar a{display:inline-flex;align-items:center;min-height:35px;padding:6px 10px;border:1px solid #8d7b5d;color:var(--olive);text-decoration:none;font-size:.72rem;font-weight:800}
+.gaza-source-bar a:hover{border-color:var(--red);color:var(--red)}
+.gaza-context-note{margin-top:25px;padding:20px 22px;border:1px solid #ffffff2b;background:#ffffff0a;color:#d5dfd7;font-size:.84rem}
+.gaza-context-note strong{color:#f0d49f}
+@media(max-width:900px){.gaza-layout{grid-template-columns:1fr}.gaza-photo{min-height:480px}}
+@media(max-width:620px){.gaza-photo{min-height:420px}.gaza-story-panel{padding:20px}.gaza-era{grid-template-columns:66px 1fr}.gaza-children-grid{grid-template-columns:1fr}}
+
 /* THEN / NOW DOCUMENTARY GALLERY */
 .compare-scope{
   margin:0 0 28px;padding:22px 24px;
@@ -525,6 +560,7 @@ html[dir="rtl"] .menu-panel{transform:translateX(-105%)}
         <a href="#cities" data-en="Cities" data-ar="المدن">Cities</a>
         <a href="#culture" data-en="Culture" data-ar="الثقافة">Culture</a>
         <a href="#before1948" data-en="Before 1948" data-ar="قبل 1948">Before 1948</a>
+        <a href="#gaza-story" data-en="Gaza" data-ar="غزة">Gaza</a>
         <a href="#then-now" data-en="Then / Now" data-ar="آنذاك / الآن">Then / Now</a>
         <a href="#archives" data-en="Archives" data-ar="الأرشيف">Archives</a>
         <a href="#sources" data-en="Sources" data-ar="المصادر">Sources</a>
@@ -896,10 +932,137 @@ html[dir="rtl"] .menu-panel{transform:translateX(-105%)}
 </section>
 
 
+
+<section class="section gaza-feature" id="gaza-story">
+  <div class="wrap">
+    <div class="section-head">
+      <div class="kicker" data-en="05 / GAZA · MEMORY, REFUGE, SURVIVAL, CHILDHOOD" data-ar="05 / غزة · الذاكرة واللجوء والبقاء والطفولة">05 / GAZA · MEMORY, REFUGE, SURVIVAL, CHILDHOOD</div>
+      <h2 data-en="Gaza has a history deeper than the current war" data-ar="لغزة تاريخ أعمق من الحرب الحالية">Gaza has a history deeper than the current war</h2>
+      <p data-en="Gaza is an ancient Mediterranean place, a city and coastal district shaped by trade, agriculture, scholarship, family life and repeated political upheaval. This section follows one modern thread: displacement in 1948, refugee life, occupation, blockade, recurrent war and the lives of children growing up through it."
+         data-ar="غزة مكان متوسطي عريق، ومدينة ومنطقة ساحلية شكّلتها التجارة والزراعة والعلم والحياة العائلية والتحولات السياسية المتكررة. يتتبع هذا القسم خيطاً حديثاً واحداً: التهجير عام 1948، وحياة اللاجئين، والاحتلال، والحصار، والحروب المتكررة، وحياة الأطفال الذين يكبرون في ظلها.">
+        Gaza is an ancient Mediterranean place, a city and coastal district shaped by trade, agriculture, scholarship, family life and repeated political upheaval. This section follows one modern thread: displacement in 1948, refugee life, occupation, blockade, recurrent war and the lives of children growing up through it.
+      </p>
+    </div>
+
+    <div class="gaza-layout">
+      <figure class="gaza-photo">
+        <img loading="lazy" decoding="async"
+             src="https://commons.wikimedia.org/wiki/Special:Redirect/file/Gaza%20children-%20Gaza%20war%2023-25.jpg"
+             alt="Children in Gaza walking in the rain on 27 February 2025">
+        <figcaption class="gaza-photo-caption">
+          <strong data-en="Children of Gaza · 27 February 2025" data-ar="أطفال غزة · 27 فبراير 2025">Children of Gaza · 27 February 2025</strong>
+          <span data-en="Photograph by Hla.bashbash. Licensed CC BY 4.0. The image is used here because its reuse terms are explicit and verifiable."
+                data-ar="تصوير Hla.bashbash. مرخصة بموجب CC BY 4.0. تُستخدم الصورة هنا لأن شروط إعادة استخدامها واضحة وقابلة للتحقق.">
+            Photograph by Hla.bashbash. Licensed CC BY 4.0. The image is used here because its reuse terms are explicit and verifiable.
+          </span>
+          <div><a href="https://commons.wikimedia.org/wiki/File:Gaza_children-_Gaza_war_23-25.jpg" target="_blank" rel="noopener noreferrer">Image source & license ↗</a></div>
+        </figcaption>
+      </figure>
+
+      <article class="gaza-story-panel">
+        <h3 data-en="A modern history of displacement and endurance" data-ar="تاريخ حديث من التهجير والصمود">A modern history of displacement and endurance</h3>
+        <p data-en="The purpose of this timeline is not to reduce Gaza to suffering. It records the political conditions that shaped generations of family life while leaving room for education, work, culture, play, faith, humor and hopes for the future."
+           data-ar="لا تهدف هذه الخلاصة إلى اختزال غزة في المعاناة. إنها تسجل الظروف السياسية التي شكّلت حياة أجيال من العائلات، مع إبقاء مساحة للتعليم والعمل والثقافة واللعب والإيمان والفكاهة والأمل بالمستقبل.">
+          The purpose of this timeline is not to reduce Gaza to suffering. It records the political conditions that shaped generations of family life while leaving room for education, work, culture, play, faith, humor and hopes for the future.
+        </p>
+
+        <div class="gaza-timeline">
+          <div class="gaza-era">
+            <div class="gaza-era-date">1948–50</div>
+            <div>
+              <strong data-en="Mass displacement and refugee camps" data-ar="التهجير الواسع ومخيمات اللاجئين">Mass displacement and refugee camps</strong>
+              <p data-en="The 1948 war displaced a large part of Palestine's Arab population. Refugees from towns and villages in central and southern Palestine entered the Gaza Strip, where camps including Jabalia, Rafah, Deir al-Balah and Maghazi were established. UNRWA began operations in 1950."
+                 data-ar="أدت حرب 1948 إلى تهجير جزء كبير من السكان العرب في فلسطين. وصل لاجئون من مدن وقرى وسط وجنوب فلسطين إلى قطاع غزة، حيث أُنشئت مخيمات مثل جباليا ورفح ودير البلح والمغازي. وبدأت الأونروا عملياتها عام 1950.">
+                The 1948 war displaced a large part of Palestine's Arab population. Refugees from towns and villages in central and southern Palestine entered the Gaza Strip, where camps including Jabalia, Rafah, Deir al-Balah and Maghazi were established. UNRWA began operations in 1950.
+              </p>
+              <a href="https://www.unrwa.org/palestine-refugees" target="_blank" rel="noopener noreferrer">UNRWA refugee history ↗</a>
+            </div>
+          </div>
+
+          <div class="gaza-era">
+            <div class="gaza-era-date">1967</div>
+            <div>
+              <strong data-en="Occupation after the June war" data-ar="الاحتلال بعد حرب يونيو">Occupation after the June war</strong>
+              <p data-en="In the 1967 war, Israel occupied the Gaza Strip and the West Bank, including East Jerusalem. The war produced another major Palestinian displacement."
+                 data-ar="في حرب 1967 احتلت إسرائيل قطاع غزة والضفة الغربية بما فيها القدس الشرقية. وأدت الحرب إلى موجة كبيرة أخرى من التهجير الفلسطيني.">
+                In the 1967 war, Israel occupied the Gaza Strip and the West Bank, including East Jerusalem. The war produced another major Palestinian displacement.
+              </p>
+              <a href="https://www.un.org/unispal/history/" target="_blank" rel="noopener noreferrer">UN history timeline ↗</a>
+            </div>
+          </div>
+
+          <div class="gaza-era">
+            <div class="gaza-era-date">2005</div>
+            <div>
+              <strong data-en="Withdrawal of permanent ground presence, continued legal obligations" data-ar="انسحاب الوجود البري الدائم واستمرار الالتزامات القانونية">Withdrawal of permanent ground presence, continued legal obligations</strong>
+              <p data-en="Israel removed its permanent military presence and settlements from inside Gaza in 2005. In its 2024 advisory opinion, the International Court of Justice said Israel continued to exercise key elements of authority over Gaza and had not been entirely released from obligations under the law of occupation."
+                 data-ar="أزالت إسرائيل وجودها العسكري الدائم ومستوطَناتها من داخل غزة عام 2005. وفي رأيها الاستشاري لعام 2024 قالت محكمة العدل الدولية إن إسرائيل واصلت ممارسة عناصر رئيسية من السلطة على غزة ولم تتحلل بالكامل من التزاماتها بموجب قانون الاحتلال.">
+                Israel removed its permanent military presence and settlements from inside Gaza in 2005. In its 2024 advisory opinion, the International Court of Justice said Israel continued to exercise key elements of authority over Gaza and had not been entirely released from obligations under the law of occupation.
+              </p>
+              <a href="https://www.icj-cij.org/node/204176" target="_blank" rel="noopener noreferrer">ICJ advisory-opinion summary ↗</a>
+            </div>
+          </div>
+
+          <div class="gaza-era">
+            <div class="gaza-era-date">2007–</div>
+            <div>
+              <strong data-en="Blockade and restricted movement" data-ar="الحصار وقيود الحركة">Blockade and restricted movement</strong>
+              <p data-en="OCHA records that movement restrictions began earlier and intensified in June 2007 after Hamas took control of Gaza, when Israel imposed a land, sea and air blockade citing security concerns. Restrictions at Egypt's Rafah crossing also contributed to Gaza's isolation."
+                 data-ar="يوثق مكتب الأمم المتحدة لتنسيق الشؤون الإنسانية أن قيود الحركة بدأت قبل ذلك واشتدت في يونيو 2007 بعد سيطرة حماس على غزة، حين فرضت إسرائيل حصاراً برياً وبحرياً وجوياً متذرعة باعتبارات أمنية. كما ساهمت القيود على معبر رفح المصري في عزلة غزة.">
+                OCHA records that movement restrictions began earlier and intensified in June 2007 after Hamas took control of Gaza, when Israel imposed a land, sea and air blockade citing security concerns. Restrictions at Egypt's Rafah crossing also contributed to Gaza's isolation.
+              </p>
+              <a href="https://www.ochaopt.org/content/gaza-blockade" target="_blank" rel="noopener noreferrer">OCHA blockade background ↗</a>
+            </div>
+          </div>
+
+          <div class="gaza-era">
+            <div class="gaza-era-date">2023–26</div>
+            <div>
+              <strong data-en="War, destruction and repeated displacement" data-ar="الحرب والدمار والتهجير المتكرر">War, destruction and repeated displacement</strong>
+              <p data-en="The war beginning in October 2023 produced extraordinary destruction and repeated displacement. A UNOSAT assessment cited by OCHA found that about 82% of structures in Gaza had sustained damage by 16 June 2026. OCHA's October 2026 reporting continued to describe critical conditions, unsafe buildings, shortages and large-scale displacement."
+                 data-ar="أدت الحرب التي بدأت في أكتوبر 2023 إلى دمار استثنائي وتهجير متكرر. ووجد تقييم ليونوسات نقل عنه مكتب الأمم المتحدة لتنسيق الشؤون الإنسانية أن نحو 82٪ من مباني غزة تعرضت لأضرار حتى 16 يونيو 2026. واستمرت تقارير أكتوبر 2026 في وصف ظروف حرجة ومبانٍ غير آمنة ونقص واسع وتهجير كبير.">
+                The war beginning in October 2023 produced extraordinary destruction and repeated displacement. A UNOSAT assessment cited by OCHA found that about 82% of structures in Gaza had sustained damage by 16 June 2026. OCHA's October 2026 reporting continued to describe critical conditions, unsafe buildings, shortages and large-scale displacement.
+              </p>
+              <a href="https://www.ochaopt.org/content/humanitarian-situation-report-7-august-2026" target="_blank" rel="noopener noreferrer">OCHA structural-damage assessment ↗</a>
+            </div>
+          </div>
+        </div>
+      </article>
+    </div>
+
+    <div class="gaza-children">
+      <div class="kicker" data-en="CHILDHOOD IS MORE THAN SURVIVAL" data-ar="الطفولة أكثر من مجرد البقاء">CHILDHOOD IS MORE THAN SURVIVAL</div>
+      <h3 data-en="Children in Gaza are also students, artists, siblings, friends and dreamers" data-ar="أطفال غزة أيضاً طلاب وفنانون وإخوة وأصدقاء وحالمون">Children in Gaza are also students, artists, siblings, friends and dreamers</h3>
+      <p data-en="UNICEF's 2026 “The Gaza We Want” initiative gathered visions from more than 11,000 children about recovery, dignity and hope. Their recurring priorities were ordinary ones: safe homes, schools, parks, health care, clean streets, trees, play and a future without fear."
+         data-ar="جمعت مبادرة اليونيسف لعام 2026 «غزة التي نريدها» رؤى أكثر من 11 ألف طفل حول التعافي والكرامة والأمل. وتكررت أولويات بسيطة وأساسية: بيوت آمنة ومدارس وحدائق ورعاية صحية وشوارع نظيفة وأشجار ولعب ومستقبل بلا خوف.">
+        UNICEF's 2026 “The Gaza We Want” initiative gathered visions from more than 11,000 children about recovery, dignity and hope. Their recurring priorities were ordinary ones: safe homes, schools, parks, health care, clean streets, trees, play and a future without fear.
+      </p>
+      <div class="gaza-children-grid">
+        <div class="gaza-hope-card"><strong data-en="Learn" data-ar="التعلّم">Learn</strong><span data-en="School remains a place of knowledge, routine, friendship and future possibility." data-ar="تبقى المدرسة مكاناً للمعرفة والروتين والصداقة وإمكانات المستقبل.">School remains a place of knowledge, routine, friendship and future possibility.</span></div>
+        <div class="gaza-hope-card"><strong data-en="Play" data-ar="اللعب">Play</strong><span data-en="Parks, bicycles, sports and safe outdoor space appear throughout children's visions of recovery." data-ar="تظهر الحدائق والدراجات والرياضة والمساحات الخارجية الآمنة في رؤى الأطفال للتعافي.">Parks, bicycles, sports and safe outdoor space appear throughout children's visions of recovery.</span></div>
+        <div class="gaza-hope-card"><strong data-en="Rebuild" data-ar="إعادة البناء">Rebuild</strong><span data-en="Children imagine homes, hospitals, schools, green streets and neighborhoods restored with dignity." data-ar="يتخيل الأطفال بيوتاً ومستشفيات ومدارس وشوارع خضراء وأحياء تُعاد بكرامة.">Children imagine homes, hospitals, schools, green streets and neighborhoods restored with dignity.</span></div>
+      </div>
+      <div class="gaza-source-bar">
+        <a href="https://www.unicef.org/sop/stories/roadmap-recovery-written-children" target="_blank" rel="noopener noreferrer">UNICEF · The Gaza We Want, 2026 ↗</a>
+        <a href="https://www.unrwa.org/photo-and-film-archive" target="_blank" rel="noopener noreferrer">UNRWA historic photo archive ↗</a>
+        <a href="https://www.ochaopt.org/content/humanitarian-situation-report-15-october-2026" target="_blank" rel="noopener noreferrer">OCHA · Oct 2026 ↗</a>
+      </div>
+    </div>
+
+    <div class="gaza-context-note">
+      <strong data-en="Editorial note:" data-ar="ملاحظة تحريرية:">Editorial note:</strong>
+      <span data-en="This section records Palestinian suffering and displacement without assigning collective guilt to Israelis or Jews. Responsibility is attributed to governments, armed groups, military forces, institutions and documented decisions where evidence supports it. Civilian life and dignity remain the focus."
+            data-ar="يوثق هذا القسم المعاناة والتهجير الفلسطينيين من دون إسناد ذنب جماعي إلى الإسرائيليين أو اليهود. تُنسب المسؤولية إلى الحكومات والجماعات المسلحة والقوات العسكرية والمؤسسات والقرارات الموثقة حيث يدعم الدليل ذلك. وتظل حياة المدنيين وكرامتهم في المركز.">
+        This section records Palestinian suffering and displacement without assigning collective guilt to Israelis or Jews. Responsibility is attributed to governments, armed groups, military forces, institutions and documented decisions where evidence supports it. Civilian life and dignity remain the focus.
+      </span>
+    </div>
+  </div>
+</section>
+
 <section class="section" id="then-now">
   <div class="wrap">
     <div class="section-head">
-      <div class="kicker" data-en="05 / THEN · NOW" data-ar="05 / آنذاك · الآن">05 / THEN · NOW</div>
+      <div class="kicker" data-en="06 / THEN · NOW" data-ar="06 / آنذاك · الآن">06 / THEN · NOW</div>
       <h2 data-en="Archive to 2026: places remembered, places enduring" data-ar="من الأرشيف إلى 2026: أماكن في الذاكرة وأماكن تستمر">Archive to 2026: places remembered, places enduring</h2>
       <p data-en="Drag each image to move between an archival photograph and a later view. The photographs are dated exactly; the present-day legal and humanitarian notes are updated separately so an older reusable photograph is never misrepresented as a 2026 image."
          data-ar="اسحب كل صورة للانتقال بين صورة أرشيفية ومشهد لاحق. تواريخ الصور مذكورة بدقة، أما الملاحظات القانونية والإنسانية الحالية فتُحدّث بصورة منفصلة حتى لا تُعرض صورة قديمة قابلة لإعادة الاستخدام وكأنها التُقطت في 2026.">
@@ -1284,7 +1447,7 @@ html[dir="rtl"] .menu-panel{transform:translateX(-105%)}
 <section class="section" id="archives">
   <div class="wrap">
     <div class="section-head">
-      <div class="kicker" data-en="06 / MAPS, PHOTOGRAPHS & ARCHIVES" data-ar="06 / الخرائط والصور والأرشيف">06 / MAPS, PHOTOGRAPHS & ARCHIVES</div>
+      <div class="kicker" data-en="07 / MAPS, PHOTOGRAPHS & ARCHIVES" data-ar="07 / الخرائط والصور والأرشيف">07 / MAPS, PHOTOGRAPHS & ARCHIVES</div>
       <h2 data-en="Read the past through original records" data-ar="اقرأ الماضي من خلال السجلات الأصلية">Read the past through original records</h2>
       <p data-en="A strong history page should let readers move from summary to evidence. These collections are starting points for maps, photographs, community records and material culture."
          data-ar="يجب أن تسمح صفحة التاريخ القوية للقارئ بالانتقال من الملخص إلى الدليل. هذه المجموعات نقاط بداية للخرائط والصور والسجلات المجتمعية والثقافة المادية.">
@@ -1354,7 +1517,7 @@ html[dir="rtl"] .menu-panel{transform:translateX(-105%)}
 <section class="section stone" id="sources">
   <div class="wrap">
     <div class="section-head">
-      <div class="kicker" data-en="07 / TRUSTED STARTING POINTS" data-ar="07 / نقاط بداية موثوقة">07 / TRUSTED STARTING POINTS</div>
+      <div class="kicker" data-en="08 / TRUSTED STARTING POINTS" data-ar="08 / نقاط بداية موثوقة">08 / TRUSTED STARTING POINTS</div>
       <h2 data-en="Research should remain inspectable" data-ar="يجب أن يبقى البحث قابلاً للتحقق">Research should remain inspectable</h2>
       <p data-en="The page favors sources that let readers inspect original records, institutional descriptions or scholarly evidence. No source is treated as beyond criticism; provenance and scope matter."
          data-ar="تفضّل الصفحة المصادر التي تتيح للقارئ فحص السجلات الأصلية أو الأوصاف المؤسسية أو الأدلة العلمية. ولا يُعامل أي مصدر على أنه فوق النقد؛ فالمصدر والنطاق مهمان.">
@@ -1429,6 +1592,7 @@ html[dir="rtl"] .menu-panel{transform:translateX(-105%)}
       <a href="#cities" data-en="Cities, villages & networks" data-ar="المدن والقرى والشبكات">Cities, villages & networks</a>
       <a href="#culture" data-en="Living culture" data-ar="الثقافة الحيّة">Living culture</a>
       <a href="#before1948" data-en="Palestine before 1948" data-ar="فلسطين قبل 1948">Palestine before 1948</a>
+      <a href="#gaza-story" data-en="Gaza: history & childhood" data-ar="غزة: التاريخ والطفولة">Gaza: history & childhood</a>
       <a href="#then-now" data-en="Then / Now gallery" data-ar="معرض آنذاك / الآن">Then / Now gallery</a>
       <a href="#archives" data-en="Maps & archives" data-ar="الخرائط والأرشيف">Maps & archives</a>
       <a href="#sources" data-en="Trusted sources" data-ar="المصادر الموثوقة">Trusted sources</a>
