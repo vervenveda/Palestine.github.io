@@ -194,6 +194,47 @@ img,svg{display:block;max-width:100%}
 }
 .button.primary{background:var(--red);border-color:var(--red)}
 .button.light{background:#fffdf8;color:var(--olive);border-color:#fffdf8}
+.button.academy{
+  background:#efd8ad;color:#173a27;border-color:#efd8ad;
+  box-shadow:0 8px 22px #07170e38
+}
+.button.academy:hover{background:#fff3d7;border-color:#fff3d7;transform:translateY(-1px)}
+.academy-bridge{
+  position:relative;z-index:4;
+  background:#efe3cd;border-bottom:1px solid #d7c7a8
+}
+.academy-bridge-inner{
+  min-height:118px;display:grid;
+  grid-template-columns:minmax(0,1fr) auto;
+  gap:26px;align-items:center;padding:22px 0
+}
+.academy-bridge-copy{display:flex;align-items:center;gap:18px;min-width:0}
+.academy-badge{
+  width:58px;height:58px;flex:0 0 58px;display:grid;place-items:center;
+  border:1px solid #a88a57;background:#173a27;color:#f6e4bd;
+  font:600 12px/1 var(--display);letter-spacing:.09em
+}
+.academy-bridge .kicker{margin-bottom:4px}
+.academy-bridge h2{
+  margin:0;color:var(--olive);
+  font:600 clamp(1.25rem,2.2vw,1.8rem)/1.2 var(--display)
+}
+.academy-bridge p{margin:6px 0 0;color:var(--muted);font-size:.86rem}
+.academy-bridge-action{
+  min-height:50px;display:inline-flex;align-items:center;justify-content:center;
+  padding:11px 18px;background:var(--olive);color:#fff;text-decoration:none;
+  border:1px solid var(--olive);font-size:.8rem;font-weight:800;letter-spacing:.05em;
+  white-space:nowrap
+}
+.academy-bridge-action:hover{background:var(--red);border-color:var(--red)}
+@media(max-width:760px){
+  .academy-bridge-inner{grid-template-columns:1fr}
+  .academy-bridge-action{width:100%}
+}
+@media(max-width:520px){
+  .academy-bridge-copy{align-items:flex-start}
+  .academy-badge{width:48px;height:48px;flex-basis:48px}
+}
 .hero-note{margin-top:25px;color:#c9d9ce;font-size:.79rem;letter-spacing:.02em}
 .hero-art{
   position:relative;min-height:470px;
@@ -590,6 +631,8 @@ html[dir="rtl"] .menu-panel{transform:translateX(-105%)}
       <div class="hero-actions">
         <a class="button primary" href="#before1948" data-en="Explore life before 1948" data-ar="استكشف الحياة قبل 1948">Explore life before 1948</a>
         <a class="button light" href="#sources" data-en="Open trusted sources" data-ar="افتح المصادر الموثوقة">Open trusted sources</a>
+        <a class="button academy" href="https://vervenveda.com/Khaemenes_Academy.github.io/" target="_blank" rel="noopener noreferrer"
+           data-en="Free Khaemenes Academy ↗" data-ar="أكاديمية خايمينيس المجانية ↗">Free Khaemenes Academy ↗</a>
       </div>
       <div class="hero-note"
            data-en="Independent educational project · English + العربية · Evidence close to the claim"
@@ -613,6 +656,27 @@ html[dir="rtl"] .menu-panel{transform:translateX(-105%)}
     </div>
   </div>
 </section>
+
+<aside class="academy-bridge" aria-label="Free Khaemenes Academy educational platform">
+  <div class="wrap academy-bridge-inner">
+    <div class="academy-bridge-copy">
+      <div class="academy-badge" aria-hidden="true">KA</div>
+      <div>
+        <div class="kicker" data-en="FREE EDUCATION · KHAEMENES ACADEMY" data-ar="تعليم مجاني · أكاديمية خايمينيس">FREE EDUCATION · KHAEMENES ACADEMY</div>
+        <h2 data-en="Continue learning in the free Khaemenes Academy educational platform"
+            data-ar="واصل التعلّم في منصة أكاديمية خايمينيس التعليمية المجانية">
+          Continue learning in the free Khaemenes Academy educational platform
+        </h2>
+        <p data-en="Explore Academy learning pathways, student and family portals, grade-level resources, courses and educational tools."
+           data-ar="استكشف مسارات التعلّم وبوابات الطلاب والعائلات وموارد الصفوف والدورات والأدوات التعليمية في الأكاديمية.">
+          Explore Academy learning pathways, student and family portals, grade-level resources, courses and educational tools.
+        </p>
+      </div>
+    </div>
+    <a class="academy-bridge-action" href="https://vervenveda.com/Khaemenes_Academy.github.io/" target="_blank" rel="noopener noreferrer"
+       data-en="Enter Khaemenes Academy →" data-ar="ادخل أكاديمية خايمينيس ←">Enter Khaemenes Academy →</a>
+  </div>
+</aside>
 
 <section class="section" id="land">
   <div class="wrap">
@@ -1564,6 +1628,8 @@ html[dir="rtl"] .menu-panel{transform:translateX(-105%)}
       <a href="#then-now" data-en="Then / Now gallery" data-ar="معرض آنذاك / الآن">Then / Now gallery</a>
       <a href="#archives" data-en="Maps & archives" data-ar="الخرائط والأرشيف">Maps & archives</a>
       <a href="#sources" data-en="Trusted sources" data-ar="المصادر الموثوقة">Trusted sources</a>
+      <a href="https://vervenveda.com/Khaemenes_Academy.github.io/" target="_blank" rel="noopener noreferrer"
+         data-en="Free Khaemenes Academy ↗" data-ar="أكاديمية خايمينيس المجانية ↗">Free Khaemenes Academy ↗</a>
       <a href="https://vervenveda.com/" data-en="Verve N Veda Home ↗" data-ar="العودة إلى Verve N Veda ↗">Verve N Veda Home ↗</a>
       <a href="https://vervenveda.github.io/Saudi_Arabia.github.io/" data-en="Saudi Arabia guide ↗" data-ar="دليل المملكة العربية السعودية ↗">Saudi Arabia guide ↗</a>
     </nav>
