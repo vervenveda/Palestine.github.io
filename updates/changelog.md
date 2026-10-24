@@ -24,4 +24,7 @@
 - Corrected the Ramallah archival image date from an over-precise 1900 to the Library of Congress range, approximately 1900–1920.
 - Clarified Battir sourcing by separating the World Heritage Committee's 2026 decision from details contained in the State of Palestine's 2025 conservation report.
 - Clarified that the Lifta Tentative List description is a 2015 State Party submission by Israel, rather than presenting the text as an independent UNESCO factual finding.
+- Final forensic certification snapshot: 26 displayed documentary photographs; 0 SVG, canvas, or data-generated content images; 0 broken internal anchors; 0 duplicate IDs; 0 missing alt attributes; 0 malformed CSS units; JavaScript syntax PASS; language, ticker, menu open/close, and all 12 comparison sliders wired.
+- Replaced qualitative Gaza displacement wording with UN-documented figures: almost 750,000 Palestinian refugees associated with the 1948 hostilities and more than 500,000 Palestinians displaced in the 1967 war; changed “extraordinary destruction” to the directly supportable “widespread destruction.”
+- External source links were checked against authoritative/indexed destinations. Some UN, UNRWA, Library of Congress, Palestinian Museum, and GitHub Pages endpoints restrict automated crawlers or rate-limit checks; these were not treated as broken when their official/indexed destination or repository-backed path was independently confirmed.
 
