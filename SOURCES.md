@@ -88,3 +88,32 @@ The landing-page comparison gallery uses only images whose source and reuse stat
 ### Comparison rule
 A "Then / Now" pair does not imply that both photographs were taken from the same camera position. The landing page explicitly labels unmatched views and keeps image date, present-day context date, attribution, and license separate.
 
+### Battir
+- **Before:** Matson Collection / Library of Congress, *Palestine disturbances 1936. Passenger train at Bittir, showing military escort*, 1936, public domain: https://commons.wikimedia.org/wiki/File:Palestine_disturbances_1936._Passenger_train_at_Bittir,_showing_military_escort_LOC_matpc.18110.jpg
+- **Later:** Hagai Agmon-Snir, *BattirVillageJan212023.jpg*, 22 January 2023, CC BY-SA 4.0: https://commons.wikimedia.org/wiki/File:BattirVillageJan212023.jpg
+- **2026 heritage status:** UNESCO Decision 48 COM 7A.11 retains Battir on the List of World Heritage in Danger: https://whc.unesco.org/en/decisions/9003/
+- **Conservation evidence:** UNESCO state-of-conservation material documents settlement-outpost expansion, damage to agricultural land and farmer-access restrictions in 2024–25: https://whc.unesco.org/document/224529
+
+### Ramallah
+- **Before:** Matson Collection / Library of Congress, *Northern views. Street at Ramallah*, 1900, public domain / no known restrictions: https://commons.wikimedia.org/wiki/File:Northern_views._Street_at_Ramallah_LOC_matpc.01048.jpg
+- **Later:** أمين, *Ramallah 2024.jpg*, 8 September 2024, CC BY-SA 4.0: https://commons.wikimedia.org/wiki/File:Ramallah_2024.jpg
+- **2026 context:** OCHA, *Humanitarian Situation Report | 2 October 2026*: https://www.ochaopt.org/content/humanitarian-situation-report-2-october-2026
+
+### Akka / Acre
+- **Before:** Israel Antiquities Authority scientific archive, *Acre Citadel. Acre, Old City (SRF 5; 284).jpg*, between 1919 and 1948, CC BY-SA 4.0: https://commons.wikimedia.org/wiki/File:Acre_Citadel._Acre,_Old_City_(SRF_5;_284).jpg
+- **Later:** Ansam-w-sonokrot, *Acre (Akko).jpg*, 24 January 2024, CC BY 4.0: https://commons.wikimedia.org/wiki/File:Acre_(Akko).jpg
+
+### Haifa
+- **Before:** *Haifa and Mount Carmel (before 1899).jpg*, before 1899, public domain: https://commons.wikimedia.org/wiki/File:Haifa_and_Mount_Carmel_(before_1899).jpg
+- **Later:** Shlomo Roded / PikiWiki Israel, *117167 haifa and the port of haifa PikiWiki Israel.jpg*, August 2024, CC BY 2.5: https://commons.wikimedia.org/wiki/File:117167_haifa_and_the_port_of_haifa_PikiWiki_Israel.jpg
+
+### Lydd / Lod
+- **Before:** Matson Collection / Library of Congress, *Lydda—The Palestine R.R. Junction*, 1932, public domain / no known restrictions: https://commons.wikimedia.org/wiki/File:Lydda-The_Palestine_R.R._Junction_LCCN2002699229.jpg
+- **Later:** DGtal, *Ottoman railway station in Lod.jpg*, 30 June 2024, CC BY-SA 4.0: https://commons.wikimedia.org/wiki/File:Ottoman_railway_station_in_Lod.jpg
+- **Map cross-check:** Survey of Palestine / Palestine Open Maps historical map series: https://commons.wikimedia.org/wiki/File:Historical_map_series_for_the_area_of_Lydda_(1940s).jpg
+
+### Lifta
+- **Before:** Australian War Memorial accession B02386, *Lifta, Palestine. A view of the village of Lifta, near Jerusalem*, c. 1918, public domain: https://www.awm.gov.au/collection/B02386
+- **Later:** Bukvoed, *Lifta-40920.jpg*, 20 July 2024, CC BY 4.0: https://commons.wikimedia.org/wiki/File:Lifta-40920.jpg
+- **Heritage context:** UNESCO tentative-list record, *Liftah (Mey Naftoah) – Traditional mountain village*: https://whc.unesco.org/en/tentativelists/6061/
+
