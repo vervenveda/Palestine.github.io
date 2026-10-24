@@ -4,7 +4,7 @@ A source-linked public history project exploring Palestine, its people, names, g
 
 ## Project status
 
-**Research foundation / actively expandable.** The landing page and initial research framework are populated. The chapter files are concise, evidence-conscious starting syntheses, not a claim that every subject has been exhaustively researched. Dates, links, and interpretations should be reviewed as the archive grows.
+**Research foundation / actively expandable.** The bilingual landing page and initial research framework are populated. The chapter files are concise, evidence-conscious starting syntheses, not a claim that every subject has been exhaustively researched. Dates, links, and interpretations should be reviewed as the archive grows.
 
 ## Preview locally
 
@@ -18,7 +18,7 @@ Open `index.html` in a browser. The page is self-contained and does not require 
 4. Save, then wait for the Pages deployment workflow to finish.
 5. Check the Pages URL and confirm that `index.html` loads.
 
-This bundle has **not** been committed or deployed to GitHub by this generation step.
+The research foundation and bilingual `index.html` are committed to `main`. GitHub Pages publication depends on the repository Pages setting.
 
 ## Structure
 
