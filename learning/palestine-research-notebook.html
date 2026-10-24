@@ -1,0 +1,363 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#21472f">
+<meta name="robots" content="index,follow">
+<meta name="description" content="Khaemenes Academy Palestine Research Notebook — a bilingual formative academic-evidence packet for source-led historical inquiry.">
+<title>Palestine Research Notebook | Khaemenes Academy</title>
+<style>
+:root{
+  --olive:#21472f;--red:#a52d35;--ink:#202520;--muted:#687067;--paper:#fffdf8;
+  --cream:#f6efe1;--line:#d9cfbc;--gold:#b88e4d;--dark:#0f1e16;
+  --display:Georgia,"Times New Roman",serif;
+  --body:"Avenir Next","Segoe UI",Arial,sans-serif;
+  --arabic:"Noto Naskh Arabic","Geeza Pro",Arial,sans-serif
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--cream);color:var(--ink);font:15px/1.6 var(--body)}
+html[dir="rtl"] body{font-family:var(--arabic);text-align:right}
+a{color:var(--olive)}
+button,input,select,textarea{font:inherit}
+button,a{touch-action:manipulation}
+:focus-visible{outline:3px solid var(--red);outline-offset:3px}
+.shell{width:min(980px,calc(100% - 28px));margin:auto}
+.topbar{background:var(--dark);color:#fff}
+.topbar .shell{min-height:54px;display:flex;align-items:center;justify-content:space-between;gap:14px;flex-wrap:wrap;padding:8px 0}
+.topbar a{color:#fff;text-decoration:none;font-size:.78rem}
+.topbar nav{display:flex;gap:12px;flex-wrap:wrap}
+.lang{border:1px solid #ffffff66;background:transparent;color:#fff;padding:6px 10px;cursor:pointer}
+header{padding:42px 0 26px;text-align:center}
+.eyebrow{color:var(--red);font-size:.72rem;font-weight:800;letter-spacing:.18em;text-transform:uppercase}
+h1{margin:10px 0 6px;color:var(--olive);font:500 clamp(2rem,5vw,3.4rem)/1.05 var(--display)}
+.sub{margin:0;color:var(--muted)}
+.notice{
+  margin:18px auto 0;max-width:820px;padding:14px 16px;border:1px solid #cabd9f;
+  background:#efe3cf;color:#575e57;font-size:.86rem
+}
+.actions{display:flex;justify-content:center;gap:8px;flex-wrap:wrap;margin:22px 0}
+.actions button,.actions a{
+  min-height:42px;display:inline-flex;align-items:center;justify-content:center;
+  padding:8px 13px;border:1px solid var(--olive);background:var(--olive);color:#fff;
+  text-decoration:none;cursor:pointer;border-radius:3px;font-weight:700;font-size:.8rem
+}
+.actions .secondary{background:transparent;color:var(--olive)}
+#status{min-height:24px;color:var(--muted);font-size:.82rem;text-align:center}
+form{display:grid;gap:16px;padding-bottom:48px}
+.card{background:var(--paper);border:1px solid var(--line);padding:22px;box-shadow:0 10px 28px #211b130a}
+.card h2{margin:0 0 14px;color:var(--olive);font:500 1.45rem/1.2 var(--display)}
+.card h3{margin:18px 0 8px;color:var(--olive);font:600 1rem/1.3 var(--display)}
+.grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
+.grid.three{grid-template-columns:repeat(3,minmax(0,1fr))}
+label{display:block;color:#3c443e;font-size:.82rem;font-weight:700}
+input,select,textarea{
+  width:100%;margin-top:5px;border:1px solid #bfb39e;background:#fff;color:var(--ink);
+  padding:10px 11px;border-radius:2px;font-weight:400
+}
+textarea{min-height:110px;resize:vertical;line-height:1.55}
+textarea.tall{min-height:165px}
+small.help{display:block;margin-top:6px;color:var(--muted);font-weight:400}
+.source-row{display:grid;grid-template-columns:1.15fr 1fr;gap:10px;margin-top:10px;padding-top:10px;border-top:1px solid var(--line)}
+.source-row:first-of-type{border-top:0;margin-top:0;padding-top:0}
+.checklist{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px}
+.check{padding:10px 12px;border:1px solid var(--line);background:#fff}
+.check input{width:auto;margin:0 7px 0 0}
+html[dir="rtl"] .check input{margin:0 0 0 7px}
+.review-lines{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.footer-note{padding:20px 0 36px;text-align:center;color:var(--muted);font-size:.8rem}
+.print-value{display:none;white-space:pre-wrap;overflow-wrap:anywhere}
+@media(max-width:720px){
+  .grid,.grid.three,.source-row,.review-lines,.checklist{grid-template-columns:1fr}
+  .card{padding:17px}
+}
+@media print{
+  @page{margin:13mm}
+  body{background:#fff;color:#111;font-size:11pt}
+  .topbar,.actions,#status,.notice,.footer-note{display:none!important}
+  .shell{width:100%;max-width:none}
+  header{padding:0 0 12px}
+  form{gap:10px;padding:0}
+  .card{box-shadow:none;border:1px solid #888;padding:12px;break-inside:avoid}
+  input,select,textarea{display:none!important}
+  .print-value{display:block!important;margin-top:4px;min-height:18px;border-bottom:1px solid #bbb;padding:2px 0 5px}
+  h1{font-size:23pt}.card h2{font-size:15pt}
+  .check input{display:inline!important}
+}
+</style>
+</head>
+<body>
+<div class="topbar no-print">
+  <div class="shell">
+    <nav aria-label="Research notebook navigation">
+      <a href="../index.html" data-en="← Palestine Research Guide" data-ar="دليل فلسطين البحثي ←">← Palestine Research Guide</a>
+      <a href="https://vervenveda.com/Khaemenes_Academy.github.io/" target="_blank" rel="noopener noreferrer" data-en="Free Khaemenes Academy ↗" data-ar="أكاديمية خايمينيس المجانية ↗">Free Khaemenes Academy ↗</a>
+    </nav>
+    <button id="langToggle" class="lang" type="button" aria-label="Switch language">العربية</button>
+  </div>
+</div>
+
+<header class="shell">
+  <div class="eyebrow" data-en="KHAEMENES ACADEMY · ACADEMIC EVIDENCE CONVENTION v1" data-ar="أكاديمية خايمينيس · معيار الدليل الأكاديمي v1">KHAEMENES ACADEMY · ACADEMIC EVIDENCE CONVENTION v1</div>
+  <h1 data-en="Palestine Research Notebook" data-ar="دفتر البحث عن فلسطين">Palestine Research Notebook</h1>
+  <p class="sub" data-en="Source-led historical inquiry · Formative / ungraded · Print or export for your portfolio"
+     data-ar="بحث تاريخي قائم على المصادر · تكويني / غير مُقيّم · اطبع أو صدّر لحافظة أعمالك">
+    Source-led historical inquiry · Formative / ungraded · Print or export for your portfolio
+  </p>
+  <div class="notice" data-en="Privacy boundary: nothing on this page is uploaded, submitted, synchronized, or automatically saved. Print or export your work before leaving. Parent/teacher review fields are for offline review only and do not create grades, credits, or authenticated teacher access."
+       data-ar="حدود الخصوصية: لا يتم رفع أي شيء من هذه الصفحة أو إرساله أو مزامنته أو حفظه تلقائياً. اطبع عملك أو صدّره قبل مغادرة الصفحة. حقول مراجعة الوالد/المعلم للمراجعة دون اتصال فقط ولا تنشئ درجات أو اعتمادات أو وصولاً مصادقاً للمعلم.">
+    Privacy boundary: nothing on this page is uploaded, submitted, synchronized, or automatically saved. Print or export your work before leaving. Parent/teacher review fields are for offline review only and do not create grades, credits, or authenticated teacher access.
+  </div>
+</header>
+
+<main class="shell">
+  <div class="actions no-print">
+    <button type="button" id="printBtn" data-en="Print / Save PDF" data-ar="طباعة / حفظ PDF">Print / Save PDF</button>
+    <button type="button" id="jsonBtn" data-en="Export Evidence JSON" data-ar="تصدير JSON للدليل">Export Evidence JSON</button>
+    <button type="button" id="textBtn" data-en="Export Text Record" data-ar="تصدير سجل نصي">Export Text Record</button>
+    <button type="button" id="clearBtn" class="secondary" data-en="Clear Notebook" data-ar="مسح الدفتر">Clear Notebook</button>
+  </div>
+  <div id="status" role="status" aria-live="polite" data-en="Begin with a research question. Export or print before leaving." data-ar="ابدأ بسؤال بحث. صدّر أو اطبع قبل مغادرة الصفحة.">Begin with a research question. Export or print before leaving.</div>
+
+  <form id="evidenceForm" autocomplete="off">
+    <section class="card">
+      <h2 data-en="1 · Student and Study Context" data-ar="1 · بيانات الطالب وسياق الدراسة">1 · Student and Study Context</h2>
+      <div class="grid three">
+        <label><span data-en="Student name" data-ar="اسم الطالب">Student name</span><input name="student"><span class="print-value"></span></label>
+        <label><span data-en="Date" data-ar="التاريخ">Date</span><input name="date" type="date"><span class="print-value"></span></label>
+        <label><span data-en="Grade / level" data-ar="الصف / المستوى">Grade / level</span><input name="grade" placeholder="e.g., 8, 10, Adult"><span class="print-value"></span></label>
+        <label><span data-en="Subject" data-ar="المادة">Subject</span><input name="subject" value="Social Studies / History"><span class="print-value"></span></label>
+        <label><span data-en="Unit" data-ar="الوحدة">Unit</span><input name="unit" value="Palestine Research"><span class="print-value"></span></label>
+        <label><span data-en="Lesson / entry" data-ar="الدرس / المدخل">Lesson / entry</span><input name="lesson" placeholder="e.g., Gaza, Jaffa, Battir"><span class="print-value"></span></label>
+      </div>
+      <label style="margin-top:12px"><span data-en="Evidence type / investigation title" data-ar="نوع الدليل / عنوان البحث">Evidence type / investigation title</span>
+        <input name="title" value="Palestine Source-Led Historical Inquiry"><span class="print-value"></span>
+      </label>
+    </section>
+
+    <section class="card">
+      <h2 data-en="2 · Research Question / Purpose" data-ar="2 · سؤال البحث / الغرض">2 · Research Question / Purpose</h2>
+      <label><span data-en="What are you investigating?" data-ar="ما الذي تبحث فيه؟">What are you investigating?</span>
+        <textarea name="researchQuestion" class="tall" placeholder="Frame a question that can be answered with evidence."></textarea><span class="print-value"></span>
+      </label>
+      <label><span data-en="Why does this question matter?" data-ar="لماذا يهم هذا السؤال؟">Why does this question matter?</span>
+        <textarea name="purpose"></textarea><span class="print-value"></span>
+      </label>
+    </section>
+
+    <section class="card">
+      <h2 data-en="3 · Sources, Citations and Reliability" data-ar="3 · المصادر والاستشهادات والموثوقية">3 · Sources, Citations and Reliability</h2>
+      <p data-en="Record what each source can establish and what it cannot establish alone."
+         data-ar="سجّل ما يمكن لكل مصدر إثباته وما لا يستطيع إثباته بمفرده.">Record what each source can establish and what it cannot establish alone.</p>
+      <div class="source-row">
+        <label><span data-en="Source 1 · title / author / organization / URL / access date" data-ar="المصدر 1 · العنوان / المؤلف / المؤسسة / الرابط / تاريخ الوصول">Source 1 · title / author / organization / URL / access date</span><textarea name="source1"></textarea><span class="print-value"></span></label>
+        <label><span data-en="Authority / limitation / corroboration" data-ar="السلطة / القيود / التحقق المتقاطع">Authority / limitation / corroboration</span><textarea name="source1Limit"></textarea><span class="print-value"></span></label>
+      </div>
+      <div class="source-row">
+        <label><span data-en="Source 2 · title / author / organization / URL / access date" data-ar="المصدر 2 · العنوان / المؤلف / المؤسسة / الرابط / تاريخ الوصول">Source 2 · title / author / organization / URL / access date</span><textarea name="source2"></textarea><span class="print-value"></span></label>
+        <label><span data-en="Authority / limitation / corroboration" data-ar="السلطة / القيود / التحقق المتقاطع">Authority / limitation / corroboration</span><textarea name="source2Limit"></textarea><span class="print-value"></span></label>
+      </div>
+      <div class="source-row">
+        <label><span data-en="Source 3 · title / author / organization / URL / access date" data-ar="المصدر 3 · العنوان / المؤلف / المؤسسة / الرابط / تاريخ الوصول">Source 3 · title / author / organization / URL / access date</span><textarea name="source3"></textarea><span class="print-value"></span></label>
+        <label><span data-en="Authority / limitation / corroboration" data-ar="السلطة / القيود / التحقق المتقاطع">Authority / limitation / corroboration</span><textarea name="source3Limit"></textarea><span class="print-value"></span></label>
+      </div>
+      <div class="checklist" style="margin-top:14px">
+        <label class="check"><input type="checkbox" name="sourceCheck" value="primary"><span data-en="I used at least one primary or archival source where appropriate." data-ar="استخدمت مصدراً أولياً أو أرشيفياً واحداً على الأقل حيث كان مناسباً.">I used at least one primary or archival source where appropriate.</span></label>
+        <label class="check"><input type="checkbox" name="sourceCheck" value="corroborated"><span data-en="I corroborated major claims with an independent source." data-ar="تحققت من الادعاءات الرئيسية بمصدر مستقل.">I corroborated major claims with an independent source.</span></label>
+        <label class="check"><input type="checkbox" name="sourceCheck" value="distinction"><span data-en="I distinguished fact, interpretation and uncertainty." data-ar="ميّزت بين الحقيقة والتفسير وعدم اليقين.">I distinguished fact, interpretation and uncertainty.</span></label>
+        <label class="check"><input type="checkbox" name="sourceCheck" value="images"><span data-en="I checked image date, creator/archive and rights when using photographs." data-ar="تحققت من تاريخ الصورة والمصور/الأرشيف والحقوق عند استخدام الصور.">I checked image date, creator/archive and rights when using photographs.</span></label>
+      </div>
+    </section>
+
+    <section class="card">
+      <h2 data-en="4 · Vocabulary and Language Connections" data-ar="4 · المفردات والروابط اللغوية">4 · Vocabulary and Language Connections</h2>
+      <label><span data-en="Terms · meaning in your own words · context/example" data-ar="المصطلحات · المعنى بكلماتك · السياق/المثال">Terms · meaning in your own words · context/example</span>
+        <textarea name="vocabulary" class="tall"></textarea><span class="print-value"></span>
+      </label>
+      <label><span data-en="Arabic / English translation or language notes (optional)" data-ar="ملاحظات ترجمة عربية / إنجليزية (اختياري)">Arabic / English translation or language notes (optional)</span>
+        <textarea name="languageConnections"></textarea><span class="print-value"></span>
+      </label>
+    </section>
+
+    <section class="card">
+      <h2 data-en="5 · Evidence / Observations / Artifacts" data-ar="5 · الأدلة / الملاحظات / المواد">5 · Evidence / Observations / Artifacts</h2>
+      <label><span data-en="What did you observe directly in documents, photographs, maps, data or artifacts?" data-ar="ماذا لاحظت مباشرة في الوثائق أو الصور أو الخرائط أو البيانات أو المواد؟">What did you observe directly in documents, photographs, maps, data or artifacts?</span>
+        <textarea name="evidence" class="tall"></textarea><span class="print-value"></span>
+      </label>
+      <label><span data-en="Separate observation from interpretation" data-ar="افصل الملاحظة عن التفسير">Separate observation from interpretation</span>
+        <textarea name="interpretation"></textarea><span class="print-value"></span>
+      </label>
+    </section>
+
+    <section class="card">
+      <h2 data-en="6 · Claim, Reasoning, Limitations and Uncertainty" data-ar="6 · الادعاء والاستدلال والقيود وعدم اليقين">6 · Claim, Reasoning, Limitations and Uncertainty</h2>
+      <label><span data-en="Your evidence-based claim" data-ar="ادعاؤك المبني على الدليل">Your evidence-based claim</span>
+        <textarea name="claim"></textarea><span class="print-value"></span>
+      </label>
+      <label><span data-en="Reasoning · how does the evidence support the claim?" data-ar="الاستدلال · كيف يدعم الدليل الادعاء؟">Reasoning · how does the evidence support the claim?</span>
+        <textarea name="reasoning" class="tall"></textarea><span class="print-value"></span>
+      </label>
+      <label><span data-en="Limitations, uncertainty, counterevidence or alternative interpretation" data-ar="القيود وعدم اليقين والأدلة المخالفة أو التفسير البديل">Limitations, uncertainty, counterevidence or alternative interpretation</span>
+        <textarea name="limitations"></textarea><span class="print-value"></span>
+      </label>
+    </section>
+
+    <section class="card">
+      <h2 data-en="7 · Subject Connections, Reflection and Next Steps" data-ar="7 · روابط المواد والتأمل والخطوات التالية">7 · Subject Connections, Reflection and Next Steps</h2>
+      <label><span data-en="How does this connect to another subject?" data-ar="كيف يرتبط هذا بمادة أخرى؟">How does this connect to another subject?</span>
+        <textarea name="subjectConnections" placeholder="Examples: geography, language arts, art, economics, mathematics, linguistics"></textarea><span class="print-value"></span>
+      </label>
+      <label><span data-en="Learner reflection" data-ar="تأمل الطالب">Learner reflection</span>
+        <textarea name="reflection"></textarea><span class="print-value"></span>
+      </label>
+      <label><span data-en="Next question or learning goal" data-ar="السؤال التالي أو هدف التعلم">Next question or learning goal</span>
+        <textarea name="nextSteps"></textarea><span class="print-value"></span>
+      </label>
+    </section>
+
+    <section class="card">
+      <h2 data-en="8 · Parent / Teacher Review" data-ar="8 · مراجعة الوالد / المعلم">8 · Parent / Teacher Review</h2>
+      <p data-en="Offline review only. Completing this section does not create a grade, credit, account permission or verified teacher record."
+         data-ar="للمراجعة دون اتصال فقط. إكمال هذا القسم لا ينشئ درجة أو اعتماداً أو صلاحية حساب أو سجلاً معلماً موثقاً.">
+        Offline review only. Completing this section does not create a grade, credit, account permission or verified teacher record.
+      </p>
+      <div class="review-lines">
+        <label><span data-en="Reviewer name" data-ar="اسم المراجع">Reviewer name</span><input name="reviewer"><span class="print-value"></span></label>
+        <label><span data-en="Review date" data-ar="تاريخ المراجعة">Review date</span><input name="reviewDate" type="date"><span class="print-value"></span></label>
+      </div>
+      <label><span data-en="Feedback / evidence checked" data-ar="الملاحظات / الأدلة التي تمت مراجعتها">Feedback / evidence checked</span><textarea name="feedback"></textarea><span class="print-value"></span></label>
+      <label><span data-en="Next learning goal" data-ar="هدف التعلم التالي">Next learning goal</span><textarea name="reviewNext"></textarea><span class="print-value"></span></label>
+      <label><span data-en="Signature / initials (offline)" data-ar="التوقيع / الأحرف الأولى (دون اتصال)">Signature / initials (offline)</span><input name="signature"><span class="print-value"></span></label>
+    </section>
+  </form>
+</main>
+
+<footer class="footer-note shell">
+  <span data-en="Khaemenes Academy · Palestine Research Notebook · Formative / ungraded · Portable evidence document only"
+        data-ar="أكاديمية خايمينيس · دفتر البحث عن فلسطين · تكويني / غير مُقيّم · وثيقة دليل محمولة فقط">
+    Khaemenes Academy · Palestine Research Notebook · Formative / ungraded · Portable evidence document only
+  </span>
+</footer>
+
+<script>
+"use strict";
+(()=>{
+  const form=document.getElementById("evidenceForm");
+  const status=document.getElementById("status");
+  const langBtn=document.getElementById("langToggle");
+  const html=document.documentElement;
+
+  function values(){
+    const fd=new FormData(form);
+    const checked=[...form.querySelectorAll('input[name="sourceCheck"]:checked')].map(x=>x.value);
+    return {
+      schema:"khaemenes-academic-evidence-v1",
+      status:"formative_ungraded",
+      academy:"Khaemenes Academy",
+      evidenceType:"Palestine Research Notebook",
+      student:fd.get("student")||"",
+      date:fd.get("date")||"",
+      grade:fd.get("grade")||"",
+      subject:fd.get("subject")||"",
+      unit:fd.get("unit")||"",
+      lesson:fd.get("lesson")||"",
+      title:fd.get("title")||"",
+      researchQuestion:fd.get("researchQuestion")||"",
+      purpose:fd.get("purpose")||"",
+      sources:[
+        {citation:fd.get("source1")||"",limitations:fd.get("source1Limit")||""},
+        {citation:fd.get("source2")||"",limitations:fd.get("source2Limit")||""},
+        {citation:fd.get("source3")||"",limitations:fd.get("source3Limit")||""}
+      ].filter(x=>x.citation||x.limitations),
+      sourceChecks:checked,
+      vocabulary:fd.get("vocabulary")||"",
+      languageConnections:fd.get("languageConnections")||"",
+      subjectConnections:fd.get("subjectConnections")||"",
+      evidence:fd.get("evidence")||"",
+      interpretation:fd.get("interpretation")||"",
+      claim:fd.get("claim")||"",
+      reasoning:fd.get("reasoning")||"",
+      limitations:fd.get("limitations")||"",
+      reflection:fd.get("reflection")||"",
+      nextSteps:fd.get("nextSteps")||"",
+      review:{
+        reviewer:fd.get("reviewer")||"",
+        date:fd.get("reviewDate")||"",
+        feedback:fd.get("feedback")||"",
+        nextGoal:fd.get("reviewNext")||"",
+        signature:fd.get("signature")||""
+      }
+    };
+  }
+
+  function syncPrint(){
+    form.querySelectorAll("input,select,textarea").forEach(control=>{
+      const holder=control.parentElement.querySelector(".print-value");
+      if(!holder)return;
+      if(control.type==="checkbox") return;
+      holder.textContent=control.value||" ";
+    });
+  }
+
+  function download(name,type,text){
+    const blob=new Blob([text],{type});
+    const url=URL.createObjectURL(blob);
+    const a=document.createElement("a");
+    a.href=url;a.download=name;document.body.appendChild(a);a.click();a.remove();
+    setTimeout(()=>URL.revokeObjectURL(url),1000);
+  }
+
+  function safeSlug(){
+    const name=(form.elements.student.value||"student").trim().replace(/[^a-z0-9_-]+/gi,"-").replace(/^-+|-+$/g,"");
+    const date=form.elements.date.value||new Date().toISOString().slice(0,10);
+    return (name||"student")+"-palestine-research-"+date;
+  }
+
+  document.getElementById("printBtn").addEventListener("click",()=>{syncPrint();window.print();});
+  document.getElementById("jsonBtn").addEventListener("click",()=>{
+    download(safeSlug()+".json","application/json",JSON.stringify(values(),null,2));
+    status.textContent=html.lang==="ar"?"تم تصدير سجل JSON محلياً. لم يتم رفع أي شيء.":"JSON evidence record exported locally. Nothing was uploaded.";
+  });
+  document.getElementById("textBtn").addEventListener("click",()=>{
+    const v=values();
+    const lines=[
+      "KHAEMENES ACADEMY","PALESTINE RESEARCH NOTEBOOK","FORMATIVE / UNGRADED","",
+      "Student: "+v.student,"Date: "+v.date,"Grade / Level: "+v.grade,"Subject: "+v.subject,"Unit: "+v.unit,"Lesson / Entry: "+v.lesson,
+      "Title: "+v.title,"","RESEARCH QUESTION",v.researchQuestion,"","PURPOSE",v.purpose,"",
+      "SOURCES",...v.sources.flatMap((s,i)=>["Source "+(i+1)+": "+s.citation,"Authority / limitation: "+s.limitations]),"",
+      "VOCABULARY",v.vocabulary,"","LANGUAGE CONNECTIONS",v.languageConnections,"","SUBJECT CONNECTIONS",v.subjectConnections,"",
+      "EVIDENCE / OBSERVATIONS",v.evidence,"","INTERPRETATION",v.interpretation,"","CLAIM",v.claim,"","REASONING",v.reasoning,"","LIMITATIONS / UNCERTAINTY",v.limitations,"",
+      "REFLECTION",v.reflection,"","NEXT STEPS",v.nextSteps,"","PARENT / TEACHER REVIEW",
+      "Reviewer: "+v.review.reviewer,"Date: "+v.review.date,"Feedback: "+v.review.feedback,"Next goal: "+v.review.nextGoal,"Signature / initials: "+v.review.signature
+    ];
+    download(safeSlug()+".txt","text/plain;charset=utf-8",lines.join("\n"));
+    status.textContent=html.lang==="ar"?"تم تصدير السجل النصي محلياً. لم يتم رفع أي شيء.":"Text evidence record exported locally. Nothing was uploaded.";
+  });
+  document.getElementById("clearBtn").addEventListener("click",()=>{
+    if(!confirm(html.lang==="ar"?"مسح جميع حقول الدفتر؟":"Clear all notebook fields?"))return;
+    form.reset();
+    form.elements.subject.value="Social Studies / History";
+    form.elements.unit.value="Palestine Research";
+    form.elements.title.value="Palestine Source-Led Historical Inquiry";
+    form.elements.date.value=new Date().toISOString().slice(0,10);
+    status.textContent=html.lang==="ar"?"تم مسح الدفتر.":"Notebook cleared.";
+  });
+
+  form.addEventListener("input",()=>{status.textContent=html.lang==="ar"?"لديك تغييرات غير مُصدّرة. اطبع أو صدّر قبل مغادرة الصفحة.":"You have unexported changes. Print or export before leaving.";});
+
+  function applyLang(lang){
+    const ar=lang==="ar";
+    html.lang=ar?"ar":"en";html.dir=ar?"rtl":"ltr";
+    document.querySelectorAll("[data-en][data-ar]").forEach(el=>{el.textContent=ar?el.dataset.ar:el.dataset.en;});
+    langBtn.textContent=ar?"English":"العربية";
+    langBtn.setAttribute("aria-label",ar?"Switch to English":"التبديل إلى العربية");
+  }
+  langBtn.addEventListener("click",()=>applyLang(html.lang==="ar"?"en":"ar"));
+
+  form.elements.date.value=new Date().toISOString().slice(0,10);
+  window.addEventListener("beforeprint",syncPrint);
+})();
+</script>
+</body>
+</html>
