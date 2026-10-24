@@ -306,6 +306,73 @@ html[dir="rtl"] .time-date{text-align:left}
 }
 .before-card strong{font:500 clamp(1.7rem,3vw,2.35rem)/1.16 var(--display)}
 .before-card p{margin:0;color:#dce7df}
+
+/* THEN / NOW DOCUMENTARY GALLERY */
+.compare-scope{
+  margin:0 0 28px;padding:22px 24px;
+  border:1px solid #cbbd9e;border-left:4px solid var(--red);
+  background:#f1e6d2;color:var(--muted)
+}
+html[dir="rtl"] .compare-scope{border-left:1px solid #cbbd9e;border-right:4px solid var(--red)}
+.compare-scope strong{display:block;margin-bottom:7px;color:var(--olive);font:600 1.15rem/1.25 var(--display)}
+.compare-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:20px}
+.compare-card{background:#fff;border:1px solid var(--line);box-shadow:var(--shadow);overflow:hidden}
+.compare-head{padding:21px 22px 17px;border-bottom:1px solid var(--line)}
+.compare-head-top{display:flex;align-items:flex-start;justify-content:space-between;gap:12px}
+.compare-place{margin:0;color:var(--olive);font:600 1.45rem/1.2 var(--display)}
+.compare-status{flex:0 0 auto;padding:5px 8px;border:1px solid #d3c3a7;color:var(--red);font-size:.65rem;font-weight:800;letter-spacing:.09em;text-transform:uppercase}
+.compare-head p{margin:9px 0 0;color:var(--muted);font-size:.86rem}
+.compare-stage{position:relative;aspect-ratio:16/10;overflow:hidden;background:#d8d0c2}
+.compare-stage img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.compare-after{clip-path:inset(0 0 0 50%)}
+html[dir="rtl"] .compare-after{clip-path:inset(0 50% 0 0)}
+.compare-divider{position:absolute;top:0;bottom:0;left:50%;width:2px;background:#fff;box-shadow:0 0 0 1px #0003;pointer-events:none}
+html[dir="rtl"] .compare-divider{left:auto;right:50%}
+.compare-divider:before{
+  content:"↔";position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);
+  width:38px;height:38px;display:grid;place-items:center;border-radius:50%;
+  background:#fff;color:var(--red);box-shadow:0 3px 14px #0004;font-weight:900
+}
+.compare-label{
+  position:absolute;top:12px;z-index:3;padding:6px 9px;
+  background:#111c;color:#fff;font-size:.67rem;font-weight:800;letter-spacing:.1em;text-transform:uppercase
+}
+.compare-label.before{left:12px}
+.compare-label.after{right:12px}
+html[dir="rtl"] .compare-label.before{left:auto;right:12px}
+html[dir="rtl"] .compare-label.after{right:auto;left:12px}
+.compare-range{
+  position:absolute;left:0;right:0;bottom:0;z-index:4;width:100%;height:42px;
+  margin:0;opacity:.01;cursor:ew-resize
+}
+.compare-meta{display:grid;grid-template-columns:1fr 1fr;border-top:1px solid var(--line)}
+.compare-meta>div{padding:14px 16px}
+.compare-meta>div+div{border-left:1px solid var(--line)}
+html[dir="rtl"] .compare-meta>div+div{border-left:0;border-right:1px solid var(--line)}
+.compare-meta strong{display:block;color:var(--olive);font-size:.75rem}
+.compare-meta span{display:block;margin-top:4px;color:var(--muted);font-size:.75rem}
+.compare-copy{padding:18px 22px 20px}
+.compare-copy p{margin:0;color:var(--muted);font-size:.87rem}
+.compare-links{display:flex;flex-wrap:wrap;gap:8px;margin-top:14px}
+.compare-links a{
+  display:inline-flex;align-items:center;min-height:34px;padding:6px 9px;
+  border:1px solid var(--line);color:var(--olive);text-decoration:none;font-size:.72rem;font-weight:800
+}
+.compare-links a:hover{border-color:var(--red);color:var(--red)}
+.compare-license{margin-top:12px;color:#7c756b;font-size:.7rem;line-height:1.5}
+.compare-note{
+  margin-top:24px;padding:20px 22px;background:var(--olive);color:#e5eee7
+}
+.compare-note strong{color:#f4dfb8}
+.compare-note a{color:#f4dfb8}
+@media(max-width:820px){.compare-grid{grid-template-columns:1fr}}
+@media(max-width:560px){
+  .compare-head,.compare-copy{padding-left:16px;padding-right:16px}
+  .compare-meta{grid-template-columns:1fr}
+  .compare-meta>div+div{border-left:0!important;border-right:0!important;border-top:1px solid var(--line)}
+  .compare-stage{aspect-ratio:4/3}
+}
+
 .archive-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px}
 .archive-card{
   background:#fff;border:1px solid var(--line);padding:24px;
@@ -827,6 +894,219 @@ html[dir="rtl"] .menu-panel{transform:translateX(-105%)}
   </div>
 </section>
 
+
+<section class="section" id="then-now">
+  <div class="wrap">
+    <div class="section-head">
+      <div class="kicker" data-en="05 / THEN · NOW" data-ar="05 / آنذاك · الآن">05 / THEN · NOW</div>
+      <h2 data-en="Archive to 2026: places remembered, places enduring" data-ar="من الأرشيف إلى 2026: أماكن في الذاكرة وأماكن تستمر">Archive to 2026: places remembered, places enduring</h2>
+      <p data-en="Drag each image to move between an archival photograph and a later view. The photographs are dated exactly; the present-day legal and humanitarian notes are updated separately so an older reusable photograph is never misrepresented as a 2026 image."
+         data-ar="اسحب كل صورة للانتقال بين صورة أرشيفية ومشهد لاحق. تواريخ الصور مذكورة بدقة، أما الملاحظات القانونية والإنسانية الحالية فتُحدّث بصورة منفصلة حتى لا تُعرض صورة قديمة قابلة لإعادة الاستخدام وكأنها التُقطت في 2026.">
+        Drag each image to move between an archival photograph and a later view. The photographs are dated exactly; the present-day legal and humanitarian notes are updated separately so an older reusable photograph is never misrepresented as a 2026 image.
+      </p>
+    </div>
+
+    <div class="compare-scope">
+      <strong data-en="A necessary legal distinction" data-ar="تمييز قانوني ضروري">A necessary legal distinction</strong>
+      <span data-en="The International Court of Justice treats the West Bank, including East Jerusalem, and the Gaza Strip as the Occupied Palestinian Territory. Jaffa lies within present-day Israel, so its card documents Palestinian urban memory, displacement and transformation without labeling present-day Jaffa itself as occupied territory."
+            data-ar="تتعامل محكمة العدل الدولية مع الضفة الغربية، بما فيها القدس الشرقية، وقطاع غزة بوصفها الأرض الفلسطينية المحتلة. تقع يافا داخل إسرائيل اليوم، ولذلك توثق بطاقتها الذاكرة الحضرية الفلسطينية والتهجير والتحول من دون وصف يافا الحالية نفسها بأنها أرض محتلة.">
+        The International Court of Justice treats the West Bank, including East Jerusalem, and the Gaza Strip as the Occupied Palestinian Territory. Jaffa lies within present-day Israel, so its card documents Palestinian urban memory, displacement and transformation without labeling present-day Jaffa itself as occupied territory.
+      </span>
+      <div class="compare-links">
+        <a href="https://www.icj-cij.org/node/204176" target="_blank" rel="noopener noreferrer">ICJ · territorial scope ↗</a>
+        <a href="https://www.ochaopt.org/content/movement-and-access-west-bank-april-2026" target="_blank" rel="noopener noreferrer">OCHA · West Bank access, Apr 2026 ↗</a>
+      </div>
+    </div>
+
+    <div class="compare-grid">
+
+      <article class="compare-card" data-compare>
+        <div class="compare-head">
+          <div class="compare-head-top"><h3 class="compare-place">Jaffa · يافا</h3><span class="compare-status">Urban memory</span></div>
+          <p data-en="A port city transformed across the twentieth century; this pair focuses on continuity of place and Palestinian urban memory."
+             data-ar="مدينة مينائية تحولت عبر القرن العشرين؛ تركز هذه المقارنة على استمرارية المكان والذاكرة الحضرية الفلسطينية.">
+            A port city transformed across the twentieth century; this pair focuses on continuity of place and Palestinian urban memory.
+          </p>
+        </div>
+        <div class="compare-stage">
+          <img loading="lazy" decoding="async" src="https://commons.wikimedia.org/wiki/Special:Redirect/file/Jaffa%20circa%201910.jpg" alt="Jaffa street scene around 1911">
+          <img class="compare-after" loading="lazy" decoding="async" src="https://commons.wikimedia.org/wiki/Special:Redirect/file/Old%20Jaffa%2C%20August%202014%2001.jpg" alt="View of Old Jaffa in August 2014">
+          <span class="compare-label before">1911</span><span class="compare-label after">2014</span>
+          <span class="compare-divider" aria-hidden="true"></span>
+          <input class="compare-range" type="range" min="0" max="100" value="50" aria-label="Compare historical and later Jaffa images">
+        </div>
+        <div class="compare-meta"><div><strong>Before</strong><span>G. E. Franklin · 1911 · Public domain</span></div><div><strong>Later view</strong><span>Xiquinho Silva · 2014 · CC BY 2.0</span></div></div>
+        <div class="compare-copy">
+          <p data-en="The earlier photograph records a Jaffa street scene before the end of Ottoman rule. The later image shows the preserved old-city fabric within present-day Tel Aviv-Yafo. The comparison should be read alongside research on Jaffa’s Palestinian port, citrus economy, neighborhoods and the rupture of 1948."
+             data-ar="توثق الصورة الأولى مشهداً من شوارع يافا قبل نهاية الحكم العثماني. وتُظهر الصورة اللاحقة النسيج العمراني القديم المحفوظ ضمن تل أبيب-يافا اليوم. ينبغي قراءة المقارنة إلى جانب البحث في ميناء يافا الفلسطيني واقتصاد الحمضيات والأحياء وتحولات عام 1948.">
+            The earlier photograph records a Jaffa street scene before the end of Ottoman rule. The later image shows the preserved old-city fabric within present-day Tel Aviv-Yafo. The comparison should be read alongside research on Jaffa’s Palestinian port, citrus economy, neighborhoods and the rupture of 1948.
+          </p>
+          <div class="compare-links">
+            <a href="https://commons.wikimedia.org/wiki/File:Jaffa_circa_1910.jpg" target="_blank" rel="noopener noreferrer">Before source ↗</a>
+            <a href="https://commons.wikimedia.org/wiki/File:Old_Jaffa,_August_2014_01.jpg" target="_blank" rel="noopener noreferrer">Later source ↗</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="compare-card" data-compare>
+        <div class="compare-head">
+          <div class="compare-head-top"><h3 class="compare-place">Jerusalem · القدس</h3><span class="compare-status">Context 2026</span></div>
+          <p data-en="The Old City is part of East Jerusalem; its political and legal status is distinct from West Jerusalem and remains internationally contested."
+             data-ar="تقع البلدة القديمة ضمن القدس الشرقية؛ ووضعها السياسي والقانوني يختلف عن القدس الغربية وما زال موضع نزاع دولي.">
+            The Old City is part of East Jerusalem; its political and legal status is distinct from West Jerusalem and remains internationally contested.
+          </p>
+        </div>
+        <div class="compare-stage">
+          <img loading="lazy" decoding="async" src="https://commons.wikimedia.org/wiki/Special:Redirect/file/Jerusalem%20um%201900.jpg" alt="Jerusalem between 1890 and 1900">
+          <img class="compare-after" loading="lazy" decoding="async" src="https://commons.wikimedia.org/wiki/Special:Redirect/file/Jerusalem-old-city-TM-32230.jpg" alt="Zion Gate in Jerusalem in June 2024">
+          <span class="compare-label before">1890–1900</span><span class="compare-label after">2024</span>
+          <span class="compare-divider" aria-hidden="true"></span>
+          <input class="compare-range" type="range" min="0" max="100" value="50" aria-label="Compare historical and later Jerusalem images">
+        </div>
+        <div class="compare-meta"><div><strong>Before</strong><span>Library of Congress · Public domain</span></div><div><strong>Later view</strong><span>Bukvoed · 2024 · CC BY 4.0</span></div></div>
+        <div class="compare-copy">
+          <p data-en="The archival view documents Jerusalem at the turn of the twentieth century; the later photograph shows Zion Gate. In its 2024 advisory opinion, the ICJ reaffirmed that East Jerusalem is occupied territory and addressed Israel as the occupying Power there."
+             data-ar="توثق الصورة الأرشيفية القدس في مطلع القرن العشرين، بينما تُظهر الصورة اللاحقة باب النبي داود. وفي رأيها الاستشاري لعام 2024 أكدت محكمة العدل الدولية أن القدس الشرقية أرض محتلة وتناولت إسرائيل بوصفها القوة القائمة بالاحتلال هناك.">
+            The archival view documents Jerusalem at the turn of the twentieth century; the later photograph shows Zion Gate. In its 2024 advisory opinion, the ICJ reaffirmed that East Jerusalem is occupied territory and addressed Israel as the occupying Power there.
+          </p>
+          <div class="compare-links">
+            <a href="https://commons.wikimedia.org/wiki/File:Jerusalem_um_1900.jpg" target="_blank" rel="noopener noreferrer">Before source ↗</a>
+            <a href="https://commons.wikimedia.org/wiki/File:Jerusalem-old-city-TM-32230.jpg" target="_blank" rel="noopener noreferrer">Later source ↗</a>
+            <a href="https://www.icj-cij.org/node/204176" target="_blank" rel="noopener noreferrer">ICJ context ↗</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="compare-card" data-compare>
+        <div class="compare-head">
+          <div class="compare-head-top"><h3 class="compare-place">Nablus · نابلس</h3><span class="compare-status">West Bank</span></div>
+          <p data-en="A highland commercial and craft center whose old city remains a living urban fabric."
+             data-ar="مركز تجاري وحرفي في المرتفعات ما زالت بلدته القديمة نسيجاً حضرياً حيّاً.">
+            A highland commercial and craft center whose old city remains a living urban fabric.
+          </p>
+        </div>
+        <div class="compare-stage">
+          <img loading="lazy" decoding="async" src="https://commons.wikimedia.org/wiki/Special:Redirect/file/Nablus%20Great%20Mosque.jpg" alt="Great Mosque minaret in Nablus in the early twentieth century">
+          <img class="compare-after" loading="lazy" decoding="async" src="https://commons.wikimedia.org/wiki/Special:Redirect/file/Nablus%20the%20old%20city.jpg" alt="Old City of Nablus in May 2024">
+          <span class="compare-label before">Early 1900s</span><span class="compare-label after">2024</span>
+          <span class="compare-divider" aria-hidden="true"></span>
+          <input class="compare-range" type="range" min="0" max="100" value="50" aria-label="Compare historical and later Nablus images">
+        </div>
+        <div class="compare-meta"><div><strong>Before</strong><span>K. A. C. Creswell / Archnet · Public domain</span></div><div><strong>Later view</strong><span>Fateen888 · 2024 · CC BY 4.0</span></div></div>
+        <div class="compare-copy">
+          <p data-en="The pair emphasizes architectural continuity rather than claiming the photographs show the same viewpoint. Nablus is in the occupied West Bank; OCHA’s April 2026 movement-and-access assessment recorded 925 movement obstacles across the West Bank."
+             data-ar="تُبرز المقارنة الاستمرارية المعمارية ولا تدّعي أن الصورتين التُقطتا من الزاوية نفسها. تقع نابلس في الضفة الغربية المحتلة؛ وسجل تقييم مكتب الأمم المتحدة لتنسيق الشؤون الإنسانية في أبريل 2026 وجود 925 عائقاً للحركة في أنحاء الضفة الغربية.">
+            The pair emphasizes architectural continuity rather than claiming the photographs show the same viewpoint. Nablus is in the occupied West Bank; OCHA’s April 2026 movement-and-access assessment recorded 925 movement obstacles across the West Bank.
+          </p>
+          <div class="compare-links">
+            <a href="https://commons.wikimedia.org/wiki/File:Nablus_Great_Mosque.jpg" target="_blank" rel="noopener noreferrer">Before source ↗</a>
+            <a href="https://commons.wikimedia.org/wiki/File:Nablus_the_old_city.jpg" target="_blank" rel="noopener noreferrer">Later source ↗</a>
+            <a href="https://www.ochaopt.org/content/movement-and-access-west-bank-april-2026" target="_blank" rel="noopener noreferrer">OCHA 2026 context ↗</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="compare-card" data-compare>
+        <div class="compare-head">
+          <div class="compare-head-top"><h3 class="compare-place">Bethlehem · بيت لحم</h3><span class="compare-status">West Bank</span></div>
+          <p data-en="A city of pilgrimage, neighborhoods, churches, workshops and family life documented across more than a century of photography."
+             data-ar="مدينة للحج والأحياء والكنائس والورش والحياة العائلية، موثقة عبر أكثر من قرن من التصوير.">
+            A city of pilgrimage, neighborhoods, churches, workshops and family life documented across more than a century of photography.
+          </p>
+        </div>
+        <div class="compare-stage">
+          <img loading="lazy" decoding="async" src="https://commons.wikimedia.org/wiki/Special:Redirect/file/Bethlehem%2C%20Palestine.jpg" alt="Bethlehem around 1904">
+          <img class="compare-after" loading="lazy" decoding="async" src="https://commons.wikimedia.org/wiki/Special:Redirect/file/%D8%A8%D9%8A%D8%AA_%D9%84%D8%AD%D9%85_%D9%88%D8%A7%D8%AF_%D9%85%D8%B9%D8%A7%D9%84%D9%8A.jpg" alt="General view of Bethlehem in February 2024">
+          <span class="compare-label before">1904</span><span class="compare-label after">2024</span>
+          <span class="compare-divider" aria-hidden="true"></span>
+          <input class="compare-range" type="range" min="0" max="100" value="50" aria-label="Compare historical and later Bethlehem images">
+        </div>
+        <div class="compare-meta"><div><strong>Before</strong><span>Borthwick Institute · Public domain</span></div><div><strong>Later view</strong><span>Tamerhm · 2024 · CC BY-SA 4.0</span></div></div>
+        <div class="compare-copy">
+          <p data-en="These are city-scale views rather than a matched camera position. Bethlehem is in the occupied West Bank. The present image documents continuity of homes, churches and dense urban life; regional movement restrictions are documented separately in OCHA’s 2026 access reporting."
+             data-ar="هاتان صورتان على مستوى المدينة وليستا من موضع كاميرا متطابق. تقع بيت لحم في الضفة الغربية المحتلة. توثق الصورة الحالية استمرارية البيوت والكنائس والحياة الحضرية الكثيفة، بينما توثق تقارير الأمم المتحدة لعام 2026 قيود الحركة الإقليمية بصورة منفصلة.">
+            These are city-scale views rather than a matched camera position. Bethlehem is in the occupied West Bank. The present image documents continuity of homes, churches and dense urban life; regional movement restrictions are documented separately in OCHA’s 2026 access reporting.
+          </p>
+          <div class="compare-links">
+            <a href="https://commons.wikimedia.org/wiki/File:Bethlehem,_Palestine.jpg" target="_blank" rel="noopener noreferrer">Before source ↗</a>
+            <a href="https://commons.wikimedia.org/wiki/File:%D8%A8%D9%8A%D8%AA_%D9%84%D8%AD%D9%85_%D9%88%D8%A7%D8%AF_%D9%85%D8%B9%D8%A7%D9%84%D9%8A.jpg" target="_blank" rel="noopener noreferrer">Later source ↗</a>
+            <a href="https://www.ochaopt.org/content/movement-and-access-west-bank-april-2026" target="_blank" rel="noopener noreferrer">OCHA 2026 context ↗</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="compare-card" data-compare>
+        <div class="compare-head">
+          <div class="compare-head-top"><h3 class="compare-place">Hebron / Al-Khalil · الخليل</h3><span class="compare-status">Context Jul 2026</span></div>
+          <p data-en="An ancient living city where historic urban fabric now intersects directly with checkpoints, settlement infrastructure and access restrictions."
+             data-ar="مدينة عريقة وحية يتقاطع نسيجها العمراني التاريخي اليوم مباشرة مع الحواجز والبنية الاستيطانية وقيود الوصول.">
+            An ancient living city where historic urban fabric now intersects directly with checkpoints, settlement infrastructure and access restrictions.
+          </p>
+        </div>
+        <div class="compare-stage">
+          <img loading="lazy" decoding="async" src="https://commons.wikimedia.org/wiki/Special:Redirect/file/Hebron%20LOC%20matpc.09259.jpg" alt="Historical photograph of Hebron from the Matson Collection">
+          <img class="compare-after" loading="lazy" decoding="async" src="https://commons.wikimedia.org/wiki/Special:Redirect/file/The%20old%20city%20-%20Hebron%20-%20Palestine.jpg" alt="Old City of Hebron in January 2022">
+          <span class="compare-label before">1898–1946</span><span class="compare-label after">2022</span>
+          <span class="compare-divider" aria-hidden="true"></span>
+          <input class="compare-range" type="range" min="0" max="100" value="50" aria-label="Compare historical and later Hebron images">
+        </div>
+        <div class="compare-meta"><div><strong>Before</strong><span>Matson Collection · Public domain / no known restrictions</span></div><div><strong>Later view</strong><span>مي هشلمون · 2022 · CC BY-SA 4.0</span></div></div>
+        <div class="compare-copy">
+          <p data-en="UNESCO describes the Old Town as a living historic city and states that Israeli settlement activity and mobility/access restrictions threaten the site. OCHA reported in July 2026 that a newly installed gate near the Old City further restricted access for about 130 Palestinian families."
+             data-ar="تصف اليونسكو البلدة القديمة بأنها مدينة تاريخية حيّة، وتذكر أن النشاط الاستيطاني الإسرائيلي وقيود الحركة والوصول تهدد الموقع. وأفاد مكتب الأمم المتحدة لتنسيق الشؤون الإنسانية في يوليو 2026 بأن بوابة جديدة قرب البلدة القديمة زادت القيود على وصول نحو 130 عائلة فلسطينية.">
+            UNESCO describes the Old Town as a living historic city and states that Israeli settlement activity and mobility/access restrictions threaten the site. OCHA reported in July 2026 that a newly installed gate near the Old City further restricted access for about 130 Palestinian families.
+          </p>
+          <div class="compare-links">
+            <a href="https://commons.wikimedia.org/wiki/File:Hebron_LOC_matpc.09259.jpg" target="_blank" rel="noopener noreferrer">Before source ↗</a>
+            <a href="https://commons.wikimedia.org/wiki/File:The_old_city_-_Hebron_-_Palestine.jpg" target="_blank" rel="noopener noreferrer">Later source ↗</a>
+            <a href="https://www.ochaopt.org/content/humanitarian-situation-report-10-july-2026" target="_blank" rel="noopener noreferrer">OCHA Jul 2026 ↗</a>
+            <a href="https://whc.unesco.org/en/list/1565" target="_blank" rel="noopener noreferrer">UNESCO Hebron ↗</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="compare-card" data-compare>
+        <div class="compare-head">
+          <div class="compare-head-top"><h3 class="compare-place">Gaza · غزة</h3><span class="compare-status">Photo Jan 2026</span></div>
+          <p data-en="A comparison across more than a century, with a current image that documents severe destruction near a children’s hospital in western Gaza."
+             data-ar="مقارنة عبر أكثر من قرن، مع صورة حالية توثق دماراً شديداً قرب مستشفى للأطفال في غرب غزة.">
+            A comparison across more than a century, with a current image that documents severe destruction near a children’s hospital in western Gaza.
+          </p>
+        </div>
+        <div class="compare-stage">
+          <img loading="lazy" decoding="async" src="https://commons.wikimedia.org/wiki/Special:Redirect/file/Southern%20Palestine.%20Gaza%2C%20from%20the%20east.%20LOC%20matpc.01377.jpg" alt="Gaza viewed from the east around 1900">
+          <img class="compare-after" loading="lazy" decoding="async" src="https://commons.wikimedia.org/wiki/Special:Redirect/file/Destroyed%20infrastructure%20in%20the%20Gaza%20Strip.jpg" alt="Destroyed infrastructure near Al-Rantisi Children's Hospital in Gaza on 1 January 2026">
+          <span class="compare-label before">c. 1900</span><span class="compare-label after">Jan 2026</span>
+          <span class="compare-divider" aria-hidden="true"></span>
+          <input class="compare-range" type="range" min="0" max="100" value="50" aria-label="Compare historical and 2026 Gaza images">
+        </div>
+        <div class="compare-meta"><div><strong>Before</strong><span>Matson Collection / Library of Congress · Public domain</span></div><div><strong>2026</strong><span>Yousef Alnono · 1 Jan 2026 · CC BY 4.0</span></div></div>
+        <div class="compare-copy">
+          <p data-en="The current photograph shows the street in front of Al-Rantisi Children’s Hospital in western Gaza. OCHA reported in August 2026 that UNOSAT assessed about 82% of structures in the Gaza Strip as damaged as of 16 June 2026; by October, OCHA continued to describe widespread destruction, displacement and unsafe buildings."
+             data-ar="تُظهر الصورة الحالية الشارع أمام مستشفى الرنتيسي للأطفال في غرب غزة. وأفاد مكتب الأمم المتحدة لتنسيق الشؤون الإنسانية في أغسطس 2026 بأن تقييم يونوسات وجد أن نحو 82٪ من مباني قطاع غزة كانت قد تضررت حتى 16 يونيو 2026؛ وفي أكتوبر واصل المكتب وصف الدمار الواسع والنزوح والمباني غير الآمنة.">
+            The current photograph shows the street in front of Al-Rantisi Children’s Hospital in western Gaza. OCHA reported in August 2026 that UNOSAT assessed about 82% of structures in the Gaza Strip as damaged as of 16 June 2026; by October, OCHA continued to describe widespread destruction, displacement and unsafe buildings.
+          </p>
+          <div class="compare-links">
+            <a href="https://commons.wikimedia.org/wiki/File:Southern_Palestine._Gaza,_from_the_east._LOC_matpc.01377.jpg" target="_blank" rel="noopener noreferrer">Before source ↗</a>
+            <a href="https://commons.wikimedia.org/wiki/File:Destroyed_infrastructure_in_the_Gaza_Strip.jpg" target="_blank" rel="noopener noreferrer">2026 image source ↗</a>
+            <a href="https://www.ochaopt.org/content/humanitarian-situation-report-7-august-2026" target="_blank" rel="noopener noreferrer">OCHA damage assessment ↗</a>
+            <a href="https://www.ochaopt.org/content/humanitarian-situation-report-15-october-2026" target="_blank" rel="noopener noreferrer">OCHA Oct 2026 ↗</a>
+          </div>
+        </div>
+      </article>
+
+    </div>
+
+    <div class="compare-note">
+      <strong data-en="Reading the images responsibly" data-ar="قراءة الصور بمسؤولية">Reading the images responsibly</strong>
+      <span data-en="A historical and a recent photograph rarely share the exact camera position. These cards compare place, built environment and historical condition—not pixel-for-pixel change unless explicitly stated. Every image links to its source and license."
+            data-ar="نادراً ما تتشارك الصورة التاريخية والصورة الحديثة موضع الكاميرا نفسه. تقارن هذه البطاقات المكان والبيئة المبنية والحالة التاريخية، ولا تدّعي تطابقاً بصرياً دقيقاً إلا إذا ذُكر ذلك صراحة. ترتبط كل صورة بمصدرها وترخيصها.">
+        A historical and a recent photograph rarely share the exact camera position. These cards compare place, built environment and historical condition—not pixel-for-pixel change unless explicitly stated. Every image links to its source and license.
+      </span>
+    </div>
+  </div>
+</section>
+
 <section class="section" id="archives">
   <div class="wrap">
     <div class="section-head">
@@ -1082,6 +1362,29 @@ html[dir="rtl"] .menu-panel{transform:translateX(-105%)}
   setTickerPaused(paused);
   tickerPause.addEventListener("click",function(){
     setTickerPaused(ticker.dataset.paused !== "true");
+  });
+
+  document.querySelectorAll("[data-compare]").forEach(function(card){
+    var range = card.querySelector(".compare-range");
+    var after = card.querySelector(".compare-after");
+    var divider = card.querySelector(".compare-divider");
+    if(!range || !after || !divider) return;
+    function renderCompare(){
+      var value = Number(range.value);
+      if(html.dir === "rtl"){
+        after.style.clipPath = "inset(0 " + (100 - value) + "% 0 0)";
+        divider.style.right = value + "%";
+        divider.style.left = "auto";
+      }else{
+        after.style.clipPath = "inset(0 0 0 " + value + "%)";
+        divider.style.left = value + "%";
+        divider.style.right = "auto";
+      }
+    }
+    range.addEventListener("input",renderCompare);
+    range.addEventListener("change",renderCompare);
+    renderCompare();
+    new MutationObserver(renderCompare).observe(html,{attributes:true,attributeFilter:["dir"]});
   });
 
   applyLanguage(currentLanguage());
