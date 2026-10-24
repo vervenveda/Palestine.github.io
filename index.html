@@ -65,9 +65,10 @@ img,svg{display:block;max-width:100%}
 }
 .skip-link:focus{top:12px}
 .tatreez-line{
-  height:7px;
+  height:9px;
   background:
-    linear-gradient(45deg,transparent 25%,var(--red) 25% 50%,transparent 50% 75%,var(--red) 75%) 0 0/20px 20px,
+    linear-gradient(45deg,transparent 37%,var(--red) 37% 50%,transparent 50% 87%,var(--red) 87%) 0 0/18px 18px,
+    linear-gradient(-45deg,transparent 37%,#f2ead8 37% 50%,transparent 50% 87%,var(--olive-3) 87%) 9px 0/18px 18px,
     var(--black);
 }
 #vnvTicker{
@@ -264,7 +265,14 @@ img,svg{display:block;max-width:100%}
 .art-caption a{color:#f5ddb0}
 html[dir="rtl"] .art-caption{border-left:0;border-right:4px solid var(--red)}
 .section{padding:82px 0}
-.section.stone{background:var(--cream)}
+.section.stone{
+  background-color:var(--cream);
+  background-image:
+    linear-gradient(#9f8d7020 1px,transparent 1px),
+    linear-gradient(90deg,#9f8d7014 1px,transparent 1px);
+  background-size:68px 34px;
+  background-position:-1px -1px
+}
 .section.dark{background:var(--black);color:#ece7dc}
 .section-head{max-width:780px;margin-bottom:34px}
 .kicker{color:var(--red)}
@@ -307,8 +315,11 @@ html[dir="rtl"] .land-strip div{border-right:0;border-left:1px solid #ffffff22}
 .city-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px}
 .city{
   position:relative;min-height:280px;padding:27px;
-  background:#fff;border:1px solid var(--line);overflow:hidden
+  background:#fff;border:1px solid var(--line);border-top:4px solid var(--stone-2);overflow:hidden
 }
+.city:nth-child(3n+1){border-top-color:var(--olive-3)}
+.city:nth-child(3n+2){border-top-color:var(--red)}
+.city:nth-child(3n){border-top-color:var(--gold)}
 .city:after{
   content:"";position:absolute;width:150px;height:150px;right:-62px;bottom:-62px;
   border:1px solid #a52d3533;transform:rotate(45deg)
@@ -325,6 +336,12 @@ html[dir="rtl"] .land-strip div{border-right:0;border-left:1px solid #ffffff22}
   content:"";position:absolute;left:0;top:0;width:7px;height:100%;
   background:linear-gradient(var(--red) 0 33%,#f0e7d5 33% 66%,var(--olive-3) 66%)
 }
+.culture-card:after{
+  content:"";position:absolute;right:16px;top:16px;width:14px;height:14px;
+  border:1px solid #e8cfa088;transform:rotate(45deg);
+  box-shadow:0 0 0 4px #a52d3520
+}
+html[dir="rtl"] .culture-card:after{right:auto;left:16px}
 html[dir="rtl"] .culture-card:before{left:auto;right:0}
 .culture-card .icon{font-size:1.75rem}
 .culture-card h3{margin:12px 0 8px;color:#f5efe2;font:500 1.45rem/1.25 var(--display)}
@@ -1619,6 +1636,7 @@ html[dir="rtl"] .menu-panel{transform:translateX(-105%)}
     <div>
       <p><a href="./SOURCES.md" data-en="Sources" data-ar="المصادر">Sources</a> · <a href="./CITATION_POLICY.md" data-en="Citation policy" data-ar="سياسة الاستشهاد">Citation policy</a> · <a href="./CONTRIBUTING.md" data-en="Corrections" data-ar="التصحيحات">Corrections</a></p>
       <p data-en="Respectful history · No collective blame · Evidence near the claim" data-ar="تاريخ باحترام · بلا لوم جماعي · الدليل قريب من الادعاء">Respectful history · No collective blame · Evidence near the claim</p>
+      <p><a href="https://vervenveda.com/Saudi_Arabia.github.io/" data-en="Saudi Arabia" data-ar="المملكة العربية السعودية">Saudi Arabia</a> · <a href="https://vervenveda.com/Iran.github.io/" data-en="Iran" data-ar="إيران">Iran</a> · <a href="https://vervenveda.com/" data-en="World & Diplomacy" data-ar="العالم والدبلوماسية">World & Diplomacy</a></p>
     </div>
   </div>
 </footer>
@@ -1644,7 +1662,8 @@ html[dir="rtl"] .menu-panel{transform:translateX(-105%)}
       <a href="https://vervenveda.com/Khaemenes_Academy.github.io/" target="_blank" rel="noopener noreferrer"
          data-en="Free Khaemenes Academy ↗" data-ar="أكاديمية خايمينيس المجانية ↗">Free Khaemenes Academy ↗</a>
       <a href="https://vervenveda.com/" data-en="Verve N Veda Home ↗" data-ar="العودة إلى Verve N Veda ↗">Verve N Veda Home ↗</a>
-      <a href="https://vervenveda.github.io/Saudi_Arabia.github.io/" data-en="Saudi Arabia guide ↗" data-ar="دليل المملكة العربية السعودية ↗">Saudi Arabia guide ↗</a>
+      <a href="https://vervenveda.com/Saudi_Arabia.github.io/" data-en="Saudi Arabia guide ↗" data-ar="دليل المملكة العربية السعودية ↗">Saudi Arabia guide ↗</a>
+      <a href="https://vervenveda.com/Iran.github.io/" data-en="Iran cultural guide ↗" data-ar="دليل إيران الثقافي ↗">Iran cultural guide ↗</a>
     </nav>
     <div class="menu-mini"
          data-en="Editorial principle: distinguish geography, population, identity, political authority and state sovereignty. Preserve evidence and explain disagreement."
