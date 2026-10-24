@@ -14,4 +14,9 @@
 - Added 12 new sourced images with explicit dates and rights: public-domain Matson/Australian War Memorial material and Creative Commons contemporary photographs.
 - Added 2026 occupation-context sourcing for Battir and Ramallah while explicitly distinguishing Akka/Acre, Haifa, Lydd/Lod, and Lifta from the occupied West Bank/Gaza legal framing.
 - Added UNESCO 2026 World Heritage in Danger context for Battir and a village-memory case study for Lifta.
+- Added a dedicated bilingual **Gaza · Memory, Refuge, Survival, Childhood** section.
+- Added a rights-cleared photograph of children in Gaza by Hla.bashbash (27 February 2025, CC BY 4.0) with visible attribution and source/license link.
+- Added a modern Gaza timeline covering 1948 refugee displacement, 1967 occupation, the 2005 withdrawal/effective-control legal context, the blockade intensified in 2007, and 2023–26 war damage and displacement.
+- Added a child-centered recovery panel based on UNICEF's 2026 **The Gaza We Want** project, emphasizing education, play, rebuilding, dignity and hope.
+- Added an editorial note preventing collective blame and requiring responsibility to be tied to documented actors and decisions.
 
