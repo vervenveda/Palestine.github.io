@@ -31,4 +31,11 @@
 - Added a prominent bilingual **Free Khaemenes Academy** doorway to the Palestine landing page.
 - Added the Academy CTA directly in the hero, a full-width education bridge immediately below the hero, and an Academy link inside the ecosystem drawer.
 - All Academy links point to the verified canonical front desk at https://vervenveda.com/Khaemenes_Academy.github.io/.
+- Pre-audited the Palestine-to-Khaemenes learning pathway against the Academy front desk, High School Social Studies hub, Shared Academic Evidence Convention v1, and the Academy evidence-authority security pre-audit.
+- Confirmed the existing Palestine page already had a prominent **Free Khaemenes Academy** doorway; preserved it rather than duplicating the feature.
+- Added `learning/palestine-research-notebook.html`, a bilingual Khaemenes Academy Academic Evidence Convention v1 packet for Palestine research.
+- The notebook includes printable identity, research question/purpose, source citations and limitations, vocabulary/language connections, subject connections, evidence/observation, claim/reasoning/limitations, reflection/next steps, and offline parent/teacher review.
+- Added explicit **Print / Save PDF**, **Export Evidence JSON**, **Export Text Record**, and **Clear Notebook** controls. No automatic persistence, upload, synchronization, network writes, grade mutation, or private teacher-sharing path is present.
+- Connected the Palestine hero and Academy bridge to the notebook, the free Khaemenes Academy front desk, and the verified High School Social Studies hub.
+- Regression PASS: no duplicate IDs, broken internal anchors, malformed CSS units, or unsafe new-tab links; JavaScript syntax passes; Academy and Social Studies destinations exist.
 
