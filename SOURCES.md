@@ -50,6 +50,11 @@ For every source, capture:
 6. Whether it is a primary source, later scholarly interpretation, official legal record, or contemporary reporting.
 7. Limitations, disagreement, or relevant correction notices.
 
+## Landing-page hero photograph
+
+- **Olive harvesting in Palestine:** Frank and Frances Carpenter Collection, Library of Congress, *Palestine-Picking olives LCCN00651202.jpg*, dated between 1880 and 1922, public domain: https://commons.wikimedia.org/wiki/File:Palestine-Picking_olives_LCCN00651202.jpg
+- The landing page uses this documentary photograph in place of the former illustrative SVG. It is presented as a historical olive-harvesting scene, not as a reconstruction of a specific village or event.
+
 ## Then / Now image register
 
 The landing-page comparison gallery uses only images whose source and reuse status were checked before inclusion. Image dates are kept separate from the page's 2026 context notes.
@@ -92,10 +97,10 @@ A "Then / Now" pair does not imply that both photographs were taken from the sam
 - **Before:** Matson Collection / Library of Congress, *Palestine disturbances 1936. Passenger train at Bittir, showing military escort*, 1936, public domain: https://commons.wikimedia.org/wiki/File:Palestine_disturbances_1936._Passenger_train_at_Bittir,_showing_military_escort_LOC_matpc.18110.jpg
 - **Later:** Hagai Agmon-Snir, *BattirVillageJan212023.jpg*, 22 January 2023, CC BY-SA 4.0: https://commons.wikimedia.org/wiki/File:BattirVillageJan212023.jpg
 - **2026 heritage status:** UNESCO Decision 48 COM 7A.11 retains Battir on the List of World Heritage in Danger: https://whc.unesco.org/en/decisions/9003/
-- **Conservation evidence:** UNESCO state-of-conservation material documents settlement-outpost expansion, damage to agricultural land and farmer-access restrictions in 2024–25: https://whc.unesco.org/document/224529
+- **Conservation evidence:** The World Heritage Committee's 2026 decision records concern about reported settlements, restrictions on farmers and damage to agricultural areas. The detailed 2025 state-of-conservation report was submitted by the State of Palestine and describes a settlement outpost, agricultural-land damage and blocked farmer access: https://whc.unesco.org/document/224529
 
 ### Ramallah
-- **Before:** Matson Collection / Library of Congress, *Northern views. Street at Ramallah*, 1900, public domain / no known restrictions: https://commons.wikimedia.org/wiki/File:Northern_views._Street_at_Ramallah_LOC_matpc.01048.jpg
+- **Before:** American Colony Photo Department / Matson Collection, Library of Congress, *Northern views. Street at Ramallah*, approximately 1900–1920, no known restrictions: https://commons.wikimedia.org/wiki/File:Northern_views._Street_at_Ramallah_LOC_matpc.01048.jpg
 - **Later:** أمين, *Ramallah 2024.jpg*, 8 September 2024, CC BY-SA 4.0: https://commons.wikimedia.org/wiki/File:Ramallah_2024.jpg
 - **2026 context:** OCHA, *Humanitarian Situation Report | 2 October 2026*: https://www.ochaopt.org/content/humanitarian-situation-report-2-october-2026
 
@@ -115,7 +120,7 @@ A "Then / Now" pair does not imply that both photographs were taken from the sam
 ### Lifta
 - **Before:** Australian War Memorial accession B02386, *Lifta, Palestine. A view of the village of Lifta, near Jerusalem*, c. 1918, public domain: https://www.awm.gov.au/collection/B02386
 - **Later:** Bukvoed, *Lifta-40920.jpg*, 20 July 2024, CC BY 4.0: https://commons.wikimedia.org/wiki/File:Lifta-40920.jpg
-- **Heritage context:** UNESCO tentative-list record, *Liftah (Mey Naftoah) – Traditional mountain village*: https://whc.unesco.org/en/tentativelists/6061/
+- **Heritage context:** Israel's 2015 UNESCO Tentative List submission, *Liftah (Mey Naftoah) – Traditional mountain village*. UNESCO notes that Tentative List content is submitted by the State Party; the record describes Lifta as an abandoned Palestinian village and discusses the survival of its traditional fabric after 1948: https://whc.unesco.org/en/tentativelists/6061/
 
 ## Gaza history and childhood feature
 
