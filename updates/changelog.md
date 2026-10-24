@@ -19,4 +19,9 @@
 - Added a modern Gaza timeline covering 1948 refugee displacement, 1967 occupation, the 2005 withdrawal/effective-control legal context, the blockade intensified in 2007, and 2023–26 war damage and displacement.
 - Added a child-centered recovery panel based on UNICEF's 2026 **The Gaza We Want** project, emphasizing education, play, rebuilding, dignity and hope.
 - Added an editorial note preventing collective blame and requiring responsibility to be tied to documented actors and decisions.
+- Completed a documentary/factual re-audit of the Palestine landing page.
+- Replaced the only illustrative hero SVG with a verified public-domain Library of Congress photograph of olive harvesting in Palestine (dated 1880–1922).
+- Corrected the Ramallah archival image date from an over-precise 1900 to the Library of Congress range, approximately 1900–1920.
+- Clarified Battir sourcing by separating the World Heritage Committee's 2026 decision from details contained in the State of Palestine's 2025 conservation report.
+- Clarified that the Lifta Tentative List description is a 2015 State Party submission by Israel, rather than presenting the text as an independent UNESCO factual finding.
 
