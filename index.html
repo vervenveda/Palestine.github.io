@@ -200,13 +200,13 @@ img,svg{display:block;max-width:100%}
   display:grid;place-items:center
 }
 .art-card{
-  width:min(100%,480px);aspect-ratio:4/5;
+  width:min(100%,480px);aspect-ratio:4/5;margin:0;
   border:1px solid #ffffff38;
   background:#f4ecd9;
   box-shadow:0 28px 70px #07170e66;
   position:relative;overflow:hidden
 }
-.art-card svg{width:100%;height:100%}
+.art-card img{width:100%;height:100%;object-fit:cover}
 .art-caption{
   position:absolute;left:20px;right:20px;bottom:19px;
   padding:12px 14px;background:#12261dcc;color:#fff;
@@ -214,6 +214,9 @@ img,svg{display:block;max-width:100%}
   backdrop-filter:blur(5px);
   font-size:.76rem
 }
+.art-caption strong{display:block;color:#f5ddb0;margin-bottom:4px}
+.art-caption span{display:block}
+.art-caption a{color:#f5ddb0}
 html[dir="rtl"] .art-caption{border-left:0;border-right:4px solid var(--red)}
 .section{padding:82px 0}
 .section.stone{background:var(--cream)}
@@ -595,53 +598,18 @@ html[dir="rtl"] .menu-panel{transform:translateX(-105%)}
       </div>
     </div>
 
-    <div class="hero-art" aria-label="Illustrated olive terraces and tatreez-inspired geometry">
-      <div class="art-card">
-        <svg viewBox="0 0 480 600" role="img" aria-labelledby="artTitle artDesc">
-          <title id="artTitle">Olive terraces and geometric textile motifs</title>
-          <desc id="artDesc">A stylized illustration inspired by limestone terraces, olive trees, village architecture and Palestinian embroidery geometry.</desc>
-          <rect width="480" height="600" fill="#f5eddc"/>
-          <circle cx="365" cy="112" r="62" fill="#d8bd78"/>
-          <path d="M0 255 C95 210 170 223 250 190 C330 156 408 160 480 145 V600 H0Z" fill="#c8c49a"/>
-          <path d="M0 320 C90 285 160 300 250 266 C347 229 410 248 480 220 V600 H0Z" fill="#8c9867"/>
-          <path d="M0 382 C102 350 172 363 269 329 C350 301 420 314 480 294 V600 H0Z" fill="#65764f"/>
-          <path d="M0 443 C90 417 173 428 273 397 C364 369 421 382 480 366 V600 H0Z" fill="#415d3d"/>
-          <g fill="none" stroke="#f1e5cb" stroke-width="6" opacity=".9">
-            <path d="M0 323 C93 287 163 303 251 268 C344 232 409 248 480 220"/>
-            <path d="M0 384 C103 351 174 365 270 331 C349 303 418 314 480 295"/>
-            <path d="M0 446 C94 419 174 430 274 399 C363 371 421 383 480 368"/>
-          </g>
-          <g transform="translate(83 185)">
-            <rect x="-5" y="67" width="10" height="69" rx="3" fill="#6b4c2d"/>
-            <path d="M0 77 C-48 46 -51 5 -8 7 C-39 -33 17 -52 29 -11 C55 -41 95 -9 67 22 C105 27 98 73 56 76 C40 111 5 112 0 77Z" fill="#314d32"/>
-            <g fill="#8b934e"><circle cx="-17" cy="35" r="5"/><circle cx="24" cy="24" r="5"/><circle cx="54" cy="50" r="5"/><circle cx="17" cy="72" r="5"/></g>
-          </g>
-          <g transform="translate(330 244)">
-            <rect x="-4" y="55" width="8" height="58" rx="3" fill="#6b4c2d"/>
-            <path d="M0 65 C-40 38 -37 2 -4 7 C-27 -24 21 -38 27 -8 C51 -31 79 -3 58 23 C88 28 81 61 50 64 C35 91 9 92 0 65Z" fill="#2d4a30"/>
-          </g>
-          <g fill="#e9deca" stroke="#8f7f65" stroke-width="2">
-            <rect x="255" y="208" width="54" height="41"/>
-            <rect x="309" y="193" width="49" height="56"/>
-            <rect x="358" y="215" width="64" height="34"/>
-          </g>
-          <g fill="#a52d35" opacity=".95">
-            <path d="M35 43 l12 -12 12 12 -12 12z"/><path d="M61 43 l12 -12 12 12 -12 12z"/>
-            <path d="M48 56 l12 -12 12 12 -12 12z"/><path d="M74 56 l12 -12 12 12 -12 12z"/>
-            <path d="M394 506 l12 -12 12 12 -12 12z"/><path d="M420 506 l12 -12 12 12 -12 12z"/>
-            <path d="M407 519 l12 -12 12 12 -12 12z"/><path d="M433 519 l12 -12 12 12 -12 12z"/>
-          </g>
-          <g fill="#171917">
-            <rect x="33" y="82" width="7" height="7"/><rect x="47" y="82" width="7" height="7"/><rect x="40" y="75" width="7" height="7"/>
-            <rect x="427" y="468" width="7" height="7"/><rect x="441" y="468" width="7" height="7"/><rect x="434" y="461" width="7" height="7"/>
-          </g>
-        </svg>
-        <div class="art-caption"
-             data-en="A visual vocabulary drawn from olive terraces, limestone villages and geometric embroidery—not a reconstruction of one specific historical site."
-             data-ar="مفردات بصرية مستوحاة من مدرجات الزيتون والقرى الحجرية والتطريز الهندسي، وليست إعادة بناء لموقع تاريخي محدد.">
-          A visual vocabulary drawn from olive terraces, limestone villages and geometric embroidery—not a reconstruction of one specific historical site.
-        </div>
-      </div>
+    <div class="hero-art" aria-label="Historical photograph of olive harvesting in Palestine">
+      <figure class="art-card">
+        <img loading="eager" decoding="async"
+             src="https://commons.wikimedia.org/wiki/Special:Redirect/file/Palestine-Picking%20olives%20LCCN00651202.jpg"
+             alt="Historical photograph of people harvesting olives in Palestine, between 1880 and 1922">
+        <figcaption class="art-caption">
+          <strong data-en="Olive harvesting in Palestine · 1880–1922" data-ar="قطف الزيتون في فلسطين · 1880–1922">Olive harvesting in Palestine · 1880–1922</strong>
+          <span data-en="Frank and Frances Carpenter Collection, Library of Congress · Public domain."
+                data-ar="مجموعة فرانك وفرانسيس كاربنتر، مكتبة الكونغرس · ملكية عامة.">Frank and Frances Carpenter Collection, Library of Congress · Public domain.</span>
+          <div><a href="https://commons.wikimedia.org/wiki/File:Palestine-Picking_olives_LCCN00651202.jpg" target="_blank" rel="noopener noreferrer">Source & rights ↗</a></div>
+        </figcaption>
+      </figure>
     </div>
   </div>
 </section>
@@ -1277,9 +1245,9 @@ html[dir="rtl"] .menu-panel{transform:translateX(-105%)}
         </div>
         <div class="compare-meta"><div><strong>Before</strong><span>Matson Collection / Library of Congress · Public domain</span></div><div><strong>Later view</strong><span>Hagai Agmon-Snir · 22 Jan 2023 · CC BY-SA 4.0</span></div></div>
         <div class="compare-copy">
-          <p data-en="The historical image records Battir's railway during the 1936 revolt; the later view shows the village and surrounding cultural landscape. UNESCO kept Battir on the List of World Heritage in Danger in 2026. Its conservation reporting documents settlement-outpost expansion, agricultural-land damage and restrictions on Palestinian farmers' access during 2024–25."
-             data-ar="توثق الصورة التاريخية سكة حديد بتير خلال ثورة 1936، بينما تُظهر الصورة اللاحقة البلدة والمشهد الثقافي المحيط بها. أبقت اليونسكو بتير على قائمة التراث العالمي المعرّض للخطر في 2026، وتوثق تقارير الحفظ توسع بؤرة استيطانية وأضراراً بالأراضي الزراعية وقيوداً على وصول المزارعين الفلسطينيين خلال 2024–2025.">
-            The historical image records Battir's railway during the 1936 revolt; the later view shows the village and surrounding cultural landscape. UNESCO kept Battir on the List of World Heritage in Danger in 2026. Its conservation reporting documents settlement-outpost expansion, agricultural-land damage and restrictions on Palestinian farmers' access during 2024–25.
+          <p data-en="The historical image records Battir's railway during the 1936 revolt; the later view shows the village and surrounding cultural landscape. The World Heritage Committee kept Battir on the List of World Heritage in Danger in 2026 and expressed concern about reported settlements, restrictions on farmers and damage to agricultural areas. The State Party's 2025 conservation report provides additional details about a settlement outpost, agricultural-land damage and blocked farmer access."
+             data-ar="توثق الصورة التاريخية سكة حديد بتير خلال ثورة 1936، بينما تُظهر الصورة اللاحقة البلدة والمشهد الثقافي المحيط بها. أبقت لجنة التراث العالمي بتير على قائمة التراث العالمي المعرّض للخطر في 2026 وأعربت عن القلق بشأن تقارير عن المستوطنات وقيود على المزارعين وأضرار بالمناطق الزراعية. ويقدم تقرير حالة الحفظ الذي قدمته دولة فلسطين في 2025 تفاصيل إضافية عن بؤرة استيطانية وأضرار بالأراضي الزراعية ومنع وصول المزارعين.">
+            The historical image records Battir's railway during the 1936 revolt; the later view shows the village and surrounding cultural landscape. The World Heritage Committee kept Battir on the List of World Heritage in Danger in 2026 and expressed concern about reported settlements, restrictions on farmers and damage to agricultural areas. The State Party's 2025 conservation report provides additional details about a settlement outpost, agricultural-land damage and blocked farmer access.
           </p>
           <div class="compare-links">
             <a href="https://commons.wikimedia.org/wiki/File:Palestine_disturbances_1936._Passenger_train_at_Bittir,_showing_military_escort_LOC_matpc.18110.jpg" target="_blank" rel="noopener noreferrer">Before source ↗</a>
@@ -1299,17 +1267,17 @@ html[dir="rtl"] .menu-panel{transform:translateX(-105%)}
           </p>
         </div>
         <div class="compare-stage">
-          <img loading="lazy" decoding="async" src="https://commons.wikimedia.org/wiki/Special:Redirect/file/Northern%20views.%20Street%20at%20Ramallah%20LOC%20matpc.01048.jpg" alt="Street in Ramallah in 1900">
+          <img loading="lazy" decoding="async" src="https://commons.wikimedia.org/wiki/Special:Redirect/file/Northern%20views.%20Street%20at%20Ramallah%20LOC%20matpc.01048.jpg" alt="Street in Ramallah, approximately 1900–1920">
           <img class="compare-after" loading="lazy" decoding="async" src="https://commons.wikimedia.org/wiki/Special:Redirect/file/Ramallah%202024.jpg" alt="Residential buildings in Ramallah in September 2024">
-          <span class="compare-label before">1900</span><span class="compare-label after">2024</span>
+          <span class="compare-label before">c. 1900–1920</span><span class="compare-label after">2024</span>
           <span class="compare-divider" aria-hidden="true"></span>
           <input class="compare-range" type="range" min="0" max="100" value="50" aria-label="Compare historical and later Ramallah images">
         </div>
         <div class="compare-meta"><div><strong>Before</strong><span>Matson Collection / Library of Congress · Public domain</span></div><div><strong>Later view</strong><span>أمين · 8 Sep 2024 · CC BY-SA 4.0</span></div></div>
         <div class="compare-copy">
-          <p data-en="The images are not a matched viewpoint: one records a Ramallah street in 1900, the other modern residential growth. OCHA reported in October 2026 that Israeli forces tightened checkpoints, road gates and entrances across Ramallah governorate after an attack near Beit 'Ur al Fauqa, severely restricting movement for thousands of Palestinians."
-             data-ar="ليست الصورتان من زاوية تصوير متطابقة: إحداهما توثق شارعاً في رام الله عام 1900، والأخرى نمو الأحياء السكنية الحديثة. أفاد مكتب الأمم المتحدة لتنسيق الشؤون الإنسانية في أكتوبر 2026 بأن القوات الإسرائيلية شددت الحواجز والبوابات ومداخل التجمعات في محافظة رام الله بعد هجوم قرب بيت عور الفوقا، ما قيّد حركة آلاف الفلسطينيين بشدة.">
-            The images are not a matched viewpoint: one records a Ramallah street in 1900, the other modern residential growth. OCHA reported in October 2026 that Israeli forces tightened checkpoints, road gates and entrances across Ramallah governorate after an attack near Beit 'Ur al Fauqa, severely restricting movement for thousands of Palestinians.
+          <p data-en="The images are not a matched viewpoint: one records a Ramallah street from approximately 1900–1920, the other modern residential growth. OCHA reported in October 2026 that Israeli forces tightened checkpoints, road gates and entrances across Ramallah governorate after an attack near Beit 'Ur al Fauqa, severely restricting movement for thousands of Palestinians."
+             data-ar="ليست الصورتان من زاوية تصوير متطابقة: إحداهما توثق شارعاً في رام الله من نحو 1900 إلى 1920، والأخرى نمو الأحياء السكنية الحديثة. أفاد مكتب الأمم المتحدة لتنسيق الشؤون الإنسانية في أكتوبر 2026 بأن القوات الإسرائيلية شددت الحواجز والبوابات ومداخل التجمعات في محافظة رام الله بعد هجوم قرب بيت عور الفوقا، ما قيّد حركة آلاف الفلسطينيين بشدة.">
+            The images are not a matched viewpoint: one records a Ramallah street from approximately 1900–1920, the other modern residential growth. OCHA reported in October 2026 that Israeli forces tightened checkpoints, road gates and entrances across Ramallah governorate after an attack near Beit 'Ur al Fauqa, severely restricting movement for thousands of Palestinians.
           </p>
           <div class="compare-links">
             <a href="https://commons.wikimedia.org/wiki/File:Northern_views._Street_at_Ramallah_LOC_matpc.01048.jpg" target="_blank" rel="noopener noreferrer">Before source ↗</a>
@@ -1420,9 +1388,9 @@ html[dir="rtl"] .menu-panel{transform:translateX(-105%)}
         </div>
         <div class="compare-meta"><div><strong>Before</strong><span>Australian War Memorial B02386 · Public domain</span></div><div><strong>Later view</strong><span>Bukvoed · 20 Jul 2024 · CC BY 4.0</span></div></div>
         <div class="compare-copy">
-          <p data-en="The Australian War Memorial photograph shows the inhabited village around 1918. The later image shows surviving stone fabric and landscape. UNESCO's tentative-list description calls Lifta an intact historic Palestinian village preserved in unusual authenticity because it was abandoned in 1948 and was not subsequently reoccupied as a normal village."
-             data-ar="تُظهر صورة النصب التذكاري للحرب الأسترالي القرية وهي مأهولة نحو عام 1918. وتُظهر الصورة اللاحقة النسيج الحجري والمشهد الباقيين. يصف ملف اليونسكو التمهيدي لفتا بأنها قرية فلسطينية تاريخية سليمة بدرجة استثنائية لأنها هُجرت عام 1948 ولم تُعد إسكانها لاحقاً كقرية عادية.">
-            The Australian War Memorial photograph shows the inhabited village around 1918. The later image shows surviving stone fabric and landscape. UNESCO's tentative-list description calls Lifta an intact historic Palestinian village preserved in unusual authenticity because it was abandoned in 1948 and was not subsequently reoccupied as a normal village.
+          <p data-en="The Australian War Memorial photograph shows the inhabited village around 1918. The later image shows surviving stone fabric and landscape. Israel's 2015 UNESCO Tentative List submission describes Lifta as an abandoned Palestinian village and says its 1948 abandonment left much of its traditional built fabric unusually intact because it was not subsequently reoccupied as a normal village."
+             data-ar="تُظهر صورة النصب التذكاري للحرب الأسترالي القرية وهي مأهولة نحو عام 1918. وتُظهر الصورة اللاحقة النسيج الحجري والمشهد الباقيين. يصف ملف إسرائيل المقدم عام 2015 إلى القائمة التمهيدية لليونسكو لفتا بأنها قرية فلسطينية مهجّرة، ويذكر أن هجرها عام 1948 أبقى كثيراً من نسيجها العمراني التقليدي سليماً على نحو غير معتاد لأنها لم تُعد إسكانها لاحقاً كقرية عادية.">
+            The Australian War Memorial photograph shows the inhabited village around 1918. The later image shows surviving stone fabric and landscape. Israel's 2015 UNESCO Tentative List submission describes Lifta as an abandoned Palestinian village and says its 1948 abandonment left much of its traditional built fabric unusually intact because it was not subsequently reoccupied as a normal village.
           </p>
           <div class="compare-links">
             <a href="https://www.awm.gov.au/collection/B02386" target="_blank" rel="noopener noreferrer">Before source ↗</a>
