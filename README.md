@@ -1,1 +1,1 @@
-# Palastine.github.io
+# Palestine.github.io
