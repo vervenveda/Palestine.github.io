@@ -100,7 +100,7 @@ A "Then / Now" pair does not imply that both photographs were taken from the sam
 - **Conservation evidence:** The World Heritage Committee's 2026 decision records concern about reported settlements, restrictions on farmers and damage to agricultural areas. The detailed 2025 state-of-conservation report was submitted by the State of Palestine and describes a settlement outpost, agricultural-land damage and blocked farmer access: https://whc.unesco.org/document/224529
 
 ### Ramallah
-- **Before:** American Colony Photo Department / Matson Collection, Library of Congress, *Northern views. Street at Ramallah*, approximately 1900–1920, no known restrictions: https://commons.wikimedia.org/wiki/File:Northern_views._Street_at_Ramallah_LOC_matpc.01048.jpg
+- **Before:** American Colony Photo Department / Matson Collection, Library of Congress, *Northern views. Street at Ramallah*, 1900, no known restrictions: https://commons.wikimedia.org/wiki/File:Northern_views._Street_at_Ramallah_LOC_matpc.01048.jpg
 - **Later:** أمين, *Ramallah 2024.jpg*, 8 September 2024, CC BY-SA 4.0: https://commons.wikimedia.org/wiki/File:Ramallah_2024.jpg
 - **2026 context:** OCHA, *Humanitarian Situation Report | 2 October 2026*: https://www.ochaopt.org/content/humanitarian-situation-report-2-october-2026
 
