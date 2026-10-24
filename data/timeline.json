@@ -1,0 +1,101 @@
+[
+  {
+    "date": "Prehistory–Bronze Age",
+    "topic": "Settlement and Canaan",
+    "summary": "Archaeological evidence documents long-term human settlement; Bronze Age sources refer to Canaan and multiple cities and political authorities.",
+    "status": "introductory synthesis",
+    "source_urls": [
+      "https://www.inscriptionsisraelpalestine.org/"
+    ]
+  },
+  {
+    "date": "Iron Age, c. 1200 BCE onward",
+    "topic": "Peleset and Philistia",
+    "summary": "Egyptian inscriptions refer to Peleset; archaeology and scholarship study Philistine settlements, particularly in the southern coastal plain.",
+    "status": "introductory synthesis",
+    "source_urls": [
+      "https://www.inscriptionsisraelpalestine.org/"
+    ]
+  },
+  {
+    "date": "Fifth century BCE",
+    "topic": "Greek geographical terminology",
+    "summary": "Herodotus uses a form of Palaistinē; interpret scope in the context of the passage and translation.",
+    "status": "source-specific review needed",
+    "source_urls": [
+      "https://sourcebooks.web.fordham.edu/ancient/herodotus-history.asp"
+    ]
+  },
+  {
+    "date": "1516/1517–1917",
+    "topic": "Ottoman rule",
+    "summary": "Most of the region came under Ottoman rule; administrative boundaries and names changed over time.",
+    "status": "introductory synthesis",
+    "source_urls": [
+      "https://guides.lib.berkeley.edu/c.php?g=810896&p=7333572"
+    ]
+  },
+  {
+    "date": "1917–1947",
+    "topic": "British Mandate",
+    "summary": "British administration and the League of Nations Mandate shaped competing national projects and political conflict.",
+    "status": "introductory synthesis",
+    "source_urls": [
+      "https://www.un.org/unispal/history/"
+    ]
+  },
+  {
+    "date": "29 November 1947",
+    "topic": "UN General Assembly Resolution 181 (II)",
+    "summary": "The General Assembly recommended partition into Arab and Jewish states with a special international regime for Jerusalem.",
+    "status": "primary document",
+    "source_urls": [
+      "https://www.un.org/unispal/document/auto-insert-185393/"
+    ]
+  },
+  {
+    "date": "14 May 1948",
+    "topic": "Declaration of the State of Israel",
+    "summary": "Israel declared independence as the British Mandate ended; war and mass Palestinian displacement shaped the period.",
+    "status": "historical overview; add primary declaration citation",
+    "source_urls": [
+      "https://www.un.org/unispal/history/"
+    ]
+  },
+  {
+    "date": "June 1967",
+    "topic": "War and occupation",
+    "summary": "Israel captured the West Bank, including East Jerusalem, and Gaza, among other territories.",
+    "status": "introductory synthesis",
+    "source_urls": [
+      "https://www.un.org/unispal/history/"
+    ]
+  },
+  {
+    "date": "1993 onward",
+    "topic": "Oslo agreements",
+    "summary": "Interim Palestinian self-government arrangements were established; core permanent-status questions were deferred.",
+    "status": "introductory synthesis",
+    "source_urls": [
+      "https://www.un.org/unispal/history/"
+    ]
+  },
+  {
+    "date": "29 November 2012",
+    "topic": "UN General Assembly Resolution 67/19",
+    "summary": "Palestine received non-member observer State status at the United Nations.",
+    "status": "primary document",
+    "source_urls": [
+      "https://www.un.org/unispal/document/auto-insert-184195/"
+    ]
+  },
+  {
+    "date": "19 July 2024",
+    "topic": "ICJ advisory opinion",
+    "summary": "The ICJ issued an advisory opinion concerning the legal consequences arising from Israel's policies and practices in the Occupied Palestinian Territory, including East Jerusalem.",
+    "status": "primary legal document; cite full text before detailed legal claims",
+    "source_urls": [
+      "https://www.icj-cij.org/"
+    ]
+  }
+]

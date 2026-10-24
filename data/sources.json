@@ -1,0 +1,66 @@
+[
+  {
+    "id": "SRC-UNISPAL",
+    "title": "UN Information System on the Question of Palestine",
+    "institution": "United Nations",
+    "type": "document repository",
+    "url": "https://www.un.org/unispal/data-collection/",
+    "notes": "UN documents, resolutions, maps, reports, and historical studies."
+  },
+  {
+    "id": "SRC-UN-HISTORY",
+    "title": "History of the Question of Palestine",
+    "institution": "United Nations",
+    "type": "institutional historical overview",
+    "url": "https://www.un.org/unispal/history/",
+    "notes": "Useful orientation; compare with primary sources and other scholarship."
+  },
+  {
+    "id": "SRC-ICJ",
+    "title": "International Court of Justice",
+    "institution": "ICJ",
+    "type": "official court records",
+    "url": "https://www.icj-cij.org/",
+    "notes": "Use case pages, full opinions, dates, and paragraph references."
+  },
+  {
+    "id": "SRC-OCHA",
+    "title": "Occupied Palestinian territory",
+    "institution": "UN OCHA",
+    "type": "humanitarian reporting",
+    "url": "https://www.ochaopt.org/",
+    "notes": "Dated situation reports and data; current figures require date checks."
+  },
+  {
+    "id": "SRC-UNRWA",
+    "title": "UNRWA",
+    "institution": "United Nations Relief and Works Agency",
+    "type": "institutional records",
+    "url": "https://www.unrwa.org/",
+    "notes": "Palestine refugee registration, services, and operational information."
+  },
+  {
+    "id": "SRC-UNESCO",
+    "title": "State of Palestine — World Heritage Centre",
+    "institution": "UNESCO",
+    "type": "heritage records",
+    "url": "https://whc.unesco.org/en/statesparties/ps",
+    "notes": "Check current individual property records and status."
+  },
+  {
+    "id": "SRC-INSCRIPTIONS",
+    "title": "Inscriptions from the Persian Period to the Islamic Conquest",
+    "institution": "Academic research project",
+    "type": "epigraphic corpus",
+    "url": "https://www.inscriptionsisraelpalestine.org/",
+    "notes": "Ancient inscriptions and translations; cite catalogue IDs."
+  },
+  {
+    "id": "SRC-BERKELEY",
+    "title": "Historical Primary Sources: Israel/Palestine",
+    "institution": "UC Berkeley Library",
+    "type": "archival research guide",
+    "url": "https://guides.lib.berkeley.edu/c.php?g=810896&p=7333572",
+    "notes": "Pointers to Mandate, Ottoman, oral-history, and related collections."
+  }
+]

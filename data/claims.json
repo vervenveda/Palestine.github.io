@@ -1,0 +1,42 @@
+[
+  {
+    "id": "CLM-001",
+    "claim": "The name Palestine has ancient attestations, but its geographic scope changed over time.",
+    "period": "Ancient to modern",
+    "status": "Supported",
+    "evidence_needed": "Cite specific Greek and Roman passages, editions, and administrative records.",
+    "caution": "Do not infer uninterrupted sovereignty solely from the name."
+  },
+  {
+    "id": "CLM-002",
+    "claim": "Canaan was a region containing multiple communities and political centers rather than one continuously unified state throughout the Bronze Age.",
+    "period": "Bronze Age",
+    "status": "Supported",
+    "evidence_needed": "Add Egyptian, Amarna, and archaeological sources with precise references.",
+    "caution": "Avoid treating all political structures as identical across centuries."
+  },
+  {
+    "id": "CLM-003",
+    "claim": "UN General Assembly Resolution 181 recommended partition into Arab and Jewish states and a special international regime for Jerusalem.",
+    "period": "1947",
+    "status": "Documented",
+    "evidence_needed": "Cite the resolution text and relevant sections.",
+    "caution": "A recommendation is not the same as full implementation."
+  },
+  {
+    "id": "CLM-004",
+    "claim": "UN General Assembly Resolution 67/19 accorded Palestine non-member observer State status at the United Nations.",
+    "period": "2012",
+    "status": "Documented",
+    "evidence_needed": "Cite resolution text and date.",
+    "caution": "This is distinct from full UN membership and does not settle every border or recognition question."
+  },
+  {
+    "id": "CLM-005",
+    "claim": "The ICJ's 19 July 2024 advisory opinion concluded that Israel's continued presence in the Occupied Palestinian Territory is unlawful.",
+    "period": "2024",
+    "status": "Documented",
+    "evidence_needed": "Cite the full opinion, operative clause, and paragraph numbers.",
+    "caution": "Do not extend the opinion beyond its stated scope."
+  }
+]
