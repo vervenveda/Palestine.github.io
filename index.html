@@ -220,15 +220,19 @@ img,svg{display:block;max-width:100%}
   font:600 clamp(1.25rem,2.2vw,1.8rem)/1.2 var(--display)
 }
 .academy-bridge p{margin:6px 0 0;color:var(--muted);font-size:.86rem}
+.academy-bridge-actions{display:flex;gap:8px;flex-wrap:wrap;justify-content:flex-end}
 .academy-bridge-action{
   min-height:50px;display:inline-flex;align-items:center;justify-content:center;
   padding:11px 18px;background:var(--olive);color:#fff;text-decoration:none;
   border:1px solid var(--olive);font-size:.8rem;font-weight:800;letter-spacing:.05em;
   white-space:nowrap
 }
-.academy-bridge-action:hover{background:var(--red);border-color:var(--red)}
+.academy-bridge-action.secondary{background:transparent;color:var(--olive)}
+.academy-bridge-action.gold{background:var(--gold);border-color:var(--gold);color:#20170b}
+.academy-bridge-action:hover{background:var(--red);border-color:var(--red);color:#fff}
 @media(max-width:760px){
   .academy-bridge-inner{grid-template-columns:1fr}
+  .academy-bridge-actions{justify-content:stretch}
   .academy-bridge-action{width:100%}
 }
 @media(max-width:520px){
@@ -633,6 +637,8 @@ html[dir="rtl"] .menu-panel{transform:translateX(-105%)}
         <a class="button light" href="#sources" data-en="Open trusted sources" data-ar="افتح المصادر الموثوقة">Open trusted sources</a>
         <a class="button academy" href="https://vervenveda.com/Khaemenes_Academy.github.io/" target="_blank" rel="noopener noreferrer"
            data-en="Free Khaemenes Academy ↗" data-ar="أكاديمية خايمينيس المجانية ↗">Free Khaemenes Academy ↗</a>
+        <a class="button light" href="./learning/palestine-research-notebook.html"
+           data-en="Open Research Notebook →" data-ar="افتح دفتر البحث ←">Open Research Notebook →</a>
       </div>
       <div class="hero-note"
            data-en="Independent educational project · English + العربية · Evidence close to the claim"
@@ -667,14 +673,20 @@ html[dir="rtl"] .menu-panel{transform:translateX(-105%)}
             data-ar="واصل التعلّم في منصة أكاديمية خايمينيس التعليمية المجانية">
           Continue learning in the free Khaemenes Academy educational platform
         </h2>
-        <p data-en="Explore Academy learning pathways, student and family portals, grade-level resources, courses and educational tools."
-           data-ar="استكشف مسارات التعلّم وبوابات الطلاب والعائلات وموارد الصفوف والدورات والأدوات التعليمية في الأكاديمية.">
-          Explore Academy learning pathways, student and family portals, grade-level resources, courses and educational tools.
+        <p data-en="Use this guide for source-led research, record your evidence in the Academy notebook, then continue into free Khaemenes Academy learning. The notebook is formative, ungraded, local-only and portfolio-ready."
+           data-ar="استخدم هذا الدليل للبحث القائم على المصادر، وسجّل أدلتك في دفتر الأكاديمية، ثم واصل التعلّم المجاني في أكاديمية خايمينيس. الدفتر تكويني وغير مُقيّم ومحلي فقط وجاهز لحافظة الأعمال.">
+          Use this guide for source-led research, record your evidence in the Academy notebook, then continue into free Khaemenes Academy learning. The notebook is formative, ungraded, local-only and portfolio-ready.
         </p>
       </div>
     </div>
-    <a class="academy-bridge-action" href="https://vervenveda.com/Khaemenes_Academy.github.io/" target="_blank" rel="noopener noreferrer"
-       data-en="Enter Khaemenes Academy →" data-ar="ادخل أكاديمية خايمينيس ←">Enter Khaemenes Academy →</a>
+    <div class="academy-bridge-actions" aria-label="Khaemenes Academy learning pathway">
+      <a class="academy-bridge-action gold" href="./learning/palestine-research-notebook.html"
+         data-en="1 · Open Research Notebook" data-ar="1 · افتح دفتر البحث">1 · Open Research Notebook</a>
+      <a class="academy-bridge-action" href="https://vervenveda.com/Khaemenes_Academy.github.io/" target="_blank" rel="noopener noreferrer"
+         data-en="2 · Enter Free Academy →" data-ar="2 · ادخل الأكاديمية المجانية ←">2 · Enter Free Academy →</a>
+      <a class="academy-bridge-action secondary" href="https://vervenveda.com/Khaemenes_High.github.io/courses/social-studies/" target="_blank" rel="noopener noreferrer"
+         data-en="High School Social Studies ↗" data-ar="الدراسات الاجتماعية للمرحلة الثانوية ↗">High School Social Studies ↗</a>
+    </div>
   </div>
 </aside>
 
@@ -1628,6 +1640,7 @@ html[dir="rtl"] .menu-panel{transform:translateX(-105%)}
       <a href="#then-now" data-en="Then / Now gallery" data-ar="معرض آنذاك / الآن">Then / Now gallery</a>
       <a href="#archives" data-en="Maps & archives" data-ar="الخرائط والأرشيف">Maps & archives</a>
       <a href="#sources" data-en="Trusted sources" data-ar="المصادر الموثوقة">Trusted sources</a>
+      <a href="./learning/palestine-research-notebook.html" data-en="Palestine Research Notebook →" data-ar="دفتر البحث عن فلسطين ←">Palestine Research Notebook →</a>
       <a href="https://vervenveda.com/Khaemenes_Academy.github.io/" target="_blank" rel="noopener noreferrer"
          data-en="Free Khaemenes Academy ↗" data-ar="أكاديمية خايمينيس المجانية ↗">Free Khaemenes Academy ↗</a>
       <a href="https://vervenveda.com/" data-en="Verve N Veda Home ↗" data-ar="العودة إلى Verve N Veda ↗">Verve N Veda Home ↗</a>
