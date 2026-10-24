@@ -28,4 +28,7 @@
 - Replaced qualitative Gaza displacement wording with UN-documented figures: almost 750,000 Palestinian refugees associated with the 1948 hostilities and more than 500,000 Palestinians displaced in the 1967 war; changed “extraordinary destruction” to the directly supportable “widespread destruction.”
 - External source links were checked against authoritative/indexed destinations. Some UN, UNRWA, Library of Congress, Palestinian Museum, and GitHub Pages endpoints restrict automated crawlers or rate-limit checks; these were not treated as broken when their official/indexed destination or repository-backed path was independently confirmed.
 - Audit self-correction: direct verification of the Ramallah image file record gives the date as **1900**. Restored the page and source register to that exact catalog date after an intermediate audit draft had broadened it unnecessarily.
+- Added a prominent bilingual **Free Khaemenes Academy** doorway to the Palestine landing page.
+- Added the Academy CTA directly in the hero, a full-width education bridge immediately below the hero, and an Academy link inside the ecosystem drawer.
+- All Academy links point to the verified canonical front desk at https://vervenveda.com/Khaemenes_Academy.github.io/.
 
