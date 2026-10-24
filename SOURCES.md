@@ -117,3 +117,26 @@ A "Then / Now" pair does not imply that both photographs were taken from the sam
 - **Later:** Bukvoed, *Lifta-40920.jpg*, 20 July 2024, CC BY 4.0: https://commons.wikimedia.org/wiki/File:Lifta-40920.jpg
 - **Heritage context:** UNESCO tentative-list record, *Liftah (Mey Naftoah) – Traditional mountain village*: https://whc.unesco.org/en/tentativelists/6061/
 
+## Gaza history and childhood feature
+
+### Featured image
+- **Children of Gaza:** Hla.bashbash, *Gaza children- Gaza war 23-25.jpg*, 27 February 2025, own work, CC BY 4.0: https://commons.wikimedia.org/wiki/File:Gaza_children-_Gaza_war_23-25.jpg
+- The image is used with visible attribution and a direct link to the license/source page. It is dated 2025 and is not represented as a 2026 photograph.
+
+### Historical and legal timeline
+- **1948 displacement / refugee definition:** UNRWA, *Palestine refugees*: https://www.unrwa.org/palestine-refugees
+- **Historic refugee record:** UNRWA, *Photo and film archive for Palestine refugees*: https://www.unrwa.org/photo-and-film-archive
+- **Gaza refugee camps:** UNRWA camp records for Jabalia, Rafah, Deir El-Balah, Maghazi and Khan Younis document camp formation following the 1948 war.
+- **1948 and 1967 chronology:** United Nations, *History of the Question of Palestine*: https://www.un.org/unispal/history/
+- **2005 / occupation-law context:** International Court of Justice, *Summary of the Advisory Opinion of 19 July 2024*: https://www.icj-cij.org/node/204176
+- **Blockade background:** OCHA, *Gaza Blockade*, 2 March 2016: https://www.ochaopt.org/content/gaza-blockade
+- **2026 structural damage:** OCHA, *Humanitarian Situation Report | 7 August 2026*: https://www.ochaopt.org/content/humanitarian-situation-report-7-august-2026
+- **October 2026 humanitarian conditions:** OCHA, *Humanitarian Situation Report | 15 October 2026*: https://www.ochaopt.org/content/humanitarian-situation-report-15-october-2026
+
+### Children, recovery and hope
+- **UNICEF, 2 March 2026:** *A Roadmap to Recovery, Written by Children* — more than 11,000 children contributed visions through “The Gaza We Want”: https://www.unicef.org/sop/stories/roadmap-recovery-written-children
+- **UNICEF, 2026:** *Hope amid the Pain: Palestinian Children in the Gaza Strip One Year after the Ceasefire* documents children’s education, care, injury, family responsibilities and aspirations: https://www.unicef.org/sop/stories/hope-amid-pain-palestinian-children-gaza-strip-one-year-after-ceasefire
+
+### Editorial treatment
+The Gaza feature separates image date from current context date, distinguishes institutional findings from broader interpretation, and avoids collective blame. Claims about occupation, blockade, displacement and damage are linked directly to the issuing institution.
+
