@@ -85,13 +85,18 @@ html[dir="rtl"] .check input{margin:0 0 0 7px}
   h1{font-size:23pt}.card h2{font-size:15pt}
   .check input{display:inline!important}
 }
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*::before,*::after{animation:none!important;transition:none!important}}
+.skip-link{position:absolute;left:12px;top:-100px;z-index:100;background:var(--paper);color:var(--olive);border:2px solid var(--gold);padding:9px 12px;font-weight:700}.skip-link:focus{top:10px}
 </style>
 </head>
-<body>
+<body><a class="skip-link" href="#main" data-en="Skip to main content" data-ar="انتقل إلى المحتوى الرئيسي">Skip to main content</a>
 <div class="topbar no-print">
   <div class="shell">
     <nav aria-label="Research notebook navigation">
-      <a href="../index.html" data-en="← Palestine Research Guide" data-ar="دليل فلسطين البحثي ←">← Palestine Research Guide</a>
+      <a href="../research/index.html" data-en="← Palestine Research Archive" data-ar="أرشيف البحث عن فلسطين ←">← Palestine Research Archive</a>
+      <a href="../SOURCES.md" data-en="Sources & Rights" data-ar="المصادر والحقوق">Sources & Rights</a>
+      <a href="https://vervenveda.com/Saudi_Arabia.github.io/" data-en="Saudi Arabia" data-ar="السعودية">Saudi Arabia</a>
+      <a href="https://vervenveda.com/Iran.github.io/" data-en="Iran" data-ar="إيران">Iran</a>
       <a href="https://vervenveda.com/Khaemenes_Academy.github.io/" target="_blank" rel="noopener noreferrer" data-en="Free Khaemenes Academy ↗" data-ar="أكاديمية خايمينيس المجانية ↗">Free Khaemenes Academy ↗</a>
     </nav>
     <button id="langToggle" class="lang" type="button" aria-label="Switch language">العربية</button>
@@ -111,7 +116,7 @@ html[dir="rtl"] .check input{margin:0 0 0 7px}
   </div>
 </header>
 
-<main class="shell">
+<main class="shell" id="main">
   <div class="actions no-print">
     <button type="button" id="printBtn" data-en="Print / Save PDF" data-ar="طباعة / حفظ PDF">Print / Save PDF</button>
     <button type="button" id="jsonBtn" data-en="Export Evidence JSON" data-ar="تصدير JSON للدليل">Export Evidence JSON</button>
@@ -352,8 +357,11 @@ html[dir="rtl"] .check input{margin:0 0 0 7px}
     document.querySelectorAll("[data-en][data-ar]").forEach(el=>{el.textContent=ar?el.dataset.ar:el.dataset.en;});
     langBtn.textContent=ar?"English":"العربية";
     langBtn.setAttribute("aria-label",ar?"Switch to English":"التبديل إلى العربية");
+    try{localStorage.setItem("VNV_PALESTINE_LANG",ar?"ar":"en")}catch{}
   }
   langBtn.addEventListener("click",()=>applyLang(html.lang==="ar"?"en":"ar"));
+  let savedLang="en";try{savedLang=localStorage.getItem("VNV_PALESTINE_LANG")==="ar"?"ar":"en"}catch{}
+  applyLang(savedLang);
 
   form.elements.date.value=new Date().toISOString().slice(0,10);
   window.addEventListener("beforeprint",syncPrint);
