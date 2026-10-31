@@ -71,32 +71,6 @@ img,svg{display:block;max-width:100%}
     linear-gradient(-45deg,transparent 37%,#f2ead8 37% 50%,transparent 50% 87%,var(--olive-3) 87%) 9px 0/18px 18px,
     var(--black);
 }
-#vnvTicker{
-  position:relative;z-index:1500;
-  min-height:35px;
-  display:grid;grid-template-columns:minmax(0,1fr) 42px;
-  color:#f4ead7;
-  background:linear-gradient(90deg,#07110d,#162b21 50%,#07110d);
-  border-bottom:1px solid #ffffff24;
-  font:500 11px/1.25 var(--body);
-  letter-spacing:.08em
-}
-#vnvTicker .viewport{overflow:hidden;min-width:0;mask-image:linear-gradient(90deg,transparent,#000 24px,#000 calc(100% - 24px),transparent)}
-#vnvTicker .track{
-  min-height:35px;width:max-content;
-  display:flex;align-items:center;
-  animation:tickerMove 33s linear infinite
-}
-#vnvTicker .set{display:flex;align-items:center;gap:23px;padding-inline:12px;white-space:nowrap}
-#vnvTicker .brand{color:#e6c999;letter-spacing:.17em;text-transform:uppercase}
-#vnvTicker a{text-decoration:none;color:#f3eee4}
-#vnvTicker a:hover,#vnvTicker a:focus-visible{text-decoration:underline;color:#fff}
-#vnvTicker .pause{
-  min-height:35px;border:0;border-left:1px solid #ffffff2a;
-  background:transparent;color:#fff;cursor:pointer;font-size:15px
-}
-#vnvTicker:hover .track,#vnvTicker:focus-within .track,#vnvTicker[data-paused="true"] .track{animation-play-state:paused}
-@keyframes tickerMove{to{transform:translateX(-50%)}}
 .site-header{
   position:sticky;top:0;z-index:1200;
   background:rgba(255,253,248,.95);
@@ -564,12 +538,9 @@ html[dir="rtl"] .menu-panel{transform:translateX(-105%)}
 }
 @media(prefers-reduced-motion:reduce){
   html{scroll-behavior:auto}
-  *{animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important}
-  #vnvTicker .track{animation:none;width:auto;flex-wrap:wrap}
-  #vnvTicker .set[aria-hidden="true"]{display:none}
-}
+  *{animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important}}
 @media print{
-  #vnvTicker,.site-header,.menu-overlay,.backtop,.hero-actions{display:none!important}
+  .site-header,.menu-overlay,.backtop,.hero-actions{display:none!important}
   .hero{background:#fff!important;color:#111!important}
   .hero-lead,.hero-note{color:#333!important}
   .hero-inner{min-height:auto;padding:30px 0}
@@ -582,34 +553,6 @@ html[dir="rtl"] .menu-panel{transform:translateX(-105%)}
 </head>
 <body data-vnv-outer-landing="true">
 <a class="skip-link" href="#main" data-en="Skip to main content" data-ar="انتقل إلى المحتوى الرئيسي">Skip to main content</a>
-
-<div id="vnvTicker" data-paused="false" aria-label="Verve N Veda 333 Network ticker">
-  <div class="viewport">
-    <div class="track">
-      <div class="set">
-        <span class="brand">333 Network</span>
-        <a href="https://vervenveda.github.io/333.github.io/app/HOLLO_333_direct_connect_index.html">HOLLO</a>
-        <a href="https://vervenveda.github.io/333.github.io/app/KANSEE_333_meeting_rooms_index.html">KANSEE</a>
-        <a href="https://vervenveda.github.io/333.github.io/app/EVen_mail_index.html">E=Ven Mail</a>
-        <a href="https://vervenveda.github.io/333.github.io/app/Bazaar_Art_Live_index.html">Bazaar Art Live</a>
-        <a href="https://vervenveda.github.io/333.github.io/app/SIte_builder_index.html">SIte Studio</a>
-        <a href="https://vervenveda.github.io/333.github.io/app/Bunya_digital_infrastructure_index.html">Bunya</a>
-        <a href="https://vervenveda.github.io/333.github.io/">Open 333 →</a>
-      </div>
-      <div class="set" aria-hidden="true">
-        <span class="brand">333 Network</span>
-        <a tabindex="-1" href="https://vervenveda.github.io/333.github.io/app/HOLLO_333_direct_connect_index.html">HOLLO</a>
-        <a tabindex="-1" href="https://vervenveda.github.io/333.github.io/app/KANSEE_333_meeting_rooms_index.html">KANSEE</a>
-        <a tabindex="-1" href="https://vervenveda.github.io/333.github.io/app/EVen_mail_index.html">E=Ven Mail</a>
-        <a tabindex="-1" href="https://vervenveda.github.io/333.github.io/app/Bazaar_Art_Live_index.html">Bazaar Art Live</a>
-        <a tabindex="-1" href="https://vervenveda.github.io/333.github.io/app/SIte_builder_index.html">SIte Studio</a>
-        <a tabindex="-1" href="https://vervenveda.github.io/333.github.io/app/Bunya_digital_infrastructure_index.html">Bunya</a>
-        <a tabindex="-1" href="https://vervenveda.github.io/333.github.io/">Open 333 →</a>
-      </div>
-    </div>
-  </div>
-  <button class="pause" id="tickerPause" type="button" aria-label="Pause 333 Network ticker" aria-pressed="false" title="Pause or resume ticker">Ⅱ</button>
-</div>
 <div class="tatreez-line" aria-hidden="true"></div>
 
 <header class="site-header">
@@ -1684,8 +1627,6 @@ html[dir="rtl"] .menu-panel{transform:translateX(-105%)}
   var menuButton = document.getElementById("menuButton");
   var menuOverlay = document.getElementById("menuOverlay");
   var menuClose = document.getElementById("menuClose");
-  var ticker = document.getElementById("vnvTicker");
-  var tickerPause = document.getElementById("tickerPause");
   var priorFocus = null;
 
   function applyLanguage(lang){
@@ -1724,16 +1665,7 @@ html[dir="rtl"] .menu-panel{transform:translateX(-105%)}
     document.body.style.overflow = "";
     if(priorFocus && priorFocus.focus) priorFocus.focus();
   }
-
-  function setTickerPaused(paused){
-    ticker.dataset.paused = String(paused);
-    tickerPause.setAttribute("aria-pressed",String(paused));
-    tickerPause.setAttribute("aria-label",paused ? "Resume 333 Network ticker" : "Pause 333 Network ticker");
-    tickerPause.textContent = paused ? "▶" : "Ⅱ";
-    try{ localStorage.setItem("VNV_PALESTINE_TICKER_PAUSED",String(paused)); }catch(e){}
-  }
-
-  langButton.addEventListener("click",function(){
+langButton.addEventListener("click",function(){
     applyLanguage(html.lang === "ar" ? "en" : "ar");
   });
 
@@ -1763,15 +1695,7 @@ html[dir="rtl"] .menu-panel{transform:translateX(-105%)}
       }
     }
   });
-
-  var paused = false;
-  try{ paused = localStorage.getItem("VNV_PALESTINE_TICKER_PAUSED") === "true"; }catch(e){}
-  setTickerPaused(paused);
-  tickerPause.addEventListener("click",function(){
-    setTickerPaused(ticker.dataset.paused !== "true");
-  });
-
-  document.querySelectorAll("[data-compare]").forEach(function(card){
+document.querySelectorAll("[data-compare]").forEach(function(card){
     var range = card.querySelector(".compare-range");
     var after = card.querySelector(".compare-after");
     var divider = card.querySelector(".compare-divider");
@@ -1798,6 +1722,10 @@ html[dir="rtl"] .menu-panel{transform:translateX(-105%)}
 })();
 </script>
 <script defer src="https://vervenveda.com/assets/vnv-external-landing.js"></script>
+
+<script src="https://vervenveda.com/assets/vnv-333-ticker.js"></script>
+<script src="https://vervenveda.com/assets/vnv-ticker-autopopulate.js" data-vnv-ticker-autopopulate></script>
+<script>VNV_TICKER.autoPopulate({label:"Palestine Quick Links",max:14});</script>
 <script src="https://vervenveda.com/assets/vnv-ecosystem-toolbar.js"></script>
 </body>
 </html>
